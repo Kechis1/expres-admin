@@ -1,0 +1,184 @@
+{
+  "Labels": {
+    "VIEW": "View",
+    "RECORDS": "records",
+    "FOUND": "Found",
+    "PAGE": "Page",
+    "OF": "of"
+  },
+  "Buttons": {
+    "VIEW": "View",
+    "DELETE": "Delete"
+  },
+  "Pages": {
+    "Dashboard": {
+      "Cards": {
+        "USERS": {
+          "Title": "New Users",
+          "Manage": "Manage Users",
+          "Add": "Create a User"
+        },
+        "ORDERS": {
+          "Title": "New Orders",
+          "Manage": "Manage Orders",
+          "Add": "Place an Order"
+        },
+        "SALES": {
+          "Title": "Sales",
+          "Manage": "Manage Orders",
+          "Add": "Place an Order"
+        },
+        "VISITS": "Visits"
+      }
+    },
+    "Orders": {
+      "Header": {
+        "BOLD": "Orders",
+        "THIN": "List"
+      },
+      "ADD": "New Order",
+      "DATE": {
+        "Title": "Date"
+      },
+      "COMPANY": {
+        "Title": "Enterprise",
+        "0": "Nay",
+        "1": "Ay"
+      },
+      "CUSTOMER": {
+        "Title": "Customer"
+      },
+      "CELLNUMBER": {
+        "Title": "Phone"
+      },
+      "TOTAL": {
+        "Title": "Total"
+      },
+      "ACTION": {
+        "Title": "Action"
+      },
+      "STATUS": {
+        "Title": "Status",
+        "0": "Canceled",
+        "1": "Received",
+        "2": "Dispatched",
+        "3": "Closed",
+        "4": "Pending"
+      }
+    }
+  },
+  "Months": {
+    "Long": {
+      "January": "January",
+      "February": "February",
+      "March": "March",
+      "April": "April",
+      "May": "May",
+      "June": "June",
+      "July": "July",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "November": "November",
+      "December": "December"
+    },
+    "Short": {
+      "Jan": "Jan",
+      "Feb": "Feb",
+      "Mar": "Mar",
+      "Apr": "Apr",
+      "May": "May",
+      "Jun": "Jun",
+      "Jul": "Jul",
+      "Aug": "Aug",
+      "Sep": "Sep",
+      "Oct": "Oct",
+      "Nov": "Nov",
+      "Dec": "Dec"
+    }
+  },
+  "Menu-Headings": {
+    "NAVIGATION": "Navigation",
+    "ORDERS": "Orders summary",
+    "SALES": "This week sales",
+    "BALANCE": "This week balance"
+  },
+  "Menu": {
+    "DASHBOARD": "Dashboard",
+    "ORDERS": "Orders",
+    "SHIPPINGS": {
+      "Name": "Shipping",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add",
+        "TYPES": "List of types",
+        "ADD_TYPE": "Add a type"
+      }
+    },
+    "PAYMENTS": {
+      "Name": "Payment",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add"
+      }
+    },
+    "PICTURES": {
+      "Name": "Pictures",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add",
+        "CATEGORIES": "List of categories",
+        "ADD_CATEGORY": "Add a category"
+      }
+    },
+    "FILES": {
+      "Name": "Files",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add",
+        "CATEGORIES": "List of categories",
+        "ADD_CATEGORY": "Add a category"
+      }
+    },
+    "PRODUCTS": {
+      "Name": "Products",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add",
+        "TAGS": "List of tags"
+      }
+    },
+    "CATEGORIES": {
+      "Name": "Categories",
+      "Children": {
+        "SORT": "Sort",
+        "LIST": "List",
+        "ADD": "Add"
+      }
+    },
+    "MANUFACTURERS": {
+      "Name": "Manufacturers",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add"
+      }
+    },
+    "USERS": "Users",
+    "GROUPS": {
+      "Name": "Groups",
+      "Children": {
+        "LIST": "List",
+        "ADD": "Add"
+      }
+    },
+    "PAGES": {
+      "Name": "Pages",
+      "Children": {
+        "MAIN_MENU": "Main menu",
+        "FOOTER_MENU": "Footer menu",
+        "ARTICLES": "Articles"
+      }
+    }
+  }
+}
+

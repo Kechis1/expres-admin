@@ -1,0 +1,2528 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-sass',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json minovate@1.2.0 No description
+6 warn package.json minovate@1.2.0 No repository field.
+7 warn package.json minovate@1.2.0 No README data
+8 verbose install grunt-contrib-sass is installed as 0.7.4
+9 silly cache add args [ 'grunt-contrib-sass', null ]
+10 verbose cache add spec grunt-contrib-sass
+11 silly cache add parsed spec { raw: 'grunt-contrib-sass',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'grunt-contrib-sass',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: '*',
+11 silly cache add   type: 'range' }
+12 verbose addNamed grunt-contrib-sass@*
+13 silly addNamed semver.valid null
+14 silly addNamed semver.validRange *
+15 silly addNameRange { name: 'grunt-contrib-sass', range: '*', hasData: false }
+16 silly mapToRegistry name grunt-contrib-sass
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-sass
+20 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-sass not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/grunt-contrib-sass
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 16:42:50
+24 verbose request id a014c54e6ebe1401
+25 verbose etag W/"5854b89e-bc9e"
+26 verbose lastModified Sat, 17 Dec 2016 04:01:34 GMT
+27 http request GET https://registry.npmjs.org/grunt-contrib-sass
+28 http 304 https://registry.npmjs.org/grunt-contrib-sass
+29 silly get cb [ 304,
+29 silly get   { date: 'Tue, 17 Jan 2017 15:42:50 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     'cache-control': 'max-age=300',
+29 silly get     etag: 'W/"5854b89e-bc9e"',
+29 silly get     age: '0',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-hhn1548-HHN',
+29 silly get     'x-cache': 'HIT',
+29 silly get     'x-cache-hits': '1',
+29 silly get     'x-timer': 'S1484667770.070597,VS0,VE71',
+29 silly get     vary: 'Accept-Encoding' } ]
+30 verbose etag https://registry.npmjs.org/grunt-contrib-sass from cache
+31 verbose get saving grunt-contrib-sass to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\grunt-contrib-sass\.cache.json
+32 silly addNameRange number 2 { name: 'grunt-contrib-sass', range: '*', hasData: true }
+33 silly addNameRange versions [ 'grunt-contrib-sass',
+33 silly addNameRange   [ '0.1.0',
+33 silly addNameRange     '0.1.1',
+33 silly addNameRange     '0.1.2',
+33 silly addNameRange     '0.1.3',
+33 silly addNameRange     '0.2.0',
+33 silly addNameRange     '0.2.1',
+33 silly addNameRange     '0.2.2',
+33 silly addNameRange     '0.3.0',
+33 silly addNameRange     '0.4.0',
+33 silly addNameRange     '0.4.1',
+33 silly addNameRange     '0.5.0',
+33 silly addNameRange     '0.5.1',
+33 silly addNameRange     '0.6.0',
+33 silly addNameRange     '0.2.2-rc7',
+33 silly addNameRange     '0.7.0',
+33 silly addNameRange     '0.7.1',
+33 silly addNameRange     '0.7.2',
+33 silly addNameRange     '0.7.3',
+33 silly addNameRange     '0.7.4',
+33 silly addNameRange     '0.8.0',
+33 silly addNameRange     '0.8.1',
+33 silly addNameRange     '0.9.0',
+33 silly addNameRange     '0.9.1',
+33 silly addNameRange     '0.9.2',
+33 silly addNameRange     '1.0.0' ] ]
+34 verbose addNamed grunt-contrib-sass@1.0.0
+35 silly addNamed semver.valid 1.0.0
+36 silly addNamed semver.validRange 1.0.0
+37 silly mapToRegistry name grunt-contrib-sass
+38 silly mapToRegistry using default registry
+39 silly mapToRegistry registry https://registry.npmjs.org/
+40 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-sass
+41 verbose addRemoteTarball https://registry.npmjs.org/grunt-contrib-sass/-/grunt-contrib-sass-1.0.0.tgz not in flight; adding
+42 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-sass/-/grunt-contrib-sass-1.0.0.tgz',
+42 verbose addRemoteTarball   '806838251cbc0e1a94d64d515cdd34cf674d701b' ]
+43 info retry fetch attempt 1 at 16:42:50
+44 info attempt registry request try #1 at 16:42:50
+45 http fetch GET https://registry.npmjs.org/grunt-contrib-sass/-/grunt-contrib-sass-1.0.0.tgz
+46 http fetch 200 https://registry.npmjs.org/grunt-contrib-sass/-/grunt-contrib-sass-1.0.0.tgz
+47 silly fetchAndShaCheck shasum 806838251cbc0e1a94d64d515cdd34cf674d701b
+48 verbose addTmpTarball C:\Users\Danie\AppData\Local\Temp\npm-4776-ebc9a6ba\registry.npmjs.org\grunt-contrib-sass\-\grunt-contrib-sass-1.0.0.tgz not in flight; adding
+49 verbose addTmpTarball already have metadata; skipping unpack for grunt-contrib-sass@1.0.0
+50 silly cache afterAdd grunt-contrib-sass@1.0.0
+51 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\grunt-contrib-sass\1.0.0\package\package.json not in flight; writing
+52 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\grunt-contrib-sass\1.0.0\package\package.json written
+53 silly install resolved [ { name: 'grunt-contrib-sass',
+53 silly install resolved     description: 'Compile Sass to CSS',
+53 silly install resolved     version: '1.0.0',
+53 silly install resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+53 silly install resolved     repository:
+53 silly install resolved      { type: 'git',
+53 silly install resolved        url: 'git+https://github.com/gruntjs/grunt-contrib-sass.git' },
+53 silly install resolved     license: 'MIT',
+53 silly install resolved     engines: { node: '>=0.10.0' },
+53 silly install resolved     scripts: { test: 'grunt test' },
+53 silly install resolved     dependencies:
+53 silly install resolved      { async: '^0.9.0',
+53 silly install resolved        chalk: '^1.0.0',
+53 silly install resolved        'cross-spawn': '^0.2.3',
+53 silly install resolved        dargs: '^4.0.0',
+53 silly install resolved        which: '^1.0.5' },
+53 silly install resolved     devDependencies:
+53 silly install resolved      { grunt: '^0.4.5',
+53 silly install resolved        'grunt-cli': '^0.1.13',
+53 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+53 silly install resolved        'grunt-contrib-internal': '^0.4.10',
+53 silly install resolved        'grunt-contrib-jshint': '^0.11.0',
+53 silly install resolved        'grunt-contrib-nodeunit': '^0.4.1' },
+53 silly install resolved     peerDependencies: { grunt: '>=0.4.0' },
+53 silly install resolved     keywords:
+53 silly install resolved      [ 'gruntplugin',
+53 silly install resolved        'scss',
+53 silly install resolved        'sass',
+53 silly install resolved        'css',
+53 silly install resolved        'compile',
+53 silly install resolved        'preprocessor',
+53 silly install resolved        'style' ],
+53 silly install resolved     files: [ 'tasks' ],
+53 silly install resolved     contributors: [ [Object], [Object] ],
+53 silly install resolved     gitHead: 'd60bcf59f98be79e980b64885e18b20023ba64b5',
+53 silly install resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-sass/issues' },
+53 silly install resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-sass#readme',
+53 silly install resolved     _id: 'grunt-contrib-sass@1.0.0',
+53 silly install resolved     _shasum: '806838251cbc0e1a94d64d515cdd34cf674d701b',
+53 silly install resolved     _from: 'grunt-contrib-sass@*',
+53 silly install resolved     _npmVersion: '3.6.0',
+53 silly install resolved     _nodeVersion: '5.7.1',
+53 silly install resolved     _npmUser: { name: 'vladikoff', email: 'vlad@vladikoff.com' },
+53 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+53 silly install resolved     dist:
+53 silly install resolved      { shasum: '806838251cbc0e1a94d64d515cdd34cf674d701b',
+53 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-contrib-sass/-/grunt-contrib-sass-1.0.0.tgz' },
+53 silly install resolved     _npmOperationalInternal:
+53 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+53 silly install resolved        tmp: 'tmp/grunt-contrib-sass-1.0.0.tgz_1457125073912_0.30366725684143603' },
+53 silly install resolved     directories: {},
+53 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-sass/-/grunt-contrib-sass-1.0.0.tgz' } ]
+54 info install grunt-contrib-sass@1.0.0 into C:\Users\Danie\Desktop\admin\app\minovate
+55 info installOne grunt-contrib-sass@1.0.0
+56 verbose installOne of grunt-contrib-sass to C:\Users\Danie\Desktop\admin\app\minovate not in flight; installing
+57 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\grunt-contrib-sass-e6bc2587f38f9a41.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+58 silly install write writing grunt-contrib-sass 1.0.0 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+59 silly cache addNamed cb grunt-contrib-sass@1.0.0
+60 verbose unbuild node_modules\grunt-contrib-sass
+61 info preuninstall grunt-contrib-sass@0.7.4
+62 info uninstall grunt-contrib-sass@0.7.4
+63 verbose unbuild rmStuff grunt-contrib-sass@0.7.4 from C:\Users\Danie\Desktop\admin\app\minovate\node_modules
+64 info postuninstall grunt-contrib-sass@0.7.4
+65 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+66 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+67 silly vacuum-fs purging C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+68 silly vacuum-fs quitting because other entries in C:\Users\Danie\Desktop\admin\app\minovate\node_modules
+69 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\grunt-contrib-sass\1.0.0\package.tgz
+70 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+71 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass is being purged
+72 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+73 silly gunzTarPerm modes [ '777', '666' ]
+74 silly gunzTarPerm extractEntry package.json
+75 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+78 silly gunzTarPerm extractEntry CHANGELOG
+79 silly gunzTarPerm modified mode [ 'CHANGELOG', 420, 438 ]
+80 silly gunzTarPerm extractEntry tasks/sass.js
+81 silly gunzTarPerm modified mode [ 'tasks/sass.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry tasks/lib/check.js
+83 silly gunzTarPerm modified mode [ 'tasks/lib/check.js', 420, 438 ]
+84 info preinstall grunt-contrib-sass@1.0.0
+85 silly prepareForInstallMany adding async@^0.9.0 from grunt-contrib-sass dependencies
+86 silly prepareForInstallMany adding chalk@^1.0.0 from grunt-contrib-sass dependencies
+87 silly prepareForInstallMany adding cross-spawn@^0.2.3 from grunt-contrib-sass dependencies
+88 silly prepareForInstallMany adding dargs@^4.0.0 from grunt-contrib-sass dependencies
+89 silly prepareForInstallMany adding which@^1.0.5 from grunt-contrib-sass dependencies
+90 silly cache add args [ 'async@^0.9.0', null ]
+91 verbose cache add spec async@^0.9.0
+92 silly cache add args [ 'chalk@^1.0.0', null ]
+93 verbose cache add spec chalk@^1.0.0
+94 silly cache add parsed spec { raw: 'async@^0.9.0',
+94 silly cache add   scope: null,
+94 silly cache add   name: 'async',
+94 silly cache add   rawSpec: '^0.9.0',
+94 silly cache add   spec: '>=0.9.0 <0.10.0',
+94 silly cache add   type: 'range' }
+95 verbose addNamed async@>=0.9.0 <0.10.0
+96 silly addNamed semver.valid null
+97 silly addNamed semver.validRange >=0.9.0 <0.10.0
+98 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+99 silly mapToRegistry name async
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry uri https://registry.npmjs.org/async
+103 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+104 silly cache add parsed spec { raw: 'chalk@^1.0.0',
+104 silly cache add   scope: null,
+104 silly cache add   name: 'chalk',
+104 silly cache add   rawSpec: '^1.0.0',
+104 silly cache add   spec: '>=1.0.0 <2.0.0',
+104 silly cache add   type: 'range' }
+105 verbose addNamed chalk@>=1.0.0 <2.0.0
+106 silly addNamed semver.valid null
+107 silly addNamed semver.validRange >=1.0.0 <2.0.0
+108 silly addNameRange { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: false }
+109 silly mapToRegistry name chalk
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry uri https://registry.npmjs.org/chalk
+113 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+114 silly cache add args [ 'cross-spawn@^0.2.3', null ]
+115 verbose cache add spec cross-spawn@^0.2.3
+116 silly cache add parsed spec { raw: 'cross-spawn@^0.2.3',
+116 silly cache add   scope: null,
+116 silly cache add   name: 'cross-spawn',
+116 silly cache add   rawSpec: '^0.2.3',
+116 silly cache add   spec: '>=0.2.3 <0.3.0',
+116 silly cache add   type: 'range' }
+117 verbose addNamed cross-spawn@>=0.2.3 <0.3.0
+118 silly addNamed semver.valid null
+119 silly addNamed semver.validRange >=0.2.3 <0.3.0
+120 silly addNameRange { name: 'cross-spawn', range: '>=0.2.3 <0.3.0', hasData: false }
+121 silly mapToRegistry name cross-spawn
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry uri https://registry.npmjs.org/cross-spawn
+125 verbose addNameRange registry:https://registry.npmjs.org/cross-spawn not in flight; fetching
+126 silly cache add args [ 'dargs@^4.0.0', null ]
+127 verbose cache add spec dargs@^4.0.0
+128 silly cache add parsed spec { raw: 'dargs@^4.0.0',
+128 silly cache add   scope: null,
+128 silly cache add   name: 'dargs',
+128 silly cache add   rawSpec: '^4.0.0',
+128 silly cache add   spec: '>=4.0.0 <5.0.0',
+128 silly cache add   type: 'range' }
+129 verbose addNamed dargs@>=4.0.0 <5.0.0
+130 silly addNamed semver.valid null
+131 silly addNamed semver.validRange >=4.0.0 <5.0.0
+132 silly addNameRange { name: 'dargs', range: '>=4.0.0 <5.0.0', hasData: false }
+133 silly mapToRegistry name dargs
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/dargs
+137 verbose addNameRange registry:https://registry.npmjs.org/dargs not in flight; fetching
+138 silly cache add args [ 'which@^1.0.5', null ]
+139 verbose cache add spec which@^1.0.5
+140 silly cache add parsed spec { raw: 'which@^1.0.5',
+140 silly cache add   scope: null,
+140 silly cache add   name: 'which',
+140 silly cache add   rawSpec: '^1.0.5',
+140 silly cache add   spec: '>=1.0.5 <2.0.0',
+140 silly cache add   type: 'range' }
+141 verbose addNamed which@>=1.0.5 <2.0.0
+142 silly addNamed semver.valid null
+143 silly addNamed semver.validRange >=1.0.5 <2.0.0
+144 silly addNameRange { name: 'which', range: '>=1.0.5 <2.0.0', hasData: false }
+145 silly mapToRegistry name which
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry uri https://registry.npmjs.org/which
+149 verbose addNameRange registry:https://registry.npmjs.org/which not in flight; fetching
+150 verbose request uri https://registry.npmjs.org/async
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 16:42:51
+153 verbose etag W/"587e3266-1d38f"
+154 verbose lastModified Tue, 17 Jan 2017 15:04:06 GMT
+155 http request GET https://registry.npmjs.org/async
+156 verbose request uri https://registry.npmjs.org/chalk
+157 verbose request no auth needed
+158 info attempt registry request try #1 at 16:42:51
+159 verbose etag W/"587e19e4-8411"
+160 verbose lastModified Tue, 17 Jan 2017 13:19:32 GMT
+161 http request GET https://registry.npmjs.org/chalk
+162 verbose request uri https://registry.npmjs.org/cross-spawn
+163 verbose request no auth needed
+164 info attempt registry request try #1 at 16:42:51
+165 verbose etag W/"5877448e-ef53"
+166 verbose lastModified Thu, 12 Jan 2017 08:55:42 GMT
+167 http request GET https://registry.npmjs.org/cross-spawn
+168 verbose request uri https://registry.npmjs.org/dargs
+169 verbose request no auth needed
+170 info attempt registry request try #1 at 16:42:51
+171 verbose etag W/"58720099-5981"
+172 verbose lastModified Sun, 08 Jan 2017 09:04:25 GMT
+173 http request GET https://registry.npmjs.org/dargs
+174 verbose request uri https://registry.npmjs.org/which
+175 verbose request no auth needed
+176 info attempt registry request try #1 at 16:42:51
+177 verbose etag W/"5826444c-6e9f"
+178 verbose lastModified Fri, 11 Nov 2016 22:21:00 GMT
+179 http request GET https://registry.npmjs.org/which
+180 http 304 https://registry.npmjs.org/async
+181 silly get cb [ 304,
+181 silly get   { date: 'Tue, 17 Jan 2017 15:42:50 GMT',
+181 silly get     via: '1.1 varnish',
+181 silly get     'cache-control': 'max-age=300',
+181 silly get     etag: 'W/"587e3266-1d38f"',
+181 silly get     age: '220',
+181 silly get     connection: 'keep-alive',
+181 silly get     'x-served-by': 'cache-hhn1536-HHN',
+181 silly get     'x-cache': 'HIT',
+181 silly get     'x-cache-hits': '22',
+181 silly get     'x-timer': 'S1484667770.647826,VS0,VE0',
+181 silly get     vary: 'Accept-Encoding' } ]
+182 verbose etag https://registry.npmjs.org/async from cache
+183 verbose get saving async to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\async\.cache.json
+184 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+185 silly addNameRange versions [ 'async',
+185 silly addNameRange   [ '0.1.0',
+185 silly addNameRange     '0.1.1',
+185 silly addNameRange     '0.1.2',
+185 silly addNameRange     '0.1.3',
+185 silly addNameRange     '0.1.4',
+185 silly addNameRange     '0.1.5',
+185 silly addNameRange     '0.1.6',
+185 silly addNameRange     '0.1.7',
+185 silly addNameRange     '0.1.8',
+185 silly addNameRange     '0.1.9',
+185 silly addNameRange     '0.1.10',
+185 silly addNameRange     '0.1.11',
+185 silly addNameRange     '0.1.12',
+185 silly addNameRange     '0.1.13',
+185 silly addNameRange     '0.1.14',
+185 silly addNameRange     '0.1.15',
+185 silly addNameRange     '0.1.16',
+185 silly addNameRange     '0.1.17',
+185 silly addNameRange     '0.1.18',
+185 silly addNameRange     '0.1.19',
+185 silly addNameRange     '0.1.20',
+185 silly addNameRange     '0.1.21',
+185 silly addNameRange     '0.1.22',
+185 silly addNameRange     '0.2.0',
+185 silly addNameRange     '0.2.1',
+185 silly addNameRange     '0.2.2',
+185 silly addNameRange     '0.2.3',
+185 silly addNameRange     '0.2.4',
+185 silly addNameRange     '0.2.5',
+185 silly addNameRange     '0.2.6',
+185 silly addNameRange     '0.2.7',
+185 silly addNameRange     '0.2.8',
+185 silly addNameRange     '0.2.9',
+185 silly addNameRange     '0.2.10',
+185 silly addNameRange     '0.3.0',
+185 silly addNameRange     '0.4.0',
+185 silly addNameRange     '0.4.1',
+185 silly addNameRange     '0.5.0',
+185 silly addNameRange     '0.6.0',
+185 silly addNameRange     '0.6.1',
+185 silly addNameRange     '0.6.2',
+185 silly addNameRange     '0.7.0',
+185 silly addNameRange     '0.8.0',
+185 silly addNameRange     '0.9.0',
+185 silly addNameRange     '0.9.2',
+185 silly addNameRange     '1.0.0',
+185 silly addNameRange     '1.1.0',
+185 silly addNameRange     '1.2.0',
+185 silly addNameRange     '1.1.1',
+185 silly addNameRange     '1.2.1',
+185 silly addNameRange     '1.3.0',
+185 silly addNameRange     '1.4.0',
+185 silly addNameRange     '1.4.1',
+185 silly addNameRange     '1.4.2',
+185 silly addNameRange     '1.5.0',
+185 silly addNameRange     '1.5.1',
+185 silly addNameRange     '1.5.2',
+185 silly addNameRange     '2.0.0-alpha.0',
+185 silly addNameRange     '2.0.0-rc.1',
+185 silly addNameRange     '2.0.0-rc.2',
+185 silly addNameRange     '2.0.0-rc.3',
+185 silly addNameRange     '2.0.0-rc.4',
+185 silly addNameRange     '2.0.0-rc.5',
+185 silly addNameRange     '2.0.0-rc.6',
+185 silly addNameRange     '2.0.0',
+185 silly addNameRange     '2.0.1',
+185 silly addNameRange     '2.1.0',
+185 silly addNameRange     '2.1.1',
+185 silly addNameRange     '2.1.2',
+185 silly addNameRange     '2.1.4' ] ]
+186 verbose addNamed async@0.9.2
+187 silly addNamed semver.valid 0.9.2
+188 silly addNamed semver.validRange 0.9.2
+189 http 304 https://registry.npmjs.org/chalk
+190 silly get cb [ 304,
+190 silly get   { date: 'Tue, 17 Jan 2017 15:42:50 GMT',
+190 silly get     via: '1.1 varnish',
+190 silly get     'cache-control': 'max-age=300',
+190 silly get     etag: 'W/"587e19e4-8411"',
+190 silly get     age: '186',
+190 silly get     connection: 'keep-alive',
+190 silly get     'x-served-by': 'cache-hhn1548-HHN',
+190 silly get     'x-cache': 'HIT',
+190 silly get     'x-cache-hits': '13',
+190 silly get     'x-timer': 'S1484667770.661568,VS0,VE0',
+190 silly get     vary: 'Accept-Encoding' } ]
+191 verbose etag https://registry.npmjs.org/chalk from cache
+192 verbose get saving chalk to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\chalk\.cache.json
+193 http 304 https://registry.npmjs.org/cross-spawn
+194 silly get cb [ 304,
+194 silly get   { date: 'Tue, 17 Jan 2017 15:42:50 GMT',
+194 silly get     via: '1.1 varnish',
+194 silly get     'cache-control': 'max-age=300',
+194 silly get     etag: 'W/"5877448e-ef53"',
+194 silly get     age: '33',
+194 silly get     connection: 'keep-alive',
+194 silly get     'x-served-by': 'cache-hhn1545-HHN',
+194 silly get     'x-cache': 'HIT',
+194 silly get     'x-cache-hits': '766',
+194 silly get     'x-timer': 'S1484667770.663762,VS0,VE0',
+194 silly get     vary: 'Accept-Encoding' } ]
+195 verbose etag https://registry.npmjs.org/cross-spawn from cache
+196 verbose get saving cross-spawn to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\cross-spawn\.cache.json
+197 http 304 https://registry.npmjs.org/dargs
+198 silly get cb [ 304,
+198 silly get   { date: 'Tue, 17 Jan 2017 15:42:50 GMT',
+198 silly get     via: '1.1 varnish',
+198 silly get     'cache-control': 'max-age=300',
+198 silly get     etag: 'W/"58720099-5981"',
+198 silly get     age: '129',
+198 silly get     connection: 'keep-alive',
+198 silly get     'x-served-by': 'cache-hhn1535-HHN',
+198 silly get     'x-cache': 'HIT',
+198 silly get     'x-cache-hits': '2',
+198 silly get     'x-timer': 'S1484667770.665557,VS0,VE0',
+198 silly get     vary: 'Accept-Encoding' } ]
+199 verbose etag https://registry.npmjs.org/dargs from cache
+200 verbose get saving dargs to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\dargs\.cache.json
+201 http 304 https://registry.npmjs.org/which
+202 silly get cb [ 304,
+202 silly get   { date: 'Tue, 17 Jan 2017 15:42:50 GMT',
+202 silly get     via: '1.1 varnish',
+202 silly get     'cache-control': 'max-age=300',
+202 silly get     etag: 'W/"5826444c-6e9f"',
+202 silly get     age: '171',
+202 silly get     connection: 'keep-alive',
+202 silly get     'x-served-by': 'cache-hhn1542-HHN',
+202 silly get     'x-cache': 'HIT',
+202 silly get     'x-cache-hits': '9',
+202 silly get     'x-timer': 'S1484667770.664190,VS0,VE0',
+202 silly get     vary: 'Accept-Encoding' } ]
+203 verbose etag https://registry.npmjs.org/which from cache
+204 verbose get saving which to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\which\.cache.json
+205 silly cache afterAdd async@0.9.2
+206 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\async\0.9.2\package\package.json not in flight; writing
+207 silly addNameRange number 2 { name: 'chalk', range: '>=1.0.0 <2.0.0', hasData: true }
+208 silly addNameRange versions [ 'chalk',
+208 silly addNameRange   [ '0.1.0',
+208 silly addNameRange     '0.1.1',
+208 silly addNameRange     '0.2.0',
+208 silly addNameRange     '0.2.1',
+208 silly addNameRange     '0.3.0',
+208 silly addNameRange     '0.4.0',
+208 silly addNameRange     '0.5.0',
+208 silly addNameRange     '0.5.1',
+208 silly addNameRange     '1.0.0',
+208 silly addNameRange     '1.1.0',
+208 silly addNameRange     '1.1.1',
+208 silly addNameRange     '1.1.2',
+208 silly addNameRange     '1.1.3' ] ]
+209 verbose addNamed chalk@1.1.3
+210 silly addNamed semver.valid 1.1.3
+211 silly addNamed semver.validRange 1.1.3
+212 silly addNameRange number 2 { name: 'which', range: '>=1.0.5 <2.0.0', hasData: true }
+213 silly addNameRange versions [ 'which',
+213 silly addNameRange   [ '1.0.0',
+213 silly addNameRange     '1.0.1',
+213 silly addNameRange     '1.0.2',
+213 silly addNameRange     '1.0.3',
+213 silly addNameRange     '1.0.5',
+213 silly addNameRange     '1.0.6',
+213 silly addNameRange     '1.0.7',
+213 silly addNameRange     '1.0.8',
+213 silly addNameRange     '1.0.9',
+213 silly addNameRange     '1.1.0',
+213 silly addNameRange     '1.1.1',
+213 silly addNameRange     '1.1.2',
+213 silly addNameRange     '1.2.0',
+213 silly addNameRange     '1.2.1',
+213 silly addNameRange     '1.2.4',
+213 silly addNameRange     '1.2.5',
+213 silly addNameRange     '1.2.6',
+213 silly addNameRange     '1.2.7',
+213 silly addNameRange     '1.2.8',
+213 silly addNameRange     '1.2.9',
+213 silly addNameRange     '1.2.10',
+213 silly addNameRange     '1.2.11',
+213 silly addNameRange     '1.2.12' ] ]
+214 verbose addNamed which@1.2.12
+215 silly addNamed semver.valid 1.2.12
+216 silly addNamed semver.validRange 1.2.12
+217 silly cache afterAdd chalk@1.1.3
+218 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\chalk\1.1.3\package\package.json not in flight; writing
+219 silly cache afterAdd which@1.2.12
+220 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\which\1.2.12\package\package.json not in flight; writing
+221 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\async\0.9.2\package\package.json written
+222 silly addNameRange number 2 { name: 'cross-spawn', range: '>=0.2.3 <0.3.0', hasData: true }
+223 silly addNameRange versions [ 'cross-spawn',
+223 silly addNameRange   [ '0.1.0',
+223 silly addNameRange     '0.1.1',
+223 silly addNameRange     '0.1.2',
+223 silly addNameRange     '0.1.3',
+223 silly addNameRange     '0.1.4',
+223 silly addNameRange     '0.1.5',
+223 silly addNameRange     '0.1.6',
+223 silly addNameRange     '0.1.7',
+223 silly addNameRange     '0.2.0',
+223 silly addNameRange     '0.2.1',
+223 silly addNameRange     '0.2.2',
+223 silly addNameRange     '0.2.3',
+223 silly addNameRange     '0.2.4',
+223 silly addNameRange     '0.2.5',
+223 silly addNameRange     '0.2.6',
+223 silly addNameRange     '0.2.7',
+223 silly addNameRange     '0.2.8',
+223 silly addNameRange     '0.2.9',
+223 silly addNameRange     '0.3.0',
+223 silly addNameRange     '0.4.0',
+223 silly addNameRange     '0.4.1',
+223 silly addNameRange     '1.0.0',
+223 silly addNameRange     '1.0.1',
+223 silly addNameRange     '1.0.2',
+223 silly addNameRange     '1.0.3',
+223 silly addNameRange     '1.0.4',
+223 silly addNameRange     '2.0.0',
+223 silly addNameRange     '2.0.1',
+223 silly addNameRange     '2.1.0',
+223 silly addNameRange     '2.1.1',
+223 silly addNameRange     '2.1.2',
+223 silly addNameRange     '2.1.3',
+223 silly addNameRange     '2.1.4',
+223 silly addNameRange     '2.1.5',
+223 silly addNameRange     '2.2.0',
+223 silly addNameRange     '2.2.2',
+223 silly addNameRange     '2.2.3',
+223 silly addNameRange     '3.0.0',
+223 silly addNameRange     '3.0.1',
+223 silly addNameRange     '4.0.0',
+223 silly addNameRange     '4.0.2',
+223 silly addNameRange     '5.0.0',
+223 silly addNameRange     '5.0.1' ] ]
+224 verbose addNamed cross-spawn@0.2.9
+225 silly addNamed semver.valid 0.2.9
+226 silly addNamed semver.validRange 0.2.9
+227 silly mapToRegistry name cross-spawn
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry uri https://registry.npmjs.org/cross-spawn
+231 verbose addRemoteTarball https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.9.tgz not in flight; adding
+232 verbose addRemoteTarball [ 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.9.tgz',
+232 verbose addRemoteTarball   'bd67f96c07efb6303b7fe94c1e979f88478e0a39' ]
+233 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\which\1.2.12\package\package.json written
+234 info retry fetch attempt 1 at 16:42:51
+235 info attempt registry request try #1 at 16:42:51
+236 http fetch GET https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.9.tgz
+237 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\chalk\1.1.3\package\package.json written
+238 silly addNameRange number 2 { name: 'dargs', range: '>=4.0.0 <5.0.0', hasData: true }
+239 silly addNameRange versions [ 'dargs',
+239 silly addNameRange   [ '0.1.0',
+239 silly addNameRange     '1.0.0',
+239 silly addNameRange     '2.0.0',
+239 silly addNameRange     '2.0.1',
+239 silly addNameRange     '2.0.2',
+239 silly addNameRange     '2.0.3',
+239 silly addNameRange     '2.1.0',
+239 silly addNameRange     '3.0.0',
+239 silly addNameRange     '3.0.1',
+239 silly addNameRange     '4.0.0',
+239 silly addNameRange     '4.0.1',
+239 silly addNameRange     '4.1.0',
+239 silly addNameRange     '5.0.0',
+239 silly addNameRange     '5.0.1',
+239 silly addNameRange     '5.1.0' ] ]
+240 verbose addNamed dargs@4.1.0
+241 silly addNamed semver.valid 4.1.0
+242 silly addNamed semver.validRange 4.1.0
+243 silly cache afterAdd dargs@4.1.0
+244 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\dargs\4.1.0\package\package.json not in flight; writing
+245 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\dargs\4.1.0\package\package.json written
+246 http fetch 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.9.tgz
+247 silly fetchAndShaCheck shasum bd67f96c07efb6303b7fe94c1e979f88478e0a39
+248 verbose addTmpTarball C:\Users\Danie\AppData\Local\Temp\npm-4776-ebc9a6ba\registry.npmjs.org\cross-spawn\-\cross-spawn-0.2.9.tgz not in flight; adding
+249 verbose addTmpTarball already have metadata; skipping unpack for cross-spawn@0.2.9
+250 silly cache afterAdd cross-spawn@0.2.9
+251 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\cross-spawn\0.2.9\package\package.json not in flight; writing
+252 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\cross-spawn\0.2.9\package\package.json written
+253 silly install resolved [ { name: 'async',
+253 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+253 silly install resolved     main: 'lib/async.js',
+253 silly install resolved     author: { name: 'Caolan McMahon' },
+253 silly install resolved     version: '0.9.2',
+253 silly install resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+253 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+253 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+253 silly install resolved     license: 'MIT',
+253 silly install resolved     devDependencies:
+253 silly install resolved      { nodeunit: '>0.0.0',
+253 silly install resolved        'uglify-js': '1.2.x',
+253 silly install resolved        nodelint: '>0.0.0',
+253 silly install resolved        lodash: '>=2.4.1' },
+253 silly install resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+253 silly install resolved     scripts: { test: 'nodeunit test/test-async.js' },
+253 silly install resolved     spm: { main: 'lib/async.js' },
+253 silly install resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+253 silly install resolved     gitHead: 'de3a16091d5125384eff4a54deb3998b13c3814c',
+253 silly install resolved     homepage: 'https://github.com/caolan/async#readme',
+253 silly install resolved     _id: 'async@0.9.2',
+253 silly install resolved     _shasum: 'aea74d5e61c1f899613bf64bda66d4c78f2fd17d',
+253 silly install resolved     _from: 'async@>=0.9.0 <0.10.0',
+253 silly install resolved     _npmVersion: '2.9.0',
+253 silly install resolved     _nodeVersion: '2.0.1',
+253 silly install resolved     _npmUser: { name: 'beaugunderson', email: 'beau@beaugunderson.com' },
+253 silly install resolved     maintainers: [ [Object], [Object] ],
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: 'aea74d5e61c1f899613bf64bda66d4c78f2fd17d',
+253 silly install resolved        tarball: 'https://registry.npmjs.org/async/-/async-0.9.2.tgz' },
+253 silly install resolved     directories: {},
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.9.2.tgz',
+253 silly install resolved     readme: 'ERROR: No README data found!' },
+253 silly install resolved   { author:
+253 silly install resolved      { name: 'Isaac Z. Schlueter',
+253 silly install resolved        email: 'i@izs.me',
+253 silly install resolved        url: 'http://blog.izs.me' },
+253 silly install resolved     name: 'which',
+253 silly install resolved     description: 'Like which(1) unix command. Find the first instance of an executable in the PATH.',
+253 silly install resolved     version: '1.2.12',
+253 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-which.git' },
+253 silly install resolved     main: 'which.js',
+253 silly install resolved     bin: { which: './bin/which' },
+253 silly install resolved     license: 'ISC',
+253 silly install resolved     dependencies: { isexe: '^1.1.1' },
+253 silly install resolved     devDependencies: { mkdirp: '^0.5.0', rimraf: '^2.3.3', tap: '^5.1.1' },
+253 silly install resolved     scripts:
+253 silly install resolved      { test: 'tap test/*.js --cov',
+253 silly install resolved        changelog: 'bash gen-changelog.sh',
+253 silly install resolved        postversion: 'npm run changelog && git add CHANGELOG.md && git commit -m \'update changelog - \'${npm_package_version}' },
+253 silly install resolved     files: [ 'which.js', 'bin/which' ],
+253 silly install resolved     gitHead: '5db2078bc2ec50d5c5f3d324e1ffcc2348b9cbbd',
+253 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-which/issues' },
+253 silly install resolved     homepage: 'https://github.com/isaacs/node-which#readme',
+253 silly install resolved     _id: 'which@1.2.12',
+253 silly install resolved     _shasum: 'de67b5e450269f194909ef23ece4ebe416fa1192',
+253 silly install resolved     _from: 'which@>=1.0.5 <2.0.0',
+253 silly install resolved     _npmVersion: '3.10.9',
+253 silly install resolved     _nodeVersion: '6.5.0',
+253 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: 'de67b5e450269f194909ef23ece4ebe416fa1192',
+253 silly install resolved        tarball: 'https://registry.npmjs.org/which/-/which-1.2.12.tgz' },
+253 silly install resolved     maintainers: [ [Object] ],
+253 silly install resolved     _npmOperationalInternal:
+253 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+253 silly install resolved        tmp: 'tmp/which-1.2.12.tgz_1478902859933_0.6313941152766347' },
+253 silly install resolved     directories: {},
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/which/-/which-1.2.12.tgz',
+253 silly install resolved     readme: 'ERROR: No README data found!' },
+253 silly install resolved   { name: 'chalk',
+253 silly install resolved     version: '1.1.3',
+253 silly install resolved     description: 'Terminal string styling done right. Much color.',
+253 silly install resolved     license: 'MIT',
+253 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/chalk/chalk.git' },
+253 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+253 silly install resolved     engines: { node: '>=0.10.0' },
+253 silly install resolved     scripts:
+253 silly install resolved      { test: 'xo && mocha',
+253 silly install resolved        bench: 'matcha benchmark.js',
+253 silly install resolved        coverage: 'nyc npm test && nyc report',
+253 silly install resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+253 silly install resolved     files: [ 'index.js' ],
+253 silly install resolved     keywords:
+253 silly install resolved      [ 'color',
+253 silly install resolved        'colour',
+253 silly install resolved        'colors',
+253 silly install resolved        'terminal',
+253 silly install resolved        'console',
+253 silly install resolved        'cli',
+253 silly install resolved        'string',
+253 silly install resolved        'str',
+253 silly install resolved        'ansi',
+253 silly install resolved        'style',
+253 silly install resolved        'styles',
+253 silly install resolved        'tty',
+253 silly install resolved        'formatting',
+253 silly install resolved        'rgb',
+253 silly install resolved        '256',
+253 silly install resolved        'shell',
+253 silly install resolved        'xterm',
+253 silly install resolved        'log',
+253 silly install resolved        'logging',
+253 silly install resolved        'command-line',
+253 silly install resolved        'text' ],
+253 silly install resolved     dependencies:
+253 silly install resolved      { 'ansi-styles': '^2.2.1',
+253 silly install resolved        'escape-string-regexp': '^1.0.2',
+253 silly install resolved        'has-ansi': '^2.0.0',
+253 silly install resolved        'strip-ansi': '^3.0.0',
+253 silly install resolved        'supports-color': '^2.0.0' },
+253 silly install resolved     devDependencies:
+253 silly install resolved      { coveralls: '^2.11.2',
+253 silly install resolved        matcha: '^0.6.0',
+253 silly install resolved        mocha: '*',
+253 silly install resolved        nyc: '^3.0.0',
+253 silly install resolved        'require-uncached': '^1.0.2',
+253 silly install resolved        'resolve-from': '^1.0.0',
+253 silly install resolved        semver: '^4.3.3',
+253 silly install resolved        xo: '*' },
+253 silly install resolved     xo: { envs: [Object] },
+253 silly install resolved     gitHead: '0d8d8c204eb87a4038219131ad4d8369c9f59d24',
+253 silly install resolved     bugs: { url: 'https://github.com/chalk/chalk/issues' },
+253 silly install resolved     homepage: 'https://github.com/chalk/chalk#readme',
+253 silly install resolved     _id: 'chalk@1.1.3',
+253 silly install resolved     _shasum: 'a8115c55e4a702fe4d150abd3872822a7e09fc98',
+253 silly install resolved     _from: 'chalk@>=1.0.0 <2.0.0',
+253 silly install resolved     _npmVersion: '2.14.2',
+253 silly install resolved     _nodeVersion: '0.10.32',
+253 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: 'a8115c55e4a702fe4d150abd3872822a7e09fc98',
+253 silly install resolved        tarball: 'https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz' },
+253 silly install resolved     _npmOperationalInternal:
+253 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+253 silly install resolved        tmp: 'tmp/chalk-1.1.3.tgz_1459210604109_0.3892582862172276' },
+253 silly install resolved     directories: {},
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz',
+253 silly install resolved     readme: 'ERROR: No README data found!' },
+253 silly install resolved   { name: 'dargs',
+253 silly install resolved     version: '4.1.0',
+253 silly install resolved     description: 'Reverse minimist. Convert an object of options into an array of command-line arguments.',
+253 silly install resolved     repository: { type: 'git', url: 'https://github.com/sindresorhus/dargs' },
+253 silly install resolved     keywords:
+253 silly install resolved      [ 'options',
+253 silly install resolved        'arguments',
+253 silly install resolved        'args',
+253 silly install resolved        'flags',
+253 silly install resolved        'cli',
+253 silly install resolved        'nopt',
+253 silly install resolved        'minimist',
+253 silly install resolved        'bin',
+253 silly install resolved        'binary',
+253 silly install resolved        'command',
+253 silly install resolved        'cmd',
+253 silly install resolved        'reverse',
+253 silly install resolved        'inverse',
+253 silly install resolved        'opposite',
+253 silly install resolved        'invert',
+253 silly install resolved        'switch',
+253 silly install resolved        'construct',
+253 silly install resolved        'parse',
+253 silly install resolved        'parser',
+253 silly install resolved        'argv' ],
+253 silly install resolved     author:
+253 silly install resolved      { name: 'Sindre Sorhus',
+253 silly install resolved        email: 'sindresorhus@gmail.com',
+253 silly install resolved        url: 'sindresorhus.com' },
+253 silly install resolved     scripts: { test: 'xo && ava' },
+253 silly install resolved     dependencies: { 'number-is-nan': '^1.0.0' },
+253 silly install resolved     devDependencies: { 'array-equal': '^1.0.0', ava: '*', xo: '*' },
+253 silly install resolved     engines: { node: '>=0.10.0' },
+253 silly install resolved     license: 'MIT',
+253 silly install resolved     files: [ 'index.js' ],
+253 silly install resolved     gitHead: '048f7ac4167d72c1462d9ab1a94d121d940789c9',
+253 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/dargs/issues' },
+253 silly install resolved     homepage: 'https://github.com/sindresorhus/dargs',
+253 silly install resolved     _id: 'dargs@4.1.0',
+253 silly install resolved     _shasum: '03a9dbb4b5c2f139bf14ae53f0b8a2a6a86f4e17',
+253 silly install resolved     _from: 'dargs@>=4.0.0 <5.0.0',
+253 silly install resolved     _npmVersion: '3.3.12',
+253 silly install resolved     _nodeVersion: '5.3.0',
+253 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: '03a9dbb4b5c2f139bf14ae53f0b8a2a6a86f4e17',
+253 silly install resolved        tarball: 'https://registry.npmjs.org/dargs/-/dargs-4.1.0.tgz' },
+253 silly install resolved     maintainers: [ [Object], [Object] ],
+253 silly install resolved     directories: {},
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/dargs/-/dargs-4.1.0.tgz',
+253 silly install resolved     readme: 'ERROR: No README data found!' },
+253 silly install resolved   { name: 'cross-spawn',
+253 silly install resolved     version: '0.2.9',
+253 silly install resolved     description: 'Cross platform child_process#spawn',
+253 silly install resolved     main: 'index.js',
+253 silly install resolved     scripts: { test: 'mocha --bail -R spec' },
+253 silly install resolved     bugs: { url: 'https://github.com/IndigoUnited/node-cross-spawn/issues/' },
+253 silly install resolved     repository:
+253 silly install resolved      { type: 'git',
+253 silly install resolved        url: 'git://github.com/IndigoUnited/node-cross-spawn.git' },
+253 silly install resolved     keywords:
+253 silly install resolved      [ 'spawn',
+253 silly install resolved        'windows',
+253 silly install resolved        'cross',
+253 silly install resolved        'platform',
+253 silly install resolved        'path',
+253 silly install resolved        'ext',
+253 silly install resolved        'path-ext',
+253 silly install resolved        'path_ext',
+253 silly install resolved        'shebang',
+253 silly install resolved        'hashbang',
+253 silly install resolved        'cmd',
+253 silly install resolved        'execute' ],
+253 silly install resolved     author:
+253 silly install resolved      { name: 'IndigoUnited',
+253 silly install resolved        email: 'hello@indigounited.com',
+253 silly install resolved        url: 'http://indigounited.com' },
+253 silly install resolved     license: 'MIT',
+253 silly install resolved     dependencies: { 'lru-cache': '^2.5.0' },
+253 silly install resolved     devDependencies: { 'expect.js': '^0.3.0', mocha: '^1.20.1' },
+253 silly install resolved     gitHead: '6fececcbd8331f98b4cfd6560b925bc4d8e77f47',
+253 silly install resolved     homepage: 'https://github.com/IndigoUnited/node-cross-spawn',
+253 silly install resolved     _id: 'cross-spawn@0.2.9',
+253 silly install resolved     _shasum: 'bd67f96c07efb6303b7fe94c1e979f88478e0a39',
+253 silly install resolved     _from: 'cross-spawn@>=0.2.3 <0.3.0',
+253 silly install resolved     _npmVersion: '2.6.1',
+253 silly install resolved     _nodeVersion: '0.10.36',
+253 silly install resolved     _npmUser: { name: 'satazor', email: 'andremiguelcruz@msn.com' },
+253 silly install resolved     maintainers: [ [Object] ],
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: 'bd67f96c07efb6303b7fe94c1e979f88478e0a39',
+253 silly install resolved        tarball: 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.9.tgz' },
+253 silly install resolved     directories: {},
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/cross-spawn/-/cross-spawn-0.2.9.tgz' } ]
+254 info install async@0.9.2 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+255 info install which@1.2.12 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+256 info install chalk@1.1.3 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+257 info install dargs@4.1.0 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+258 info install cross-spawn@0.2.9 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+259 info installOne async@0.9.2
+260 verbose installOne of async to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass not in flight; installing
+261 info installOne which@1.2.12
+262 verbose installOne of which to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass not in flight; installing
+263 info installOne chalk@1.1.3
+264 verbose installOne of chalk to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass not in flight; installing
+265 info installOne dargs@4.1.0
+266 verbose installOne of dargs to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass not in flight; installing
+267 info installOne cross-spawn@0.2.9
+268 verbose installOne of cross-spawn to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass not in flight; installing
+269 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\chalk-3d493e4db4c80fd6.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+270 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\which-86d4f87c4739ca6e.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+271 silly install write writing chalk 1.1.3 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+272 silly cache addNamed cb chalk@1.1.3
+273 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk
+274 silly install write writing which 1.2.12 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+275 silly cache addNamed cb which@1.2.12
+276 verbose unbuild node_modules\grunt-contrib-sass\node_modules\which
+277 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\dargs-d84d3c808b2e6d3f.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+278 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\cross-spawn-b3476fdfb7dc7d25.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+279 silly install write writing dargs 4.1.0 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+280 silly cache addNamed cb dargs@4.1.0
+281 verbose unbuild node_modules\grunt-contrib-sass\node_modules\dargs
+282 silly install write writing cross-spawn 0.2.9 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+283 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+284 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+285 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+286 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+287 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\chalk\1.1.3\package.tgz
+288 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+289 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk is being purged
+290 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+291 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\which\1.2.12\package.tgz
+292 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+293 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which is being purged
+294 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+295 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+296 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+297 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\async-192b08ec2f6dc7aa.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+298 silly gunzTarPerm modes [ '777', '666' ]
+299 silly gunzTarPerm modes [ '777', '666' ]
+300 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\dargs\4.1.0\package.tgz
+301 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+302 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs is being purged
+303 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+304 silly install write writing async 0.9.2 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+305 silly cache addNamed cb async@0.9.2
+306 verbose unbuild node_modules\grunt-contrib-sass\node_modules\async
+307 silly gunzTarPerm modes [ '777', '666' ]
+308 silly cache addNamed cb cross-spawn@0.2.9
+309 verbose unbuild node_modules\grunt-contrib-sass\node_modules\cross-spawn
+310 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+311 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+312 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\async\0.9.2\package.tgz
+313 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+314 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async is being purged
+315 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+316 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+317 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+318 silly gunzTarPerm modes [ '777', '666' ]
+319 silly gunzTarPerm extractEntry package.json
+320 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+321 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\cross-spawn\0.2.9\package.tgz
+322 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+323 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn is being purged
+324 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+325 silly gunzTarPerm modes [ '777', '666' ]
+326 silly gunzTarPerm extractEntry package.json
+327 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+328 silly gunzTarPerm extractEntry package.json
+329 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+330 silly gunzTarPerm extractEntry index.js
+331 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+332 silly gunzTarPerm extractEntry license
+333 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+334 silly gunzTarPerm extractEntry README.md
+335 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+336 silly gunzTarPerm extractEntry LICENSE
+337 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+338 silly gunzTarPerm extractEntry index.js
+339 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+340 silly gunzTarPerm extractEntry license
+341 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+342 silly gunzTarPerm extractEntry package.json
+343 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+344 silly gunzTarPerm extractEntry package.json
+345 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+346 silly gunzTarPerm extractEntry README.md
+347 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+348 silly gunzTarPerm extractEntry LICENSE
+349 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+350 silly gunzTarPerm extractEntry component.json
+351 silly gunzTarPerm modified mode [ 'component.json', 420, 438 ]
+352 silly gunzTarPerm extractEntry .travis.yml
+353 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+354 silly gunzTarPerm extractEntry bower.json
+355 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+356 silly gunzTarPerm extractEntry lib/async.js
+357 silly gunzTarPerm modified mode [ 'lib/async.js', 420, 438 ]
+358 silly gunzTarPerm extractEntry support/sync-package-managers.js
+359 silly gunzTarPerm modified mode [ 'support/sync-package-managers.js', 493, 511 ]
+360 silly gunzTarPerm extractEntry .npmignore
+361 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+362 silly gunzTarPerm extractEntry README.md
+363 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+364 silly gunzTarPerm extractEntry readme.md
+365 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+366 silly gunzTarPerm extractEntry readme.md
+367 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+368 silly gunzTarPerm extractEntry which.js
+369 silly gunzTarPerm modified mode [ 'which.js', 420, 438 ]
+370 silly gunzTarPerm extractEntry bin/which
+371 silly gunzTarPerm modified mode [ 'bin/which', 493, 511 ]
+372 silly gunzTarPerm extractEntry CHANGELOG.md
+373 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+374 info preinstall dargs@4.1.0
+375 silly prepareForInstallMany adding number-is-nan@^1.0.0 from dargs dependencies
+376 silly gunzTarPerm extractEntry LICENSE
+377 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+378 silly gunzTarPerm extractEntry index.js
+379 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+380 silly cache add args [ 'number-is-nan@^1.0.0', null ]
+381 verbose cache add spec number-is-nan@^1.0.0
+382 silly cache add parsed spec { raw: 'number-is-nan@^1.0.0',
+382 silly cache add   scope: null,
+382 silly cache add   name: 'number-is-nan',
+382 silly cache add   rawSpec: '^1.0.0',
+382 silly cache add   spec: '>=1.0.0 <2.0.0',
+382 silly cache add   type: 'range' }
+383 verbose addNamed number-is-nan@>=1.0.0 <2.0.0
+384 silly addNamed semver.valid null
+385 silly addNamed semver.validRange >=1.0.0 <2.0.0
+386 silly addNameRange { name: 'number-is-nan',
+386 silly addNameRange   range: '>=1.0.0 <2.0.0',
+386 silly addNameRange   hasData: false }
+387 silly mapToRegistry name number-is-nan
+388 silly mapToRegistry using default registry
+389 silly mapToRegistry registry https://registry.npmjs.org/
+390 silly mapToRegistry uri https://registry.npmjs.org/number-is-nan
+391 verbose addNameRange registry:https://registry.npmjs.org/number-is-nan not in flight; fetching
+392 verbose request uri https://registry.npmjs.org/number-is-nan
+393 verbose request no auth needed
+394 info attempt registry request try #1 at 16:42:51
+395 verbose etag W/"57edf419-f2b"
+396 verbose lastModified Fri, 30 Sep 2016 05:11:53 GMT
+397 http request GET https://registry.npmjs.org/number-is-nan
+398 silly gunzTarPerm extractEntry .jshintrc
+399 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
+400 silly gunzTarPerm extractEntry .editorconfig
+401 silly gunzTarPerm modified mode [ '.editorconfig', 420, 438 ]
+402 silly gunzTarPerm extractEntry .travis.yml
+403 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+404 info preinstall which@1.2.12
+405 silly prepareForInstallMany adding isexe@^1.1.1 from which dependencies
+406 silly cache add args [ 'isexe@^1.1.1', null ]
+407 verbose cache add spec isexe@^1.1.1
+408 silly cache add parsed spec { raw: 'isexe@^1.1.1',
+408 silly cache add   scope: null,
+408 silly cache add   name: 'isexe',
+408 silly cache add   rawSpec: '^1.1.1',
+408 silly cache add   spec: '>=1.1.1 <2.0.0',
+408 silly cache add   type: 'range' }
+409 verbose addNamed isexe@>=1.1.1 <2.0.0
+410 silly addNamed semver.valid null
+411 silly addNamed semver.validRange >=1.1.1 <2.0.0
+412 silly addNameRange { name: 'isexe', range: '>=1.1.1 <2.0.0', hasData: false }
+413 silly mapToRegistry name isexe
+414 silly mapToRegistry using default registry
+415 silly mapToRegistry registry https://registry.npmjs.org/
+416 silly mapToRegistry uri https://registry.npmjs.org/isexe
+417 verbose addNameRange registry:https://registry.npmjs.org/isexe not in flight; fetching
+418 verbose request uri https://registry.npmjs.org/isexe
+419 verbose request no auth needed
+420 info attempt registry request try #1 at 16:42:51
+421 verbose etag W/"56b96d9d-1cc5"
+422 verbose lastModified Tue, 09 Feb 2016 04:39:57 GMT
+423 http request GET https://registry.npmjs.org/isexe
+424 info preinstall chalk@1.1.3
+425 silly prepareForInstallMany adding ansi-styles@^2.2.1 from chalk dependencies
+426 silly prepareForInstallMany adding escape-string-regexp@^1.0.2 from chalk dependencies
+427 silly prepareForInstallMany adding has-ansi@^2.0.0 from chalk dependencies
+428 silly prepareForInstallMany adding strip-ansi@^3.0.0 from chalk dependencies
+429 silly prepareForInstallMany adding supports-color@^2.0.0 from chalk dependencies
+430 silly cache add args [ 'ansi-styles@^2.2.1', null ]
+431 verbose cache add spec ansi-styles@^2.2.1
+432 silly cache add args [ 'escape-string-regexp@^1.0.2', null ]
+433 verbose cache add spec escape-string-regexp@^1.0.2
+434 silly cache add parsed spec { raw: 'ansi-styles@^2.2.1',
+434 silly cache add   scope: null,
+434 silly cache add   name: 'ansi-styles',
+434 silly cache add   rawSpec: '^2.2.1',
+434 silly cache add   spec: '>=2.2.1 <3.0.0',
+434 silly cache add   type: 'range' }
+435 verbose addNamed ansi-styles@>=2.2.1 <3.0.0
+436 silly addNamed semver.valid null
+437 silly addNamed semver.validRange >=2.2.1 <3.0.0
+438 silly addNameRange { name: 'ansi-styles', range: '>=2.2.1 <3.0.0', hasData: false }
+439 silly mapToRegistry name ansi-styles
+440 silly mapToRegistry using default registry
+441 silly mapToRegistry registry https://registry.npmjs.org/
+442 silly mapToRegistry uri https://registry.npmjs.org/ansi-styles
+443 verbose addNameRange registry:https://registry.npmjs.org/ansi-styles not in flight; fetching
+444 silly cache add parsed spec { raw: 'escape-string-regexp@^1.0.2',
+444 silly cache add   scope: null,
+444 silly cache add   name: 'escape-string-regexp',
+444 silly cache add   rawSpec: '^1.0.2',
+444 silly cache add   spec: '>=1.0.2 <2.0.0',
+444 silly cache add   type: 'range' }
+445 verbose addNamed escape-string-regexp@>=1.0.2 <2.0.0
+446 silly addNamed semver.valid null
+447 silly addNamed semver.validRange >=1.0.2 <2.0.0
+448 silly addNameRange { name: 'escape-string-regexp',
+448 silly addNameRange   range: '>=1.0.2 <2.0.0',
+448 silly addNameRange   hasData: false }
+449 silly mapToRegistry name escape-string-regexp
+450 silly mapToRegistry using default registry
+451 silly mapToRegistry registry https://registry.npmjs.org/
+452 silly mapToRegistry uri https://registry.npmjs.org/escape-string-regexp
+453 verbose addNameRange registry:https://registry.npmjs.org/escape-string-regexp not in flight; fetching
+454 silly cache add args [ 'has-ansi@^2.0.0', null ]
+455 verbose cache add spec has-ansi@^2.0.0
+456 silly cache add parsed spec { raw: 'has-ansi@^2.0.0',
+456 silly cache add   scope: null,
+456 silly cache add   name: 'has-ansi',
+456 silly cache add   rawSpec: '^2.0.0',
+456 silly cache add   spec: '>=2.0.0 <3.0.0',
+456 silly cache add   type: 'range' }
+457 verbose addNamed has-ansi@>=2.0.0 <3.0.0
+458 silly addNamed semver.valid null
+459 silly addNamed semver.validRange >=2.0.0 <3.0.0
+460 silly addNameRange { name: 'has-ansi', range: '>=2.0.0 <3.0.0', hasData: false }
+461 silly mapToRegistry name has-ansi
+462 silly mapToRegistry using default registry
+463 silly mapToRegistry registry https://registry.npmjs.org/
+464 silly mapToRegistry uri https://registry.npmjs.org/has-ansi
+465 verbose addNameRange registry:https://registry.npmjs.org/has-ansi not in flight; fetching
+466 silly cache add args [ 'strip-ansi@^3.0.0', null ]
+467 verbose cache add spec strip-ansi@^3.0.0
+468 silly cache add parsed spec { raw: 'strip-ansi@^3.0.0',
+468 silly cache add   scope: null,
+468 silly cache add   name: 'strip-ansi',
+468 silly cache add   rawSpec: '^3.0.0',
+468 silly cache add   spec: '>=3.0.0 <4.0.0',
+468 silly cache add   type: 'range' }
+469 verbose addNamed strip-ansi@>=3.0.0 <4.0.0
+470 silly addNamed semver.valid null
+471 silly addNamed semver.validRange >=3.0.0 <4.0.0
+472 silly addNameRange { name: 'strip-ansi', range: '>=3.0.0 <4.0.0', hasData: false }
+473 silly mapToRegistry name strip-ansi
+474 silly mapToRegistry using default registry
+475 silly mapToRegistry registry https://registry.npmjs.org/
+476 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+477 verbose addNameRange registry:https://registry.npmjs.org/strip-ansi not in flight; fetching
+478 silly cache add args [ 'supports-color@^2.0.0', null ]
+479 verbose cache add spec supports-color@^2.0.0
+480 silly cache add parsed spec { raw: 'supports-color@^2.0.0',
+480 silly cache add   scope: null,
+480 silly cache add   name: 'supports-color',
+480 silly cache add   rawSpec: '^2.0.0',
+480 silly cache add   spec: '>=2.0.0 <3.0.0',
+480 silly cache add   type: 'range' }
+481 verbose addNamed supports-color@>=2.0.0 <3.0.0
+482 silly addNamed semver.valid null
+483 silly addNamed semver.validRange >=2.0.0 <3.0.0
+484 silly addNameRange { name: 'supports-color',
+484 silly addNameRange   range: '>=2.0.0 <3.0.0',
+484 silly addNameRange   hasData: false }
+485 silly mapToRegistry name supports-color
+486 silly mapToRegistry using default registry
+487 silly mapToRegistry registry https://registry.npmjs.org/
+488 silly mapToRegistry uri https://registry.npmjs.org/supports-color
+489 verbose addNameRange registry:https://registry.npmjs.org/supports-color not in flight; fetching
+490 verbose request uri https://registry.npmjs.org/ansi-styles
+491 verbose request no auth needed
+492 info attempt registry request try #1 at 16:42:51
+493 verbose etag W/"587de0f2-45e6"
+494 verbose lastModified Tue, 17 Jan 2017 09:16:34 GMT
+495 http request GET https://registry.npmjs.org/ansi-styles
+496 verbose request uri https://registry.npmjs.org/escape-string-regexp
+497 verbose request no auth needed
+498 info attempt registry request try #1 at 16:42:51
+499 verbose etag W/"58717eec-2423"
+500 verbose lastModified Sat, 07 Jan 2017 23:51:08 GMT
+501 http request GET https://registry.npmjs.org/escape-string-regexp
+502 verbose request uri https://registry.npmjs.org/has-ansi
+503 verbose request no auth needed
+504 info attempt registry request try #1 at 16:42:51
+505 verbose etag W/"58717f5d-2736"
+506 verbose lastModified Sat, 07 Jan 2017 23:53:01 GMT
+507 http request GET https://registry.npmjs.org/has-ansi
+508 verbose request uri https://registry.npmjs.org/strip-ansi
+509 verbose request no auth needed
+510 info attempt registry request try #1 at 16:42:51
+511 verbose etag W/"5818e1d5-3e04"
+512 verbose lastModified Tue, 01 Nov 2016 18:41:25 GMT
+513 http request GET https://registry.npmjs.org/strip-ansi
+514 verbose request uri https://registry.npmjs.org/supports-color
+515 verbose request no auth needed
+516 info attempt registry request try #1 at 16:42:51
+517 verbose etag W/"587c1388-68ca"
+518 verbose lastModified Mon, 16 Jan 2017 00:27:52 GMT
+519 http request GET https://registry.npmjs.org/supports-color
+520 info preinstall cross-spawn@0.2.9
+521 silly prepareForInstallMany adding lru-cache@^2.5.0 from cross-spawn dependencies
+522 silly cache add args [ 'lru-cache@^2.5.0', null ]
+523 verbose cache add spec lru-cache@^2.5.0
+524 silly cache add parsed spec { raw: 'lru-cache@^2.5.0',
+524 silly cache add   scope: null,
+524 silly cache add   name: 'lru-cache',
+524 silly cache add   rawSpec: '^2.5.0',
+524 silly cache add   spec: '>=2.5.0 <3.0.0',
+524 silly cache add   type: 'range' }
+525 verbose addNamed lru-cache@>=2.5.0 <3.0.0
+526 silly addNamed semver.valid null
+527 silly addNamed semver.validRange >=2.5.0 <3.0.0
+528 silly addNameRange { name: 'lru-cache', range: '>=2.5.0 <3.0.0', hasData: false }
+529 silly mapToRegistry name lru-cache
+530 silly mapToRegistry using default registry
+531 silly mapToRegistry registry https://registry.npmjs.org/
+532 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+533 verbose addNameRange registry:https://registry.npmjs.org/lru-cache not in flight; fetching
+534 verbose request uri https://registry.npmjs.org/lru-cache
+535 verbose request no auth needed
+536 info attempt registry request try #1 at 16:42:51
+537 verbose etag W/"58774492-c8d6"
+538 verbose lastModified Thu, 12 Jan 2017 08:55:46 GMT
+539 http request GET https://registry.npmjs.org/lru-cache
+540 info preinstall async@0.9.2
+541 silly install resolved []
+542 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+543 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+544 verbose linkStuff [ false,
+544 verbose linkStuff   false,
+544 verbose linkStuff   false,
+544 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules' ]
+545 info linkStuff async@0.9.2
+546 verbose linkBins async@0.9.2
+547 verbose linkMans async@0.9.2
+548 verbose rebuildBundles async@0.9.2
+549 info install async@0.9.2
+550 info postinstall async@0.9.2
+551 http 304 https://registry.npmjs.org/number-is-nan
+552 silly get cb [ 304,
+552 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+552 silly get     via: '1.1 varnish',
+552 silly get     'cache-control': 'max-age=300',
+552 silly get     etag: 'W/"57edf419-f2b"',
+552 silly get     age: '201',
+552 silly get     connection: 'keep-alive',
+552 silly get     'x-served-by': 'cache-hhn1546-HHN',
+552 silly get     'x-cache': 'HIT',
+552 silly get     'x-cache-hits': '23',
+552 silly get     'x-timer': 'S1484667771.062778,VS0,VE0',
+552 silly get     vary: 'Accept-Encoding' } ]
+553 verbose etag https://registry.npmjs.org/number-is-nan from cache
+554 verbose get saving number-is-nan to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\number-is-nan\.cache.json
+555 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\async-192b08ec2f6dc7aa.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\async
+556 silly addNameRange number 2 { name: 'number-is-nan', range: '>=1.0.0 <2.0.0', hasData: true }
+557 silly addNameRange versions [ 'number-is-nan', [ '1.0.0', '1.0.1' ] ]
+558 verbose addNamed number-is-nan@1.0.1
+559 silly addNamed semver.valid 1.0.1
+560 silly addNamed semver.validRange 1.0.1
+561 silly cache afterAdd number-is-nan@1.0.1
+562 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\number-is-nan\1.0.1\package\package.json not in flight; writing
+563 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\number-is-nan\1.0.1\package\package.json written
+564 silly install resolved [ { name: 'number-is-nan',
+564 silly install resolved     version: '1.0.1',
+564 silly install resolved     description: 'ES2015 Number.isNaN() ponyfill',
+564 silly install resolved     license: 'MIT',
+564 silly install resolved     repository:
+564 silly install resolved      { type: 'git',
+564 silly install resolved        url: 'git+https://github.com/sindresorhus/number-is-nan.git' },
+564 silly install resolved     author:
+564 silly install resolved      { name: 'Sindre Sorhus',
+564 silly install resolved        email: 'sindresorhus@gmail.com',
+564 silly install resolved        url: 'sindresorhus.com' },
+564 silly install resolved     engines: { node: '>=0.10.0' },
+564 silly install resolved     scripts: { test: 'ava' },
+564 silly install resolved     files: [ 'index.js' ],
+564 silly install resolved     keywords:
+564 silly install resolved      [ 'es2015',
+564 silly install resolved        'ecmascript',
+564 silly install resolved        'ponyfill',
+564 silly install resolved        'polyfill',
+564 silly install resolved        'shim',
+564 silly install resolved        'number',
+564 silly install resolved        'is',
+564 silly install resolved        'nan',
+564 silly install resolved        'not' ],
+564 silly install resolved     devDependencies: { ava: '*' },
+564 silly install resolved     gitHead: 'ed9cdac3f428cc929b61bb230da42c87477af4b9',
+564 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/number-is-nan/issues' },
+564 silly install resolved     homepage: 'https://github.com/sindresorhus/number-is-nan#readme',
+564 silly install resolved     _id: 'number-is-nan@1.0.1',
+564 silly install resolved     _shasum: '097b602b53422a522c1afb8790318336941a011d',
+564 silly install resolved     _from: 'number-is-nan@>=1.0.0 <2.0.0',
+564 silly install resolved     _npmVersion: '2.15.9',
+564 silly install resolved     _nodeVersion: '4.5.0',
+564 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+564 silly install resolved     dist:
+564 silly install resolved      { shasum: '097b602b53422a522c1afb8790318336941a011d',
+564 silly install resolved        tarball: 'https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz' },
+564 silly install resolved     maintainers: [ [Object] ],
+564 silly install resolved     _npmOperationalInternal:
+564 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+564 silly install resolved        tmp: 'tmp/number-is-nan-1.0.1.tgz_1475212313367_0.9480371843092144' },
+564 silly install resolved     directories: {},
+564 silly install resolved     _resolved: 'https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz',
+564 silly install resolved     readme: 'ERROR: No README data found!' } ]
+565 info install number-is-nan@1.0.1 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+566 info installOne number-is-nan@1.0.1
+567 verbose installOne of number-is-nan to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs not in flight; installing
+568 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\number-is-nan-c448dd61f5d79420.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+569 silly install write writing number-is-nan 1.0.1 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+570 silly cache addNamed cb number-is-nan@1.0.1
+571 verbose unbuild node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+572 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+573 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+574 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\number-is-nan\1.0.1\package.tgz
+575 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+576 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan is being purged
+577 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+578 silly gunzTarPerm modes [ '777', '666' ]
+579 silly gunzTarPerm extractEntry package.json
+580 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+581 silly gunzTarPerm extractEntry index.js
+582 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+583 silly gunzTarPerm extractEntry license
+584 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+585 http 304 https://registry.npmjs.org/isexe
+586 silly get cb [ 304,
+586 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+586 silly get     via: '1.1 varnish',
+586 silly get     'cache-control': 'max-age=300',
+586 silly get     etag: 'W/"56b96d9d-1cc5"',
+586 silly get     age: '91',
+586 silly get     connection: 'keep-alive',
+586 silly get     'x-served-by': 'cache-hhn1522-HHN',
+586 silly get     'x-cache': 'HIT',
+586 silly get     'x-cache-hits': '13',
+586 silly get     'x-timer': 'S1484667771.111354,VS0,VE0',
+586 silly get     vary: 'Accept-Encoding' } ]
+587 verbose etag https://registry.npmjs.org/isexe from cache
+588 verbose get saving isexe to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\isexe\.cache.json
+589 silly gunzTarPerm extractEntry readme.md
+590 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+591 silly addNameRange number 2 { name: 'isexe', range: '>=1.1.1 <2.0.0', hasData: true }
+592 silly addNameRange versions [ 'isexe', [ '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2' ] ]
+593 verbose addNamed isexe@1.1.2
+594 silly addNamed semver.valid 1.1.2
+595 silly addNamed semver.validRange 1.1.2
+596 silly cache afterAdd isexe@1.1.2
+597 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\isexe\1.1.2\package\package.json not in flight; writing
+598 http 304 https://registry.npmjs.org/ansi-styles
+599 silly get cb [ 304,
+599 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+599 silly get     via: '1.1 varnish',
+599 silly get     'cache-control': 'max-age=300',
+599 silly get     etag: 'W/"587de0f2-45e6"',
+599 silly get     age: '44',
+599 silly get     connection: 'keep-alive',
+599 silly get     'x-served-by': 'cache-hhn1530-HHN',
+599 silly get     'x-cache': 'HIT',
+599 silly get     'x-cache-hits': '5',
+599 silly get     'x-timer': 'S1484667771.130771,VS0,VE0',
+599 silly get     vary: 'Accept-Encoding' } ]
+600 verbose etag https://registry.npmjs.org/ansi-styles from cache
+601 verbose get saving ansi-styles to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\ansi-styles\.cache.json
+602 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\isexe\1.1.2\package\package.json written
+603 silly install resolved [ { name: 'isexe',
+603 silly install resolved     version: '1.1.2',
+603 silly install resolved     description: 'Minimal module to check if a file is executable.',
+603 silly install resolved     main: 'index.js',
+603 silly install resolved     directories: { test: 'test' },
+603 silly install resolved     devDependencies: { mkdirp: '^0.5.1', rimraf: '^2.5.0', tap: '^5.1.2' },
+603 silly install resolved     scripts: { test: 'tap test/*.js --branches=100 --statements=100 --functions=100 --lines=100' },
+603 silly install resolved     author:
+603 silly install resolved      { name: 'Isaac Z. Schlueter',
+603 silly install resolved        email: 'i@izs.me',
+603 silly install resolved        url: 'http://blog.izs.me/' },
+603 silly install resolved     license: 'ISC',
+603 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/isaacs/isexe.git' },
+603 silly install resolved     keywords: [],
+603 silly install resolved     bugs: { url: 'https://github.com/isaacs/isexe/issues' },
+603 silly install resolved     homepage: 'https://github.com/isaacs/isexe#readme',
+603 silly install resolved     gitHead: '1882eed72c2ba152f4dd1336d857b0755ae306d9',
+603 silly install resolved     _id: 'isexe@1.1.2',
+603 silly install resolved     _shasum: '36f3e22e60750920f5e7241a476a8c6a42275ad0',
+603 silly install resolved     _from: 'isexe@>=1.1.1 <2.0.0',
+603 silly install resolved     _npmVersion: '3.7.0',
+603 silly install resolved     _nodeVersion: '4.0.0',
+603 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+603 silly install resolved     dist:
+603 silly install resolved      { shasum: '36f3e22e60750920f5e7241a476a8c6a42275ad0',
+603 silly install resolved        tarball: 'https://registry.npmjs.org/isexe/-/isexe-1.1.2.tgz' },
+603 silly install resolved     maintainers: [ [Object] ],
+603 silly install resolved     _npmOperationalInternal:
+603 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+603 silly install resolved        tmp: 'tmp/isexe-1.1.2.tgz_1454992795963_0.7608721863944083' },
+603 silly install resolved     _resolved: 'https://registry.npmjs.org/isexe/-/isexe-1.1.2.tgz',
+603 silly install resolved     readme: 'ERROR: No README data found!' } ]
+604 info install isexe@1.1.2 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+605 info installOne isexe@1.1.2
+606 verbose installOne of isexe to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which not in flight; installing
+607 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\isexe-e6f38a3e14554ca1.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+608 silly install write writing isexe 1.1.2 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+609 silly cache addNamed cb isexe@1.1.2
+610 verbose unbuild node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+611 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+612 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+613 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\isexe\1.1.2\package.tgz
+614 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+615 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe is being purged
+616 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+617 silly gunzTarPerm modes [ '777', '666' ]
+618 silly gunzTarPerm extractEntry package.json
+619 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+620 silly addNameRange number 2 { name: 'ansi-styles', range: '>=2.2.1 <3.0.0', hasData: true }
+621 silly addNameRange versions [ 'ansi-styles',
+621 silly addNameRange   [ '0.1.0',
+621 silly addNameRange     '0.1.1',
+621 silly addNameRange     '0.1.2',
+621 silly addNameRange     '0.2.0',
+621 silly addNameRange     '1.0.0',
+621 silly addNameRange     '1.1.0',
+621 silly addNameRange     '2.0.0',
+621 silly addNameRange     '2.0.1',
+621 silly addNameRange     '2.1.0',
+621 silly addNameRange     '2.2.1',
+621 silly addNameRange     '3.0.0' ] ]
+622 verbose addNamed ansi-styles@2.2.1
+623 silly addNamed semver.valid 2.2.1
+624 silly addNamed semver.validRange 2.2.1
+625 silly gunzTarPerm extractEntry .npmignore
+626 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+627 silly gunzTarPerm extractEntry README.md
+628 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+629 silly cache afterAdd ansi-styles@2.2.1
+630 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\ansi-styles\2.2.1\package\package.json not in flight; writing
+631 info preinstall number-is-nan@1.0.1
+632 silly install resolved []
+633 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+634 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+635 verbose linkStuff [ false,
+635 verbose linkStuff   false,
+635 verbose linkStuff   false,
+635 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\dargs\\node_modules' ]
+636 info linkStuff number-is-nan@1.0.1
+637 verbose linkBins number-is-nan@1.0.1
+638 verbose linkMans number-is-nan@1.0.1
+639 verbose rebuildBundles number-is-nan@1.0.1
+640 info install number-is-nan@1.0.1
+641 http 304 https://registry.npmjs.org/escape-string-regexp
+642 silly get cb [ 304,
+642 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+642 silly get     via: '1.1 varnish',
+642 silly get     'cache-control': 'max-age=300',
+642 silly get     etag: 'W/"58717eec-2423"',
+642 silly get     age: '295',
+642 silly get     connection: 'keep-alive',
+642 silly get     'x-served-by': 'cache-hhn1542-HHN',
+642 silly get     'x-cache': 'HIT',
+642 silly get     'x-cache-hits': '32',
+642 silly get     'x-timer': 'S1484667771.143815,VS0,VE0',
+642 silly get     vary: 'Accept-Encoding' } ]
+643 verbose etag https://registry.npmjs.org/escape-string-regexp from cache
+644 verbose get saving escape-string-regexp to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\escape-string-regexp\.cache.json
+645 info postinstall number-is-nan@1.0.1
+646 http 304 https://registry.npmjs.org/has-ansi
+647 silly get cb [ 304,
+647 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+647 silly get     via: '1.1 varnish',
+647 silly get     'cache-control': 'max-age=300',
+647 silly get     etag: 'W/"58717f5d-2736"',
+647 silly get     age: '19',
+647 silly get     connection: 'keep-alive',
+647 silly get     'x-served-by': 'cache-hhn1534-HHN',
+647 silly get     'x-cache': 'HIT',
+647 silly get     'x-cache-hits': '6',
+647 silly get     'x-timer': 'S1484667771.145117,VS0,VE0',
+647 silly get     vary: 'Accept-Encoding' } ]
+648 verbose etag https://registry.npmjs.org/has-ansi from cache
+649 verbose get saving has-ansi to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\has-ansi\.cache.json
+650 http 304 https://registry.npmjs.org/strip-ansi
+651 silly get cb [ 304,
+651 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+651 silly get     via: '1.1 varnish',
+651 silly get     'cache-control': 'max-age=300',
+651 silly get     etag: 'W/"5818e1d5-3e04"',
+651 silly get     age: '142',
+651 silly get     connection: 'keep-alive',
+651 silly get     'x-served-by': 'cache-hhn1532-HHN',
+651 silly get     'x-cache': 'HIT',
+651 silly get     'x-cache-hits': '18',
+651 silly get     'x-timer': 'S1484667771.146712,VS0,VE0',
+651 silly get     vary: 'Accept-Encoding' } ]
+652 verbose etag https://registry.npmjs.org/strip-ansi from cache
+653 verbose get saving strip-ansi to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\strip-ansi\.cache.json
+654 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\number-is-nan-c448dd61f5d79420.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs\node_modules\number-is-nan
+655 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+656 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+657 verbose linkStuff [ false,
+657 verbose linkStuff   false,
+657 verbose linkStuff   false,
+657 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules' ]
+658 info linkStuff dargs@4.1.0
+659 verbose linkBins dargs@4.1.0
+660 verbose linkMans dargs@4.1.0
+661 verbose rebuildBundles dargs@4.1.0
+662 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\ansi-styles\2.2.1\package\package.json written
+663 verbose rebuildBundles [ 'number-is-nan' ]
+664 info install dargs@4.1.0
+665 silly gunzTarPerm extractEntry LICENSE
+666 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+667 silly gunzTarPerm extractEntry access.js
+668 silly gunzTarPerm modified mode [ 'access.js', 420, 438 ]
+669 info postinstall dargs@4.1.0
+670 http 304 https://registry.npmjs.org/supports-color
+671 silly get cb [ 304,
+671 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+671 silly get     via: '1.1 varnish',
+671 silly get     'cache-control': 'max-age=300',
+671 silly get     etag: 'W/"587c1388-68ca"',
+671 silly get     age: '140',
+671 silly get     connection: 'keep-alive',
+671 silly get     'x-served-by': 'cache-hhn1548-HHN',
+671 silly get     'x-cache': 'HIT',
+671 silly get     'x-cache-hits': '17',
+671 silly get     'x-timer': 'S1484667771.156349,VS0,VE0',
+671 silly get     vary: 'Accept-Encoding' } ]
+672 verbose etag https://registry.npmjs.org/supports-color from cache
+673 verbose get saving supports-color to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\supports-color\.cache.json
+674 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\dargs-d84d3c808b2e6d3f.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\dargs
+675 silly addNameRange number 2 { name: 'has-ansi', range: '>=2.0.0 <3.0.0', hasData: true }
+676 silly addNameRange versions [ 'has-ansi',
+676 silly addNameRange   [ '0.1.0', '1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0' ] ]
+677 verbose addNamed has-ansi@2.0.0
+678 silly addNamed semver.valid 2.0.0
+679 silly addNamed semver.validRange 2.0.0
+680 silly addNameRange number 2 { name: 'strip-ansi', range: '>=3.0.0 <4.0.0', hasData: true }
+681 silly addNameRange versions [ 'strip-ansi',
+681 silly addNameRange   [ '0.1.0',
+681 silly addNameRange     '0.1.1',
+681 silly addNameRange     '0.2.0',
+681 silly addNameRange     '0.2.1',
+681 silly addNameRange     '0.2.2',
+681 silly addNameRange     '0.3.0',
+681 silly addNameRange     '1.0.0',
+681 silly addNameRange     '2.0.0',
+681 silly addNameRange     '2.0.1',
+681 silly addNameRange     '3.0.0',
+681 silly addNameRange     '3.0.1' ] ]
+682 verbose addNamed strip-ansi@3.0.1
+683 silly addNamed semver.valid 3.0.1
+684 silly addNamed semver.validRange 3.0.1
+685 silly cache afterAdd has-ansi@2.0.0
+686 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\has-ansi\2.0.0\package\package.json not in flight; writing
+687 silly cache afterAdd strip-ansi@3.0.1
+688 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\strip-ansi\3.0.1\package\package.json not in flight; writing
+689 silly addNameRange number 2 { name: 'supports-color',
+689 silly addNameRange   range: '>=2.0.0 <3.0.0',
+689 silly addNameRange   hasData: true }
+690 silly addNameRange versions [ 'supports-color',
+690 silly addNameRange   [ '0.2.0',
+690 silly addNameRange     '1.0.0',
+690 silly addNameRange     '1.1.0',
+690 silly addNameRange     '1.2.0',
+690 silly addNameRange     '1.2.1',
+690 silly addNameRange     '1.3.0',
+690 silly addNameRange     '1.3.1',
+690 silly addNameRange     '2.0.0',
+690 silly addNameRange     '3.0.0',
+690 silly addNameRange     '3.0.1',
+690 silly addNameRange     '3.1.0',
+690 silly addNameRange     '3.1.1',
+690 silly addNameRange     '3.1.2',
+690 silly addNameRange     '3.2.0',
+690 silly addNameRange     '3.2.1',
+690 silly addNameRange     '3.2.2',
+690 silly addNameRange     '3.2.3' ] ]
+691 verbose addNamed supports-color@2.0.0
+692 silly addNamed semver.valid 2.0.0
+693 silly addNamed semver.validRange 2.0.0
+694 silly addNameRange number 2 { name: 'escape-string-regexp',
+694 silly addNameRange   range: '>=1.0.2 <2.0.0',
+694 silly addNameRange   hasData: true }
+695 silly addNameRange versions [ 'escape-string-regexp',
+695 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+696 verbose addNamed escape-string-regexp@1.0.5
+697 silly addNamed semver.valid 1.0.5
+698 silly addNamed semver.validRange 1.0.5
+699 silly gunzTarPerm extractEntry mode.js
+700 silly gunzTarPerm modified mode [ 'mode.js', 420, 438 ]
+701 silly gunzTarPerm extractEntry windows.js
+702 silly gunzTarPerm modified mode [ 'windows.js', 420, 438 ]
+703 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\has-ansi\2.0.0\package\package.json written
+704 silly cache afterAdd escape-string-regexp@1.0.5
+705 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\escape-string-regexp\1.0.5\package\package.json not in flight; writing
+706 silly cache afterAdd supports-color@2.0.0
+707 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\supports-color\2.0.0\package\package.json not in flight; writing
+708 http 304 https://registry.npmjs.org/lru-cache
+709 silly get cb [ 304,
+709 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+709 silly get     via: '1.1 varnish',
+709 silly get     'cache-control': 'max-age=300',
+709 silly get     etag: 'W/"58774492-c8d6"',
+709 silly get     age: '103',
+709 silly get     connection: 'keep-alive',
+709 silly get     'x-served-by': 'cache-hhn1524-HHN',
+709 silly get     'x-cache': 'HIT',
+709 silly get     'x-cache-hits': '11',
+709 silly get     'x-timer': 'S1484667771.177457,VS0,VE0',
+709 silly get     vary: 'Accept-Encoding' } ]
+710 verbose etag https://registry.npmjs.org/lru-cache from cache
+711 verbose get saving lru-cache to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\lru-cache\.cache.json
+712 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\strip-ansi\3.0.1\package\package.json written
+713 silly gunzTarPerm extractEntry index.js
+714 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+715 silly gunzTarPerm extractEntry test/basic.js
+716 silly gunzTarPerm modified mode [ 'test/basic.js', 420, 438 ]
+717 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\escape-string-regexp\1.0.5\package\package.json written
+718 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.5.0 <3.0.0', hasData: true }
+719 silly addNameRange versions [ 'lru-cache',
+719 silly addNameRange   [ '1.0.1',
+719 silly addNameRange     '1.0.2',
+719 silly addNameRange     '1.0.3',
+719 silly addNameRange     '1.0.4',
+719 silly addNameRange     '1.0.5',
+719 silly addNameRange     '1.0.6',
+719 silly addNameRange     '1.1.0',
+719 silly addNameRange     '1.1.1',
+719 silly addNameRange     '2.0.0',
+719 silly addNameRange     '2.0.1',
+719 silly addNameRange     '2.0.2',
+719 silly addNameRange     '2.0.3',
+719 silly addNameRange     '2.0.4',
+719 silly addNameRange     '2.1.0',
+719 silly addNameRange     '2.2.0',
+719 silly addNameRange     '2.2.1',
+719 silly addNameRange     '2.2.2',
+719 silly addNameRange     '2.2.4',
+719 silly addNameRange     '2.3.0',
+719 silly addNameRange     '2.3.1',
+719 silly addNameRange     '2.5.0',
+719 silly addNameRange     '2.5.1',
+719 silly addNameRange     '2.5.2',
+719 silly addNameRange     '2.6.0',
+719 silly addNameRange     '2.6.1',
+719 silly addNameRange     '2.6.2',
+719 silly addNameRange     '2.6.3',
+719 silly addNameRange     '2.6.4',
+719 silly addNameRange     '2.6.5',
+719 silly addNameRange     '2.7.0',
+719 silly addNameRange     '2.7.1',
+719 silly addNameRange     '2.7.2',
+719 silly addNameRange     '2.7.3',
+719 silly addNameRange     '3.0.0',
+719 silly addNameRange     '3.1.0',
+719 silly addNameRange     '3.1.1',
+719 silly addNameRange     '3.1.2',
+719 silly addNameRange     '3.2.0',
+719 silly addNameRange     '4.0.0',
+719 silly addNameRange     '4.0.1',
+719 silly addNameRange     '4.0.2' ] ]
+720 verbose addNamed lru-cache@2.7.3
+721 silly addNamed semver.valid 2.7.3
+722 silly addNamed semver.validRange 2.7.3
+723 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\supports-color\2.0.0\package\package.json written
+724 silly install resolved [ { name: 'ansi-styles',
+724 silly install resolved     version: '2.2.1',
+724 silly install resolved     description: 'ANSI escape codes for styling strings in the terminal',
+724 silly install resolved     license: 'MIT',
+724 silly install resolved     repository:
+724 silly install resolved      { type: 'git',
+724 silly install resolved        url: 'git+https://github.com/chalk/ansi-styles.git' },
+724 silly install resolved     author:
+724 silly install resolved      { name: 'Sindre Sorhus',
+724 silly install resolved        email: 'sindresorhus@gmail.com',
+724 silly install resolved        url: 'sindresorhus.com' },
+724 silly install resolved     maintainers: [ [Object] ],
+724 silly install resolved     engines: { node: '>=0.10.0' },
+724 silly install resolved     scripts: { test: 'mocha' },
+724 silly install resolved     files: [ 'index.js' ],
+724 silly install resolved     keywords:
+724 silly install resolved      [ 'ansi',
+724 silly install resolved        'styles',
+724 silly install resolved        'color',
+724 silly install resolved        'colour',
+724 silly install resolved        'colors',
+724 silly install resolved        'terminal',
+724 silly install resolved        'console',
+724 silly install resolved        'cli',
+724 silly install resolved        'string',
+724 silly install resolved        'tty',
+724 silly install resolved        'escape',
+724 silly install resolved        'formatting',
+724 silly install resolved        'rgb',
+724 silly install resolved        '256',
+724 silly install resolved        'shell',
+724 silly install resolved        'xterm',
+724 silly install resolved        'log',
+724 silly install resolved        'logging',
+724 silly install resolved        'command-line',
+724 silly install resolved        'text' ],
+724 silly install resolved     devDependencies: { mocha: '*' },
+724 silly install resolved     gitHead: '95c59b23be760108b6530ca1c89477c21b258032',
+724 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-styles/issues' },
+724 silly install resolved     homepage: 'https://github.com/chalk/ansi-styles#readme',
+724 silly install resolved     _id: 'ansi-styles@2.2.1',
+724 silly install resolved     _shasum: 'b432dd3358b634cf75e1e4664368240533c1ddbe',
+724 silly install resolved     _from: 'ansi-styles@>=2.2.1 <3.0.0',
+724 silly install resolved     _npmVersion: '3.8.3',
+724 silly install resolved     _nodeVersion: '4.3.0',
+724 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+724 silly install resolved     dist:
+724 silly install resolved      { shasum: 'b432dd3358b634cf75e1e4664368240533c1ddbe',
+724 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz' },
+724 silly install resolved     _npmOperationalInternal:
+724 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+724 silly install resolved        tmp: 'tmp/ansi-styles-2.2.1.tgz_1459197317833_0.9694824463222176' },
+724 silly install resolved     directories: {},
+724 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz',
+724 silly install resolved     readme: 'ERROR: No README data found!' },
+724 silly install resolved   { name: 'has-ansi',
+724 silly install resolved     version: '2.0.0',
+724 silly install resolved     description: 'Check if a string has ANSI escape codes',
+724 silly install resolved     license: 'MIT',
+724 silly install resolved     repository: { type: 'git', url: 'https://github.com/sindresorhus/has-ansi' },
+724 silly install resolved     author:
+724 silly install resolved      { name: 'Sindre Sorhus',
+724 silly install resolved        email: 'sindresorhus@gmail.com',
+724 silly install resolved        url: 'sindresorhus.com' },
+724 silly install resolved     maintainers: [ [Object], [Object] ],
+724 silly install resolved     engines: { node: '>=0.10.0' },
+724 silly install resolved     scripts: { test: 'node test.js' },
+724 silly install resolved     files: [ 'index.js' ],
+724 silly install resolved     keywords:
+724 silly install resolved      [ 'ansi',
+724 silly install resolved        'styles',
+724 silly install resolved        'color',
+724 silly install resolved        'colour',
+724 silly install resolved        'colors',
+724 silly install resolved        'terminal',
+724 silly install resolved        'console',
+724 silly install resolved        'string',
+724 silly install resolved        'tty',
+724 silly install resolved        'escape',
+724 silly install resolved        'shell',
+724 silly install resolved        'xterm',
+724 silly install resolved        'command-line',
+724 silly install resolved        'text',
+724 silly install resolved        'regex',
+724 silly install resolved        'regexp',
+724 silly install resolved        're',
+724 silly install resolved        'match',
+724 silly install resolved        'test',
+724 silly install resolved        'find',
+724 silly install resolved        'pattern',
+724 silly install resolved        'has' ],
+724 silly install resolved     dependencies: { 'ansi-regex': '^2.0.0' },
+724 silly install resolved     devDependencies: { ava: '0.0.4' },
+724 silly install resolved     gitHead: '0722275e1bef139fcd09137da6e5550c3cd368b9',
+724 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/has-ansi/issues' },
+724 silly install resolved     homepage: 'https://github.com/sindresorhus/has-ansi',
+724 silly install resolved     _id: 'has-ansi@2.0.0',
+724 silly install resolved     _shasum: '34f5049ce1ecdf2b0649af3ef24e45ed35416d91',
+724 silly install resolved     _from: 'has-ansi@>=2.0.0 <3.0.0',
+724 silly install resolved     _npmVersion: '2.11.2',
+724 silly install resolved     _nodeVersion: '0.12.5',
+724 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+724 silly install resolved     dist:
+724 silly install resolved      { shasum: '34f5049ce1ecdf2b0649af3ef24e45ed35416d91',
+724 silly install resolved        tarball: 'https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz' },
+724 silly install resolved     directories: {},
+724 silly install resolved     _resolved: 'https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz',
+724 silly install resolved     readme: 'ERROR: No README data found!' },
+724 silly install resolved   { name: 'strip-ansi',
+724 silly install resolved     version: '3.0.1',
+724 silly install resolved     description: 'Strip ANSI escape codes',
+724 silly install resolved     license: 'MIT',
+724 silly install resolved     repository: { type: 'git', url: 'https://github.com/chalk/strip-ansi' },
+724 silly install resolved     author:
+724 silly install resolved      { name: 'Sindre Sorhus',
+724 silly install resolved        email: 'sindresorhus@gmail.com',
+724 silly install resolved        url: 'sindresorhus.com' },
+724 silly install resolved     maintainers: [ [Object], [Object] ],
+724 silly install resolved     engines: { node: '>=0.10.0' },
+724 silly install resolved     scripts: { test: 'xo && ava' },
+724 silly install resolved     files: [ 'index.js' ],
+724 silly install resolved     keywords:
+724 silly install resolved      [ 'strip',
+724 silly install resolved        'trim',
+724 silly install resolved        'remove',
+724 silly install resolved        'ansi',
+724 silly install resolved        'styles',
+724 silly install resolved        'color',
+724 silly install resolved        'colour',
+724 silly install resolved        'colors',
+724 silly install resolved        'terminal',
+724 silly install resolved        'console',
+724 silly install resolved        'string',
+724 silly install resolved        'tty',
+724 silly install resolved        'escape',
+724 silly install resolved        'formatting',
+724 silly install resolved        'rgb',
+724 silly install resolved        '256',
+724 silly install resolved        'shell',
+724 silly install resolved        'xterm',
+724 silly install resolved        'log',
+724 silly install resolved        'logging',
+724 silly install resolved        'command-line',
+724 silly install resolved        'text' ],
+724 silly install resolved     dependencies: { 'ansi-regex': '^2.0.0' },
+724 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+724 silly install resolved     gitHead: '8270705c704956da865623e564eba4875c3ea17f',
+724 silly install resolved     bugs: { url: 'https://github.com/chalk/strip-ansi/issues' },
+724 silly install resolved     homepage: 'https://github.com/chalk/strip-ansi',
+724 silly install resolved     _id: 'strip-ansi@3.0.1',
+724 silly install resolved     _shasum: '6a385fb8853d952d5ff05d0e8aaf94278dc63dcf',
+724 silly install resolved     _from: 'strip-ansi@>=3.0.0 <4.0.0',
+724 silly install resolved     _npmVersion: '2.11.3',
+724 silly install resolved     _nodeVersion: '0.12.7',
+724 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+724 silly install resolved     dist:
+724 silly install resolved      { shasum: '6a385fb8853d952d5ff05d0e8aaf94278dc63dcf',
+724 silly install resolved        tarball: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz' },
+724 silly install resolved     _npmOperationalInternal:
+724 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+724 silly install resolved        tmp: 'tmp/strip-ansi-3.0.1.tgz_1456057278183_0.28958667791448534' },
+724 silly install resolved     directories: {},
+724 silly install resolved     _resolved: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz',
+724 silly install resolved     readme: 'ERROR: No README data found!' },
+724 silly install resolved   { name: 'escape-string-regexp',
+724 silly install resolved     version: '1.0.5',
+724 silly install resolved     description: 'Escape RegExp special characters',
+724 silly install resolved     license: 'MIT',
+724 silly install resolved     repository:
+724 silly install resolved      { type: 'git',
+724 silly install resolved        url: 'https://github.com/sindresorhus/escape-string-regexp' },
+724 silly install resolved     author:
+724 silly install resolved      { name: 'Sindre Sorhus',
+724 silly install resolved        email: 'sindresorhus@gmail.com',
+724 silly install resolved        url: 'sindresorhus.com' },
+724 silly install resolved     maintainers: [ [Object], [Object] ],
+724 silly install resolved     engines: { node: '>=0.8.0' },
+724 silly install resolved     scripts: { test: 'xo && ava' },
+724 silly install resolved     files: [ 'index.js' ],
+724 silly install resolved     keywords:
+724 silly install resolved      [ 'escape',
+724 silly install resolved        'regex',
+724 silly install resolved        'regexp',
+724 silly install resolved        're',
+724 silly install resolved        'regular',
+724 silly install resolved        'expression',
+724 silly install resolved        'string',
+724 silly install resolved        'str',
+724 silly install resolved        'special',
+724 silly install resolved        'characters' ],
+724 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+724 silly install resolved     gitHead: 'db124a3e1aae9d692c4899e42a5c6c3e329eaa20',
+724 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+724 silly install resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+724 silly install resolved     _id: 'escape-string-regexp@1.0.5',
+724 silly install resolved     _shasum: '1b61c0562190a8dff6ae3bb2cf0200ca130b86d4',
+724 silly install resolved     _from: 'escape-string-regexp@>=1.0.2 <2.0.0',
+724 silly install resolved     _npmVersion: '2.14.12',
+724 silly install resolved     _nodeVersion: '4.2.6',
+724 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+724 silly install resolved     dist:
+724 silly install resolved      { shasum: '1b61c0562190a8dff6ae3bb2cf0200ca130b86d4',
+724 silly install resolved        tarball: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz' },
+724 silly install resolved     _npmOperationalInternal:
+724 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+724 silly install resolved        tmp: 'tmp/escape-string-regexp-1.0.5.tgz_1456059312074_0.7245344955008477' },
+724 silly install resolved     directories: {},
+724 silly install resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz',
+724 silly install resolved     readme: 'ERROR: No README data found!' },
+724 silly install resolved   { name: 'supports-color',
+724 silly install resolved     version: '2.0.0',
+724 silly install resolved     description: 'Detect whether a terminal supports color',
+724 silly install resolved     license: 'MIT',
+724 silly install resolved     repository: { type: 'git', url: 'https://github.com/chalk/supports-color' },
+724 silly install resolved     author:
+724 silly install resolved      { name: 'Sindre Sorhus',
+724 silly install resolved        email: 'sindresorhus@gmail.com',
+724 silly install resolved        url: 'sindresorhus.com' },
+724 silly install resolved     maintainers: [ [Object], [Object] ],
+724 silly install resolved     engines: { node: '>=0.8.0' },
+724 silly install resolved     scripts: { test: 'mocha' },
+724 silly install resolved     files: [ 'index.js' ],
+724 silly install resolved     keywords:
+724 silly install resolved      [ 'color',
+724 silly install resolved        'colour',
+724 silly install resolved        'colors',
+724 silly install resolved        'terminal',
+724 silly install resolved        'console',
+724 silly install resolved        'cli',
+724 silly install resolved        'ansi',
+724 silly install resolved        'styles',
+724 silly install resolved        'tty',
+724 silly install resolved        'rgb',
+724 silly install resolved        '256',
+724 silly install resolved        'shell',
+724 silly install resolved        'xterm',
+724 silly install resolved        'command-line',
+724 silly install resolved        'support',
+724 silly install resolved        'supports',
+724 silly install resolved        'capability',
+724 silly install resolved        'detect' ],
+724 silly install resolved     devDependencies: { mocha: '*', 'require-uncached': '^1.0.2' },
+724 silly install resolved     gitHead: '8400d98ade32b2adffd50902c06d9e725a5c6588',
+724 silly install resolved     bugs: { url: 'https://github.com/chalk/supports-color/issues' },
+724 silly install resolved     homepage: 'https://github.com/chalk/supports-color',
+724 silly install resolved     _id: 'supports-color@2.0.0',
+724 silly install resolved     _shasum: '535d045ce6b6363fa40117084629995e9df324c7',
+724 silly install resolved     _from: 'supports-color@>=2.0.0 <3.0.0',
+724 silly install resolved     _npmVersion: '2.11.2',
+724 silly install resolved     _nodeVersion: '0.12.5',
+724 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+724 silly install resolved     dist:
+724 silly install resolved      { shasum: '535d045ce6b6363fa40117084629995e9df324c7',
+724 silly install resolved        tarball: 'https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz' },
+724 silly install resolved     directories: {},
+724 silly install resolved     _resolved: 'https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz',
+724 silly install resolved     readme: 'ERROR: No README data found!' } ]
+725 info install ansi-styles@2.2.1 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+726 info install has-ansi@2.0.0 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+727 info install strip-ansi@3.0.1 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+728 info install escape-string-regexp@1.0.5 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+729 info install supports-color@2.0.0 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+730 info installOne ansi-styles@2.2.1
+731 verbose installOne of ansi-styles to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk not in flight; installing
+732 info installOne has-ansi@2.0.0
+733 verbose installOne of has-ansi to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk not in flight; installing
+734 info installOne strip-ansi@3.0.1
+735 verbose installOne of strip-ansi to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk not in flight; installing
+736 info installOne escape-string-regexp@1.0.5
+737 verbose installOne of escape-string-regexp to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk not in flight; installing
+738 info installOne supports-color@2.0.0
+739 verbose installOne of supports-color to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk not in flight; installing
+740 silly cache afterAdd lru-cache@2.7.3
+741 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\lru-cache\2.7.3\package\package.json not in flight; writing
+742 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\has-ansi-cb5c8e8c0b6b21a4.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+743 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\ansi-styles-8b1e8dfaf7c27ab6.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+744 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\strip-ansi-0d04b557b221f08b.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+745 silly install write writing has-ansi 2.0.0 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+746 silly cache addNamed cb has-ansi@2.0.0
+747 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+748 silly install write writing ansi-styles 2.2.1 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+749 silly cache addNamed cb ansi-styles@2.2.1
+750 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+751 silly install write writing strip-ansi 3.0.1 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+752 silly cache addNamed cb strip-ansi@3.0.1
+753 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+754 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\escape-string-regexp-b129d99fed90b4d5.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+755 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+756 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+757 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\supports-color-fde33a2c5cf6cb73.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+758 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+759 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+760 silly install write writing escape-string-regexp 1.0.5 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+761 silly cache addNamed cb escape-string-regexp@1.0.5
+762 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+763 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+764 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+765 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\has-ansi\2.0.0\package.tgz
+766 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+767 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi is being purged
+768 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+769 silly install write writing supports-color 2.0.0 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+770 silly cache addNamed cb supports-color@2.0.0
+771 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+772 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\ansi-styles\2.2.1\package.tgz
+773 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+774 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles is being purged
+775 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+776 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\strip-ansi\3.0.1\package.tgz
+777 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+778 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi is being purged
+779 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+780 silly gunzTarPerm modes [ '777', '666' ]
+781 silly gunzTarPerm modes [ '777', '666' ]
+782 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+783 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+784 silly gunzTarPerm modes [ '777', '666' ]
+785 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+786 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+787 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\escape-string-regexp\1.0.5\package.tgz
+788 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+789 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp is being purged
+790 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+791 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\supports-color\2.0.0\package.tgz
+792 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+793 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color is being purged
+794 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+795 silly gunzTarPerm modes [ '777', '666' ]
+796 silly gunzTarPerm modes [ '777', '666' ]
+797 silly gunzTarPerm extractEntry package.json
+798 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+799 silly gunzTarPerm extractEntry package.json
+800 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+801 silly gunzTarPerm extractEntry package.json
+802 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+803 silly gunzTarPerm extractEntry package.json
+804 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+805 silly gunzTarPerm extractEntry package.json
+806 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+807 silly gunzTarPerm extractEntry index.js
+808 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+809 silly gunzTarPerm extractEntry license
+810 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+811 silly gunzTarPerm extractEntry index.js
+812 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+813 silly gunzTarPerm extractEntry license
+814 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+815 silly gunzTarPerm extractEntry index.js
+816 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+817 silly gunzTarPerm extractEntry license
+818 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+819 silly gunzTarPerm extractEntry index.js
+820 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+821 silly gunzTarPerm extractEntry license
+822 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+823 silly gunzTarPerm extractEntry index.js
+824 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+825 silly gunzTarPerm extractEntry license
+826 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+827 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\lru-cache\2.7.3\package\package.json written
+828 silly install resolved [ { name: 'lru-cache',
+828 silly install resolved     description: 'A cache object that deletes the least-recently-used items.',
+828 silly install resolved     version: '2.7.3',
+828 silly install resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+828 silly install resolved     keywords: [ 'mru', 'lru', 'cache' ],
+828 silly install resolved     scripts: { test: 'tap test --gc' },
+828 silly install resolved     main: 'lib/lru-cache.js',
+828 silly install resolved     repository:
+828 silly install resolved      { type: 'git',
+828 silly install resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+828 silly install resolved     devDependencies: { tap: '^1.2.0', weak: '' },
+828 silly install resolved     license: 'ISC',
+828 silly install resolved     gitHead: '292048199f6d28b77fbe584279a1898e25e4c714',
+828 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+828 silly install resolved     homepage: 'https://github.com/isaacs/node-lru-cache#readme',
+828 silly install resolved     _id: 'lru-cache@2.7.3',
+828 silly install resolved     _shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+828 silly install resolved     _from: 'lru-cache@>=2.5.0 <3.0.0',
+828 silly install resolved     _npmVersion: '3.3.2',
+828 silly install resolved     _nodeVersion: '4.0.0',
+828 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+828 silly install resolved     dist:
+828 silly install resolved      { shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+828 silly install resolved        tarball: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz' },
+828 silly install resolved     maintainers: [ [Object], [Object] ],
+828 silly install resolved     directories: {},
+828 silly install resolved     _resolved: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz',
+828 silly install resolved     readme: 'ERROR: No README data found!' } ]
+829 info install lru-cache@2.7.3 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+830 info installOne lru-cache@2.7.3
+831 verbose installOne of lru-cache to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn not in flight; installing
+832 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\lru-cache-104d51841de03c2c.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+833 silly install write writing lru-cache 2.7.3 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+834 silly cache addNamed cb lru-cache@2.7.3
+835 verbose unbuild node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+836 silly gunzTarPerm extractEntry readme.md
+837 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+838 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+839 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+840 silly gunzTarPerm extractEntry readme.md
+841 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+842 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\lru-cache\2.7.3\package.tgz
+843 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+844 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache is being purged
+845 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+846 silly gunzTarPerm modes [ '777', '666' ]
+847 silly gunzTarPerm extractEntry readme.md
+848 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+849 silly gunzTarPerm extractEntry package.json
+850 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+851 silly gunzTarPerm extractEntry readme.md
+852 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+853 silly gunzTarPerm extractEntry readme.md
+854 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+855 silly gunzTarPerm extractEntry .npmignore
+856 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+857 silly gunzTarPerm extractEntry README.md
+858 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+859 silly gunzTarPerm extractEntry LICENSE
+860 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+861 silly gunzTarPerm extractEntry .travis.yml
+862 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+863 silly gunzTarPerm extractEntry CONTRIBUTORS
+864 silly gunzTarPerm modified mode [ 'CONTRIBUTORS', 420, 438 ]
+865 silly gunzTarPerm extractEntry lib/lru-cache.js
+866 silly gunzTarPerm modified mode [ 'lib/lru-cache.js', 420, 438 ]
+867 info preinstall has-ansi@2.0.0
+868 info preinstall supports-color@2.0.0
+869 silly prepareForInstallMany adding ansi-regex@^2.0.0 from has-ansi dependencies
+870 silly install resolved []
+871 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+872 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+873 verbose linkStuff [ false,
+873 verbose linkStuff   false,
+873 verbose linkStuff   false,
+873 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules' ]
+874 info linkStuff supports-color@2.0.0
+875 verbose linkBins supports-color@2.0.0
+876 verbose linkMans supports-color@2.0.0
+877 verbose rebuildBundles supports-color@2.0.0
+878 info preinstall strip-ansi@3.0.1
+879 info preinstall ansi-styles@2.2.1
+880 silly cache add args [ 'ansi-regex@^2.0.0', null ]
+881 verbose cache add spec ansi-regex@^2.0.0
+882 silly cache add parsed spec { raw: 'ansi-regex@^2.0.0',
+882 silly cache add   scope: null,
+882 silly cache add   name: 'ansi-regex',
+882 silly cache add   rawSpec: '^2.0.0',
+882 silly cache add   spec: '>=2.0.0 <3.0.0',
+882 silly cache add   type: 'range' }
+883 verbose addNamed ansi-regex@>=2.0.0 <3.0.0
+884 silly addNamed semver.valid null
+885 silly addNamed semver.validRange >=2.0.0 <3.0.0
+886 silly addNameRange { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: false }
+887 silly mapToRegistry name ansi-regex
+888 silly mapToRegistry using default registry
+889 silly mapToRegistry registry https://registry.npmjs.org/
+890 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+891 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex not in flight; fetching
+892 info install supports-color@2.0.0
+893 info preinstall escape-string-regexp@1.0.5
+894 silly gunzTarPerm extractEntry test/basic.js
+895 silly gunzTarPerm modified mode [ 'test/basic.js', 420, 438 ]
+896 info postinstall supports-color@2.0.0
+897 silly prepareForInstallMany adding ansi-regex@^2.0.0 from strip-ansi dependencies
+898 silly install resolved []
+899 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+900 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+901 verbose linkStuff [ false,
+901 verbose linkStuff   false,
+901 verbose linkStuff   false,
+901 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules' ]
+902 info linkStuff ansi-styles@2.2.1
+903 verbose linkBins ansi-styles@2.2.1
+904 verbose linkMans ansi-styles@2.2.1
+905 verbose rebuildBundles ansi-styles@2.2.1
+906 info install ansi-styles@2.2.1
+907 silly cache add args [ 'ansi-regex@^2.0.0', null ]
+908 verbose cache add spec ansi-regex@^2.0.0
+909 silly cache add parsed spec { raw: 'ansi-regex@^2.0.0',
+909 silly cache add   scope: null,
+909 silly cache add   name: 'ansi-regex',
+909 silly cache add   rawSpec: '^2.0.0',
+909 silly cache add   spec: '>=2.0.0 <3.0.0',
+909 silly cache add   type: 'range' }
+910 verbose addNamed ansi-regex@>=2.0.0 <3.0.0
+911 silly addNamed semver.valid null
+912 silly addNamed semver.validRange >=2.0.0 <3.0.0
+913 silly addNameRange { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: false }
+914 silly mapToRegistry name ansi-regex
+915 silly mapToRegistry using default registry
+916 silly mapToRegistry registry https://registry.npmjs.org/
+917 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+918 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex already in flight; waiting
+919 silly install resolved []
+920 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+921 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+922 verbose linkStuff [ false,
+922 verbose linkStuff   false,
+922 verbose linkStuff   false,
+922 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules' ]
+923 info linkStuff escape-string-regexp@1.0.5
+924 verbose linkBins escape-string-regexp@1.0.5
+925 verbose linkMans escape-string-regexp@1.0.5
+926 verbose rebuildBundles escape-string-regexp@1.0.5
+927 verbose request uri https://registry.npmjs.org/ansi-regex
+928 verbose request no auth needed
+929 info attempt registry request try #1 at 16:42:52
+930 verbose etag W/"58799673-342f"
+931 verbose lastModified Sat, 14 Jan 2017 03:09:39 GMT
+932 http request GET https://registry.npmjs.org/ansi-regex
+933 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\supports-color-fde33a2c5cf6cb73.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\supports-color
+934 info install escape-string-regexp@1.0.5
+935 info postinstall ansi-styles@2.2.1
+936 info postinstall escape-string-regexp@1.0.5
+937 silly gunzTarPerm extractEntry test/foreach.js
+938 silly gunzTarPerm modified mode [ 'test/foreach.js', 420, 438 ]
+939 silly gunzTarPerm extractEntry test/memory-leak.js
+940 silly gunzTarPerm modified mode [ 'test/memory-leak.js', 420, 438 ]
+941 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\ansi-styles-8b1e8dfaf7c27ab6.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\ansi-styles
+942 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\escape-string-regexp-b129d99fed90b4d5.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\escape-string-regexp
+943 silly gunzTarPerm extractEntry test/serialize.js
+944 silly gunzTarPerm modified mode [ 'test/serialize.js', 420, 438 ]
+945 info preinstall isexe@1.1.2
+946 silly install resolved []
+947 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+948 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+949 verbose linkStuff [ false,
+949 verbose linkStuff   false,
+949 verbose linkStuff   false,
+949 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\which\\node_modules' ]
+950 info linkStuff isexe@1.1.2
+951 verbose linkBins isexe@1.1.2
+952 verbose linkMans isexe@1.1.2
+953 verbose rebuildBundles isexe@1.1.2
+954 info install isexe@1.1.2
+955 info postinstall isexe@1.1.2
+956 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\isexe-e6f38a3e14554ca1.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which\node_modules\isexe
+957 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+958 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+959 verbose linkStuff [ false,
+959 verbose linkStuff   false,
+959 verbose linkStuff   false,
+959 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules' ]
+960 info linkStuff which@1.2.12
+961 verbose linkBins which@1.2.12
+962 verbose link bins [ { which: './bin/which' },
+962 verbose link bins   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\.bin',
+962 verbose link bins   false ]
+963 verbose linkMans which@1.2.12
+964 verbose rebuildBundles which@1.2.12
+965 verbose rebuildBundles [ 'isexe' ]
+966 info install which@1.2.12
+967 info postinstall which@1.2.12
+968 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\which-86d4f87c4739ca6e.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\which
+969 info preinstall lru-cache@2.7.3
+970 silly install resolved []
+971 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+972 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+973 verbose linkStuff [ false,
+973 verbose linkStuff   false,
+973 verbose linkStuff   false,
+973 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\cross-spawn\\node_modules' ]
+974 info linkStuff lru-cache@2.7.3
+975 verbose linkBins lru-cache@2.7.3
+976 verbose linkMans lru-cache@2.7.3
+977 verbose rebuildBundles lru-cache@2.7.3
+978 info install lru-cache@2.7.3
+979 info postinstall lru-cache@2.7.3
+980 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\lru-cache-104d51841de03c2c.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn\node_modules\lru-cache
+981 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+982 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+983 verbose linkStuff [ false,
+983 verbose linkStuff   false,
+983 verbose linkStuff   false,
+983 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules' ]
+984 info linkStuff cross-spawn@0.2.9
+985 verbose linkBins cross-spawn@0.2.9
+986 verbose linkMans cross-spawn@0.2.9
+987 verbose rebuildBundles cross-spawn@0.2.9
+988 verbose rebuildBundles [ 'lru-cache' ]
+989 info install cross-spawn@0.2.9
+990 info postinstall cross-spawn@0.2.9
+991 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\cross-spawn-b3476fdfb7dc7d25.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\cross-spawn
+992 http 304 https://registry.npmjs.org/ansi-regex
+993 silly get cb [ 304,
+993 silly get   { date: 'Tue, 17 Jan 2017 15:42:51 GMT',
+993 silly get     via: '1.1 varnish',
+993 silly get     'cache-control': 'max-age=300',
+993 silly get     etag: 'W/"58799673-342f"',
+993 silly get     age: '132',
+993 silly get     connection: 'keep-alive',
+993 silly get     'x-served-by': 'cache-hhn1543-HHN',
+993 silly get     'x-cache': 'HIT',
+993 silly get     'x-cache-hits': '21',
+993 silly get     'x-timer': 'S1484667771.471260,VS0,VE0',
+993 silly get     vary: 'Accept-Encoding' } ]
+994 verbose etag https://registry.npmjs.org/ansi-regex from cache
+995 verbose get saving ansi-regex to C:\Users\Danie\AppData\Roaming\npm-cache\registry.npmjs.org\ansi-regex\.cache.json
+996 silly addNameRange number 2 { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: true }
+997 silly addNameRange versions [ 'ansi-regex',
+997 silly addNameRange   [ '0.1.0',
+997 silly addNameRange     '0.2.0',
+997 silly addNameRange     '0.2.1',
+997 silly addNameRange     '1.0.0',
+997 silly addNameRange     '1.1.0',
+997 silly addNameRange     '1.1.1',
+997 silly addNameRange     '2.0.0',
+997 silly addNameRange     '2.1.1' ] ]
+998 verbose addNamed ansi-regex@2.1.1
+999 silly addNamed semver.valid 2.1.1
+1000 silly addNamed semver.validRange 2.1.1
+1001 silly addNameRange number 2 { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: true }
+1002 silly addNameRange versions [ 'ansi-regex',
+1002 silly addNameRange   [ '0.1.0',
+1002 silly addNameRange     '0.2.0',
+1002 silly addNameRange     '0.2.1',
+1002 silly addNameRange     '1.0.0',
+1002 silly addNameRange     '1.1.0',
+1002 silly addNameRange     '1.1.1',
+1002 silly addNameRange     '2.0.0',
+1002 silly addNameRange     '2.1.1' ] ]
+1003 verbose addNamed ansi-regex@2.1.1
+1004 silly addNamed semver.valid 2.1.1
+1005 silly addNamed semver.validRange 2.1.1
+1006 silly cache afterAdd ansi-regex@2.1.1
+1007 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\ansi-regex\2.1.1\package\package.json not in flight; writing
+1008 silly cache afterAdd ansi-regex@2.1.1
+1009 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\ansi-regex\2.1.1\package\package.json already in flight; not writing
+1010 verbose afterAdd C:\Users\Danie\AppData\Roaming\npm-cache\ansi-regex\2.1.1\package\package.json written
+1011 silly install resolved [ { name: 'ansi-regex',
+1011 silly install resolved     version: '2.1.1',
+1011 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+1011 silly install resolved     license: 'MIT',
+1011 silly install resolved     repository:
+1011 silly install resolved      { type: 'git',
+1011 silly install resolved        url: 'git+https://github.com/chalk/ansi-regex.git' },
+1011 silly install resolved     author:
+1011 silly install resolved      { name: 'Sindre Sorhus',
+1011 silly install resolved        email: 'sindresorhus@gmail.com',
+1011 silly install resolved        url: 'sindresorhus.com' },
+1011 silly install resolved     maintainers: [ [Object], [Object] ],
+1011 silly install resolved     engines: { node: '>=0.10.0' },
+1011 silly install resolved     scripts:
+1011 silly install resolved      { test: 'xo && ava --verbose',
+1011 silly install resolved        'view-supported': 'node fixtures/view-codes.js' },
+1011 silly install resolved     files: [ 'index.js' ],
+1011 silly install resolved     keywords:
+1011 silly install resolved      [ 'ansi',
+1011 silly install resolved        'styles',
+1011 silly install resolved        'color',
+1011 silly install resolved        'colour',
+1011 silly install resolved        'colors',
+1011 silly install resolved        'terminal',
+1011 silly install resolved        'console',
+1011 silly install resolved        'cli',
+1011 silly install resolved        'string',
+1011 silly install resolved        'tty',
+1011 silly install resolved        'escape',
+1011 silly install resolved        'formatting',
+1011 silly install resolved        'rgb',
+1011 silly install resolved        '256',
+1011 silly install resolved        'shell',
+1011 silly install resolved        'xterm',
+1011 silly install resolved        'command-line',
+1011 silly install resolved        'text',
+1011 silly install resolved        'regex',
+1011 silly install resolved        'regexp',
+1011 silly install resolved        're',
+1011 silly install resolved        'match',
+1011 silly install resolved        'test',
+1011 silly install resolved        'find',
+1011 silly install resolved        'pattern' ],
+1011 silly install resolved     devDependencies: { ava: '0.17.0', xo: '0.16.0' },
+1011 silly install resolved     xo: { rules: [Object] },
+1011 silly install resolved     gitHead: '7c908e7b4eb6cd82bfe1295e33fdf6d166c7ed85',
+1011 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-regex/issues' },
+1011 silly install resolved     homepage: 'https://github.com/chalk/ansi-regex#readme',
+1011 silly install resolved     _id: 'ansi-regex@2.1.1',
+1011 silly install resolved     _shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+1011 silly install resolved     _from: 'ansi-regex@>=2.0.0 <3.0.0',
+1011 silly install resolved     _npmVersion: '2.14.2',
+1011 silly install resolved     _nodeVersion: '0.10.32',
+1011 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+1011 silly install resolved     dist:
+1011 silly install resolved      { shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+1011 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz' },
+1011 silly install resolved     _npmOperationalInternal:
+1011 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+1011 silly install resolved        tmp: 'tmp/ansi-regex-2.1.1.tgz_1484363378013_0.4482989883981645' },
+1011 silly install resolved     directories: {},
+1011 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz',
+1011 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1012 info install ansi-regex@2.1.1 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+1013 info installOne ansi-regex@2.1.1
+1014 verbose installOne of ansi-regex to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi not in flight; installing
+1015 silly install resolved [ { name: 'ansi-regex',
+1015 silly install resolved     version: '2.1.1',
+1015 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+1015 silly install resolved     license: 'MIT',
+1015 silly install resolved     repository:
+1015 silly install resolved      { type: 'git',
+1015 silly install resolved        url: 'git+https://github.com/chalk/ansi-regex.git' },
+1015 silly install resolved     author:
+1015 silly install resolved      { name: 'Sindre Sorhus',
+1015 silly install resolved        email: 'sindresorhus@gmail.com',
+1015 silly install resolved        url: 'sindresorhus.com' },
+1015 silly install resolved     maintainers: [ [Object], [Object] ],
+1015 silly install resolved     engines: { node: '>=0.10.0' },
+1015 silly install resolved     scripts:
+1015 silly install resolved      { test: 'xo && ava --verbose',
+1015 silly install resolved        'view-supported': 'node fixtures/view-codes.js' },
+1015 silly install resolved     files: [ 'index.js' ],
+1015 silly install resolved     keywords:
+1015 silly install resolved      [ 'ansi',
+1015 silly install resolved        'styles',
+1015 silly install resolved        'color',
+1015 silly install resolved        'colour',
+1015 silly install resolved        'colors',
+1015 silly install resolved        'terminal',
+1015 silly install resolved        'console',
+1015 silly install resolved        'cli',
+1015 silly install resolved        'string',
+1015 silly install resolved        'tty',
+1015 silly install resolved        'escape',
+1015 silly install resolved        'formatting',
+1015 silly install resolved        'rgb',
+1015 silly install resolved        '256',
+1015 silly install resolved        'shell',
+1015 silly install resolved        'xterm',
+1015 silly install resolved        'command-line',
+1015 silly install resolved        'text',
+1015 silly install resolved        'regex',
+1015 silly install resolved        'regexp',
+1015 silly install resolved        're',
+1015 silly install resolved        'match',
+1015 silly install resolved        'test',
+1015 silly install resolved        'find',
+1015 silly install resolved        'pattern' ],
+1015 silly install resolved     devDependencies: { ava: '0.17.0', xo: '0.16.0' },
+1015 silly install resolved     xo: { rules: [Object] },
+1015 silly install resolved     gitHead: '7c908e7b4eb6cd82bfe1295e33fdf6d166c7ed85',
+1015 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-regex/issues' },
+1015 silly install resolved     homepage: 'https://github.com/chalk/ansi-regex#readme',
+1015 silly install resolved     _id: 'ansi-regex@2.1.1',
+1015 silly install resolved     _shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+1015 silly install resolved     _from: 'ansi-regex@>=2.0.0 <3.0.0',
+1015 silly install resolved     _npmVersion: '2.14.2',
+1015 silly install resolved     _nodeVersion: '0.10.32',
+1015 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+1015 silly install resolved     dist:
+1015 silly install resolved      { shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+1015 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz' },
+1015 silly install resolved     _npmOperationalInternal:
+1015 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+1015 silly install resolved        tmp: 'tmp/ansi-regex-2.1.1.tgz_1484363378013_0.4482989883981645' },
+1015 silly install resolved     directories: {},
+1015 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz',
+1015 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1016 info install ansi-regex@2.1.1 into C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+1017 info installOne ansi-regex@2.1.1
+1018 verbose installOne of ansi-regex to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi not in flight; installing
+1019 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\ansi-regex-1d6315b1ec2192ac.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1020 verbose lock using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\ansi-regex-6c997da2ee074cfd.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1021 silly install write writing ansi-regex 2.1.1 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1022 silly cache addNamed cb ansi-regex@2.1.1
+1023 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1024 silly install write writing ansi-regex 2.1.1 to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1025 silly cache addNamed cb ansi-regex@2.1.1
+1026 verbose unbuild node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1027 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+1028 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1029 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex is being purged from base C:\Users\Danie\Desktop\admin\app\minovate
+1030 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1031 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\ansi-regex\2.1.1\package.tgz
+1032 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1033 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex is being purged
+1034 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1035 verbose tar unpack C:\Users\Danie\AppData\Roaming\npm-cache\ansi-regex\2.1.1\package.tgz
+1036 verbose tar unpacking to C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1037 silly gentlyRm C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex is being purged
+1038 verbose gentlyRm don't care about contents; nuking C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1039 silly gunzTarPerm modes [ '777', '666' ]
+1040 silly gunzTarPerm modes [ '777', '666' ]
+1041 silly gunzTarPerm extractEntry package.json
+1042 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1043 silly gunzTarPerm extractEntry package.json
+1044 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1045 silly gunzTarPerm extractEntry index.js
+1046 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+1047 silly gunzTarPerm extractEntry license
+1048 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+1049 silly gunzTarPerm extractEntry index.js
+1050 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+1051 silly gunzTarPerm extractEntry license
+1052 silly gunzTarPerm modified mode [ 'license', 420, 438 ]
+1053 silly gunzTarPerm extractEntry readme.md
+1054 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+1055 silly gunzTarPerm extractEntry readme.md
+1056 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+1057 info preinstall ansi-regex@2.1.1
+1058 silly install resolved []
+1059 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1060 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1061 verbose linkStuff [ false,
+1061 verbose linkStuff   false,
+1061 verbose linkStuff   false,
+1061 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules\\has-ansi\\node_modules' ]
+1062 info linkStuff ansi-regex@2.1.1
+1063 verbose linkBins ansi-regex@2.1.1
+1064 verbose linkMans ansi-regex@2.1.1
+1065 verbose rebuildBundles ansi-regex@2.1.1
+1066 info install ansi-regex@2.1.1
+1067 info postinstall ansi-regex@2.1.1
+1068 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\ansi-regex-6c997da2ee074cfd.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi\node_modules\ansi-regex
+1069 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+1070 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+1071 verbose linkStuff [ false,
+1071 verbose linkStuff   false,
+1071 verbose linkStuff   false,
+1071 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules' ]
+1072 info linkStuff has-ansi@2.0.0
+1073 verbose linkBins has-ansi@2.0.0
+1074 verbose linkMans has-ansi@2.0.0
+1075 verbose rebuildBundles has-ansi@2.0.0
+1076 verbose rebuildBundles [ 'ansi-regex' ]
+1077 info install has-ansi@2.0.0
+1078 info postinstall has-ansi@2.0.0
+1079 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\has-ansi-cb5c8e8c0b6b21a4.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\has-ansi
+1080 info preinstall ansi-regex@2.1.1
+1081 silly install resolved []
+1082 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1083 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1084 verbose linkStuff [ false,
+1084 verbose linkStuff   false,
+1084 verbose linkStuff   false,
+1084 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules\\strip-ansi\\node_modules' ]
+1085 info linkStuff ansi-regex@2.1.1
+1086 verbose linkBins ansi-regex@2.1.1
+1087 verbose linkMans ansi-regex@2.1.1
+1088 verbose rebuildBundles ansi-regex@2.1.1
+1089 info install ansi-regex@2.1.1
+1090 info postinstall ansi-regex@2.1.1
+1091 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\ansi-regex-1d6315b1ec2192ac.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+1092 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+1093 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+1094 verbose linkStuff [ false,
+1094 verbose linkStuff   false,
+1094 verbose linkStuff   false,
+1094 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules\\chalk\\node_modules' ]
+1095 info linkStuff strip-ansi@3.0.1
+1096 verbose linkBins strip-ansi@3.0.1
+1097 verbose linkMans strip-ansi@3.0.1
+1098 verbose rebuildBundles strip-ansi@3.0.1
+1099 verbose rebuildBundles [ 'ansi-regex' ]
+1100 info install strip-ansi@3.0.1
+1101 info postinstall strip-ansi@3.0.1
+1102 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\strip-ansi-0d04b557b221f08b.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk\node_modules\strip-ansi
+1103 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+1104 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+1105 verbose linkStuff [ false,
+1105 verbose linkStuff   false,
+1105 verbose linkStuff   false,
+1105 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules\\grunt-contrib-sass\\node_modules' ]
+1106 info linkStuff chalk@1.1.3
+1107 verbose linkBins chalk@1.1.3
+1108 verbose linkMans chalk@1.1.3
+1109 verbose rebuildBundles chalk@1.1.3
+1110 verbose rebuildBundles [ 'ansi-styles',
+1110 verbose rebuildBundles   'escape-string-regexp',
+1110 verbose rebuildBundles   'has-ansi',
+1110 verbose rebuildBundles   'strip-ansi',
+1110 verbose rebuildBundles   'supports-color' ]
+1111 info install chalk@1.1.3
+1112 info postinstall chalk@1.1.3
+1113 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\chalk-3d493e4db4c80fd6.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass\node_modules\chalk
+1114 verbose about to build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+1115 info build C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+1116 verbose linkStuff [ false,
+1116 verbose linkStuff   false,
+1116 verbose linkStuff   false,
+1116 verbose linkStuff   'C:\\Users\\Danie\\Desktop\\admin\\app\\minovate\\node_modules' ]
+1117 info linkStuff grunt-contrib-sass@1.0.0
+1118 verbose linkBins grunt-contrib-sass@1.0.0
+1119 verbose linkMans grunt-contrib-sass@1.0.0
+1120 verbose rebuildBundles grunt-contrib-sass@1.0.0
+1121 verbose rebuildBundles [ '.bin', 'async', 'chalk', 'cross-spawn', 'dargs', 'which' ]
+1122 info install grunt-contrib-sass@1.0.0
+1123 info postinstall grunt-contrib-sass@1.0.0
+1124 verbose unlock done using C:\Users\Danie\AppData\Roaming\npm-cache\_locks\grunt-contrib-sass-e6bc2587f38f9a41.lock for C:\Users\Danie\Desktop\admin\app\minovate\node_modules\grunt-contrib-sass
+1125 verbose stack Error: The package grunt does not satisfy its siblings' peerDependencies requirements!
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\lib\install.js:125:32
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\lib\install.js:264:7
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+1125 verbose stack     at cb (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+1125 verbose stack     at cb (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+1125 verbose stack     at cb (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+1125 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+1126 verbose cwd C:\Users\Danie\Desktop\admin\app\minovate\app
+1127 error Windows_NT 6.3.9600
+1128 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-contrib-sass" "--save-dev"
+1129 error node v0.12.2
+1130 error npm  v2.7.4
+1131 error code EPEERINVALID
+1132 error peerinvalid The package grunt does not satisfy its siblings' peerDependencies requirements!
+1132 error peerinvalid Peer grunt-contrib-copy@0.5.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-contrib-clean@0.5.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-newer@0.7.0 wants grunt@~0.4.1
+1132 error peerinvalid Peer grunt-concurrent@0.5.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-contrib-concat@0.4.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-filerev@0.2.1 wants grunt@>=0.4.0
+1132 error peerinvalid Peer grunt-contrib-sass@1.0.0 wants grunt@>=0.4.0
+1132 error peerinvalid Peer grunt-usemin@2.6.2 wants grunt@>=0.4.0
+1132 error peerinvalid Peer grunt-contrib-connect@0.7.1 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-contrib-watch@0.6.1 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-ng-annotate@1.0.1 wants grunt@~0.4.5
+1132 error peerinvalid Peer grunt-svgmin@0.4.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-contrib-cssmin@0.9.0 wants grunt@~0.4.1
+1132 error peerinvalid Peer grunt-contrib-htmlmin@0.3.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-contrib-jshint@0.10.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-wiredep@1.9.0 wants grunt@~0.4.0
+1132 error peerinvalid Peer grunt-autoprefixer@0.7.6 wants grunt@~0.4.2
+1132 error peerinvalid Peer grunt-contrib-uglify@0.4.1 wants grunt@~0.4.0
+1133 verbose exit [ 1, true ]

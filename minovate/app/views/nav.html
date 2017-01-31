@@ -1,0 +1,125 @@
+<div id="sidebar-wrap" ng-controller="NavCtrl">
+  <uib-accordion close-others="oneAtTime" slimscroll="{height: '100%'}">
+
+    <uib-accordion-group is-open="status.isFirstOpen">
+      <uib-accordion-heading>
+        {{ 'Menu-Headings.NAVIGATION' | translate }} <i class="pull-right fa" ng-class="{'fa-angle-up': status.isFirstOpen, 'fa-angle-down': !status.isFirstOpen}"></i>
+      </uib-accordion-heading>
+      <ul id="navigation" nav-collapse ripple>
+        <li ui-sref-active="active">
+          <a ui-sref="app.dashboard"><fa name="dashboard"></fa> <span>{{ 'Menu.DASHBOARD' | translate }}</span></a>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.forms')}">
+          <a ui-sref="app.shop.orders"><fa name="shopping-cart"></fa> <span>{{ 'Menu.ORDERS' | translate }}</span> <span class="badge bg-lightred">6</span></a>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.forms')}">
+          <a ui-sref="app.forms"><fa name="truck"></fa> <span>{{ 'Menu.SHIPPINGS.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.forms.common"><fa name="caret-right"></fa> {{ 'Menu.SHIPPINGS.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.forms.validate"><fa name="caret-right"></fa> {{ 'Menu.SHIPPINGS.Children.ADD' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.forms.wizard"><fa name="caret-right"></fa> {{ 'Menu.SHIPPINGS.Children.TYPES' | translate }} <span class="badge badge-success">13</span></a></li>
+            <li ui-sref-active="active"><a ui-sref="app.forms.upload"><fa name="caret-right"></fa> {{ 'Menu.SHIPPINGS.Children.ADD_TYPE' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.ui')}">
+          <a ui-sref="app.ui"><fa name="credit-card"></fa> <span>{{ 'Menu.PAYMENTS.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.ui.alerts"><fa name="caret-right"></fa> {{ 'Menu.PAYMENTS.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.ui.masonry"><fa name="caret-right"></fa> {{ 'Menu.PAYMENTS.Children.ADD' | translate }} <span class="label label-success">new</span></a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.material')}">
+          <a ui-sref="app.material"><fa name="image"></fa> <span>{{ 'Menu.PICTURES.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.material.toolbar"><fa name="caret-right"></fa> {{ 'Menu.PICTURES.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.material.tooltip"><fa name="caret-right"></fa> {{ 'Menu.PICTURES.Children.ADD' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.material.whiteframe"><fa name="caret-right"></fa> {{ 'Menu.PICTURES.Children.CATEGORIES' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.material.whiteframe"><fa name="caret-right"></fa> {{ 'Menu.PICTURES.Children.ADD_CATEGORY' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.files')}">
+          <a ui-sref="app.files"><fa name="files-o"></fa> <span>{{ 'Menu.FILES.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.files.list"><fa name="caret-right"></fa> {{ 'Menu.FILES.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.files.add"><fa name="caret-right"></fa> {{ 'Menu.FILES.Children.ADD' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.files.categories"><fa name="caret-right"></fa> {{ 'Menu.FILES.Children.CATEGORIES' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.files.add-category"><fa name="caret-right"></fa> {{ 'Menu.FILES.Children.ADD_CATEGORY' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.tables')}">
+          <a ui-sref="app.tables"><fa name="stack-overflow"></fa> <span>{{ 'Menu.PRODUCTS.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.tables.bootstrap"><fa name="caret-right"></fa> {{ 'Menu.PRODUCTS.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.tables.datatables"><fa name="caret-right"></fa> {{ 'Menu.PRODUCTS.Children.ADD' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.tables.ui-grid"><fa name="caret-right"></fa> {{ 'Menu.PRODUCTS.Children.TAGS' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.tables')}">
+          <a ui-sref="app.tables"><fa name="list-ul"></fa> <span>{{ 'Menu.CATEGORIES.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.tables.bootstrap"><fa name="caret-right"></fa> {{ 'Menu.CATEGORIES.Children.SORT' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.tables.datatables"><fa name="caret-right"></fa> {{ 'Menu.CATEGORIES.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.tables.ui-grid"><fa name="caret-right"></fa> {{ 'Menu.CATEGORIES.Children.ADD' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.pages')}">
+          <a ui-sref="app.pages"><fa name="wrench"></fa> <span>{{ 'Menu.MANUFACTURERS.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="core.login"><fa name="caret-right"></fa> {{ 'Menu.MANUFACTURERS.Children.LIST' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="core.signup"><fa name="caret-right"></fa> {{ 'Menu.MANUFACTURERS.Children.ADD' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.layouts')}">
+          <a ui-sref="app.layouts"><fa name="user"></fa> <span>{{ 'Menu.USERS' | translate }}</span></a>
+        </li>
+        <li>
+          <a href="#/frontend"><fa name="group"></fa> <span>{{ 'Menu.GROUPS.Name' | translate }}</span></a>
+          <ul>
+            <li><a href="http://www.tattek.sk/minovate-corp" target="_blank"><fa name="caret-right"></fa> {{ 'Menu.GROUPS.Children.LIST' | translate }}</a></li>
+            <li><a href="http://www.tattek.sk/minovate-commerce" target="_blank"><fa name="caret-right"></fa> {{ 'Menu.GROUPS.Children.ADD' | translate }}</a></li>
+          </ul>
+        </li>
+        <li ui-sref-active="active" ng-class="{'open':$state.includes('app.maps')}">
+          <a ui-sref="app.maps"><fa name="file-o"></fa> <span>{{ 'Menu.PAGES.Name' | translate }}</span></a>
+          <ul>
+            <li ui-sref-active="active"><a ui-sref="app.maps.vector"><fa name="caret-right"></fa> {{ 'Menu.PAGES.Children.MAIN_MENU' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.maps.google"><fa name="caret-right"></fa> {{ 'Menu.PAGES.Children.FOOTER_MENU' | translate }}</a></li>
+            <li ui-sref-active="active"><a ui-sref="app.maps.leaflet"><fa name="caret-right"></fa> {{ 'Menu.PAGES.Children.ARTICLES' | translate }}</a></li>
+          </ul>
+        </li>
+      </ul>
+    </uib-accordion-group>
+
+    <uib-accordion-group is-open="status.isSecondOpen" class="charts">
+      <uib-accordion-heading>
+        {{ 'Menu-Headings.ORDERS' | translate }} <i class="pull-right fa" ng-class="{'fa-angle-up': status.isSecondOpen, 'fa-angle-down': !status.isSecondOpen}"></i>
+      </uib-accordion-heading>
+
+      <div ng-controller="SparklineCtrl" class="summary">
+
+        <div class="media">
+          <a class="pull-right" href="#">
+            <span sparkline data="navChart1.data" options="navChart1.options"></span>
+          </a>
+          <div class="media-body">
+            {{ 'Menu-Headings.SALES' | translate }}
+            <h4 class="media-heading">26, 149</h4>
+          </div>
+        </div>
+
+        <div class="media">
+          <a class="pull-right" href="#">
+            <span sparkline data="navChart2.data" options="navChart2.options"></span>
+          </a>
+          <div class="media-body">
+            {{ 'Menu-Headings.BALANCE' | translate }}
+            <h4 class="media-heading">318, 651</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </uib-accordion-group>
+
+  </uib-accordion>
+</div>

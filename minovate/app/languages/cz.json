@@ -1,0 +1,193 @@
+{
+  "Labels": {
+    "VIEW": "Zobraz",
+    "RECORDS": "záznamů",
+    "FOUND": "Nalezeno",
+    "PAGE": "Stránka",
+    "OF": "z"
+  },
+  "Buttons": {
+    "VIEW": "Zobrazit",
+    "DELETE": "Odstranit",
+    "Tools": {
+      "MINIMIZE": "Minimalizovat",
+      "EXPAND": "Maximalizovat",
+      "REFRESH": "Aktualizovat",
+      "FULLSCREEN": "Celá obrazovka",
+      "LIGHTBOX": "Otevřít v okénku"
+    }
+  },
+  "Pages": {
+      "Dashboard": {
+        "Cards": {
+          "USERS": {
+            "Title": "Noví uživatelé",
+            "Manage": "Spravovat Uživatelé",
+            "Add": "Vytvořit uživatele"
+          },
+          "ORDERS": {
+            "Title": "Nové objednávky",
+            "Manage": "Spravovat objednávky",
+            "Add": "Vytvořit objednávku"
+          },
+          "SALES": {
+            "Title": "Tržby",
+            "Manage": "Spravovat objednávky",
+            "Add": "Vytvořit objednávku"
+          },
+          "VISITS": "Návštěvy"
+        }
+      },
+      "Orders": {
+        "Header": {
+          "BOLD": "Objednávky",
+          "THIN": "Seznam"
+        },
+        "ADD": "Vytvořit objednávku",
+        "DATE": {
+          "Title": "Datum"
+        },
+        "COMPANY": {
+          "Title": "Firma",
+          "0": "Ne",
+          "1": "Ano"
+        },
+        "CUSTOMER": {
+          "Title": "Objednatel"
+        },
+        "CELLNUMBER": {
+          "Title": "Telefon"
+        },
+        "TOTAL": {
+          "Title": "Cena"
+        },
+        "ACTION": {
+          "Title": "Akce"
+        },
+        "STATUS": {
+          "Title": "Stav",
+          "children": {
+            "0": "Storno",
+            "1": "Přijatá",
+            "2": "Odeslaná",
+            "3": "Vyřízená",
+            "4": "Vyřizuje se"
+          }
+        }
+      }
+  },
+  "Months": {
+      "Long": {
+        "January": "Ledna",
+        "February": "Února",
+        "March": "Března",
+        "April": "Dubna",
+        "May": "Května",
+        "June": "Června",
+        "July": "Července",
+        "August": "Srpna",
+        "September": "Září",
+        "October": "Října",
+        "November": "Listopadu",
+        "December": "Prosince"
+      },
+      "Short": {
+        "Jan": "Ledna",
+        "Feb": "Února",
+        "Mar": "Března",
+        "Apr": "Dubna",
+        "May": "Května",
+        "Jun": "Června",
+        "Jul": "Července",
+        "Aug": "Srpna",
+        "Sep": "Září",
+        "Oct": "Října",
+        "Nov": "Listopadu",
+        "Dec": "Prosince"
+      }
+  },
+  "Menu-Headings": {
+    "NAVIGATION": "Nabídka",
+    "ORDERS": "Sourhn objednávek",
+    "SALES": "Prodej tohoto týdne",
+    "BALANCE": "Bilance tohoto týdne"
+  },
+  "Menu": {
+    "DASHBOARD": "Nástěnka",
+    "ORDERS": "Objednávky",
+    "SHIPPINGS": {
+      "Name": "Doprava",
+      "Children": {
+        "LIST": "Seznam dopravy",
+        "ADD": "Přidat dopravu",
+        "TYPES": "Seznam typů dopravy",
+        "ADD_TYPE": "Přidat typ dopravy"
+      }
+    },
+    "PAYMENTS": {
+      "Name": "Platba",
+      "Children": {
+        "LIST": "Seznam plateb",
+        "ADD": "Přidat platbu"
+      }
+    },
+    "PICTURES": {
+      "Name": "Obrázky",
+      "Children": {
+        "LIST": "Seznam obrázků",
+        "ADD": "Přidat obrázek",
+        "CATEGORIES": "Seznam kategorií obrázků",
+        "ADD_CATEGORY": "Přidat kategorii obrázků"
+      }
+    },
+    "FILES": {
+      "Name": "Soubory",
+      "Children": {
+        "LIST": "Seznam souborů",
+        "ADD": "Přidat soubor",
+        "CATEGORIES": "Seznam kategorií souborů",
+        "ADD_CATEGORY": "Přidat kategorii souborů"
+      }
+    },
+    "PRODUCTS": {
+      "Name": "Produkty",
+      "Children": {
+        "LIST": "Seznam produktů",
+        "ADD": "Přidat produkt",
+        "TAGS": "Tagy produktů"
+      }
+    },
+    "CATEGORIES": {
+      "Name": "Kategorie",
+      "Children": {
+        "SORT": "Seřadit kategorie",
+        "LIST": "Seznam kategorií",
+        "ADD": "Přidat kategorii"
+      }
+    },
+    "MANUFACTURERS": {
+      "Name": "Výrobci",
+      "Children": {
+        "LIST": "Seznam výrobců",
+        "ADD": "Přidat výrobce"
+      }
+    },
+    "USERS": "Uživatelé",
+    "GROUPS": {
+      "Name": "Skupiny",
+      "Children": {
+        "LIST": "Seznam skupin",
+        "ADD": "Přidat skupinu"
+      }
+    },
+    "PAGES": {
+      "Name": "Stránky",
+      "Children": {
+        "MAIN_MENU": "Hlavní menu",
+        "FOOTER_MENU": "Zápatí menu",
+        "ARTICLES": "Články"
+      }
+    }
+  }
+}
+
