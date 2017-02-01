@@ -1,0 +1,5 @@
+node_modules
+minovate/.sass-cache
+minovate/.tmp
+minovate/bower_components
+minovate/test
