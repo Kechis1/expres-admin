@@ -144,8 +144,9 @@
                           </li>
                         </ul>
                       </div>
+
                       <a ui-sref="app.shop.single-order" class="btn btn-xs btn-default"><i class="fa fa-search"></i> {{ 'Buttons.VIEW' | translate }}</a>
-                      <a href="javascript:;" class="btn btn-xs btn-lightred"><i class="fa fa-times"></i> {{ 'Buttons.DELETE' | translate }}</a>
+                      <a ng-click="showCase.delete(order.id)" class="text-danger text-uppercase text-strong text-sm mr-10">{{ 'Buttons.DELETE' | translate }}</a>
                     </td>
                   </tr>
                   </tbody>

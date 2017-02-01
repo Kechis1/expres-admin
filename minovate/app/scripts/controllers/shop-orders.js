@@ -46,11 +46,7 @@ app
 
     vm.selectAll = function () {
 
-      if ($scope.selectedAll) {
-        $scope.selectedAll = false;
-      } else {
-        $scope.selectedAll = true;
-      }
+      $scope.selectedAll = !$scope.selectedAll;
 
       angular.forEach(vm.orders, function(order) {
         order.selected = $scope.selectedAll;
@@ -60,5 +56,9 @@ app
     $resource('http://localhost:80/v1/app/orders').query().$promise.then(function(orders) {
       vm.orders = orders;
     });
+
+    vm.delete = function (order) {
+
+    };
 
   });
