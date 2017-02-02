@@ -126,27 +126,27 @@
                     <td>{{ order.date }}</td>
                     <td>{{ order.customer }}</td>
                     <td><span class="badge" ng-class="{'bg-success' : order.company == '1', 'bg-danger' : order.company == '0'}">{{ 'Pages.Orders.COMPANY.' + order.company | translate }}</span></td>
-                    <td><span class="label" ng-class="{'bg-danger' : order.status == '0', 'bg-primary' : order.status == '1', 'bg-success' : order.status == '2', 'bg-warning' : order.status == '3', 'bg-dutch' : order.status == '4'}">{{ 'Pages.Orders.STATUS.children.' + order.status | translate }}</span></td>
+                    <td>
+                      <div class="text-left rounded-dropdown" uib-dropdown>
+                        <button type="button" ng-class="{'bg-danger' : order.status == '0', 'bg-primary' : order.status == '1', 'bg-success' : order.status == '2', 'bg-warning' : order.status == '3', 'bg-dutch' : order.status == '4'}" class="btn btn-sm btn-rounded-20" uib-dropdown-toggle>
+                          <span>
+                          <span class="text-white">{{ 'Pages.Orders.STATUS.children.' + order.status | translate }}</span>
+                          <i class="fa fa-chevron-down"></i>
+                        </span>
+                        </button>
+                        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="single-button">
+                          <li role="menuitem" ng-repeat="status_key in status_keys">
+                            <a href="javascript:;" ng-click="changeStatus(order.id, status_key)">{{ 'Pages.Orders.STATUS.children.' + status_key | translate }}</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
                     <td>{{ order.email }}</td>
                     <td>{{ order.cellnumber }}</td>
                     <td>{{ order.total | currency:"Kč":0 }}</td>
                     <td>
-                      <div class="text-left rounded-dropdown" uib-dropdown>
-                        <button type="button" class="btn btn-default btn-sm btn-rounded-20" uib-dropdown-toggle>
-                      <span>
-                        <span ng-class="{'text-danger' : order.status == '0', 'text-primary' : order.status == '1', 'text-success' : order.status == '2', 'text-warning' : order.status == '3', 'text-dutch' : order.status == '4'}">{{ 'Pages.Orders.STATUS.children.' + order.status | translate }}</span>
-                        <i class="fa fa-chevron-down"></i>
-                      </span>
-                        </button>
-                        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="single-button">
-                          <li role="menuitem" >
-                            <a href="javascript:;" ng-click="changeStatus(order, 'a')"></a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a ui-sref="app.shop.single-order" class="btn btn-xs btn-default"><i class="fa fa-search"></i> {{ 'Buttons.VIEW' | translate }}</a>
-                      <a ng-click="showCase.delete(order.id)" class="text-danger text-uppercase text-strong text-sm mr-10">{{ 'Buttons.DELETE' | translate }}</a>
+                      <a ui-sref="app.shop.single-order/{{order.id}}" class="btn btn-xs btn-default"><i class="fa fa-search"></i> {{ 'Buttons.VIEW' | translate }}</a>
+                      <a ng-click="showCase.delete(order.id)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i> {{ 'Buttons.DELETE' | translate }}</a>
                     </td>
                   </tr>
                   </tbody>

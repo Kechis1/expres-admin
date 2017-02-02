@@ -66,13 +66,14 @@
         },
         "STATUS": {
           "Title": "Stav",
-          "children": {
-            "0": "Storno",
-            "1": "Přijatá",
-            "2": "Odeslaná",
-            "3": "Vyřízená",
-            "4": "Vyřizuje se"
-          }
+          "children": [
+            "Storno",
+            "Přijatá",
+            "Odeslaná",
+            "Vyřízená",
+            "Vyřizuje se"
+          ],
+          "children_count": "5"
         }
       }
   },

@@ -15,7 +15,7 @@ app
     };
   })
 
-  .controller('OrdersTableCtrl', function ($scope, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $resource, $filter) {
+  .controller('OrdersTableCtrl', function ($scope, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $resource, $filter) {
     var $translation = $filter('translate');
     var sLengthMenu = $translation('Labels.VIEW') + ' _MENU_ ' + $translation('Labels.RECORDS');
     var sInfo = $translation('Labels.FOUND') + ' _TOTAL_ ' + $translation('Labels.RECORDS');
@@ -48,13 +48,23 @@ app
 
       $scope.selectedAll = !$scope.selectedAll;
 
-      angular.forEach(vm.orders, function(order) {
+      angular.forEach(vm.orders, function (order) {
         order.selected = $scope.selectedAll;
       });
     };
 
-    $resource('http://localhost:80/v1/app/orders').query().$promise.then(function(orders) {
+    $resource('http://localhost:80/v1/app/orders').query().$promise.then(function (orders) {
       vm.orders = orders;
+    });
+
+    var STATUS_COUNT = 0;
+    $scope.status_keys = [];
+
+    $translate('Pages.Orders.STATUS.children_count').then(function (count) {
+      STATUS_COUNT = count;
+      for (var i = 0; i < STATUS_COUNT; i++) {
+        $scope.status_keys.push(i);
+      }
     });
 
     vm.delete = function (order) {
