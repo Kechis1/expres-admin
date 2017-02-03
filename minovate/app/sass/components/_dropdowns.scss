@@ -56,6 +56,7 @@ div.dropdown.rounded-dropdown {
         &:hover {
           background-color: transparent;
           color: $active-el;
+          text-decoration: underline;
         }
       }
     }

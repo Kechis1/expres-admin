@@ -34,6 +34,7 @@
     "angular-translate": "~2.9.2",
     "angular-translate-loader-static-files": "~2.9.2",
     "angular-translate-storage-local": "~2.9.2",
+    "angular-dynamic-locale": "~0.1.32",
     "angular-ui-calendar": "~0.8.1",
     "angular-ui-grid": "~3.0.6",
     "angular-ui-router": "~0.2.15",

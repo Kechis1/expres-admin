@@ -56,6 +56,7 @@ var app = angular
     'ui.calendar',
     'ngTagsInput',
     'pascalprecht.translate',
+    'tmh.dynamicLocale',
     'ngMaterial',
     'localytics.directives',
     'leaflet-directive',
@@ -92,13 +93,16 @@ var app = angular
   //angular-language
   .config(['$translateProvider', function($translateProvider) {
     $translateProvider.useStaticFilesLoader({
-      prefix: 'languages/',
-      suffix: '.json'
-    });
-    $translateProvider.useLocalStorage();
-    $translateProvider.preferredLanguage('cz');
-    $translateProvider.useSanitizeValueStrategy(null);
+        prefix: 'languages/',
+        suffix: '.json'
+      }).useLocalStorage()
+      .preferredLanguage('cz')
+      .useSanitizeValueStrategy(null);
   }])
+
+  .config(function (tmhDynamicLocaleProvider) {
+    tmhDynamicLocaleProvider.localeLocationPattern('/bower_components/angular-i18n/angular-locale_{{locale}}.js');
+  })
 
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 

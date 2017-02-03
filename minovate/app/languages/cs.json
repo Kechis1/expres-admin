@@ -45,7 +45,8 @@
         },
         "ADD": "Vytvořit objednávku",
         "DATE": {
-          "Title": "Datum"
+          "Title": "Datum",
+          "Format": "{{date|date:'d. MMMM yyyy v HH:mm'}}"
         },
         "COMPANY": {
           "Title": "Firma",

@@ -154,6 +154,14 @@
 * Sort styling
 */
 
+.dataTable div.dropdown.rounded-dropdown {
+  display: block;
+
+  button {
+    width: 100%;
+  }
+}
+
 table.dataTable thead th {
   position: relative;
   background-image: none !important; /* Remove the DataTables bootstrap integration styling */

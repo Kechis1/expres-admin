@@ -8,7 +8,7 @@
  * Controller of the minovateApp
  */
 app
-  .controller('MainCtrl', function ($scope, $http, $translate) {
+  .controller('MainCtrl', function ($scope, $http, $translate, tmhDynamicLocale) {
 
     $scope.main = {
       title: 'Komínexpres',
@@ -36,6 +36,8 @@ app
     $scope.changeLanguage = function (langKey) {
       $translate.use(langKey);
       $scope.currentLanguage = langKey;
+      tmhDynamicLocale.set(langKey);
     };
     $scope.currentLanguage = $translate.proposedLanguage() || $translate.use();
+    tmhDynamicLocale.set($scope.currentLanguage);
   });

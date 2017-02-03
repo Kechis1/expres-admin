@@ -4202,7 +4202,8 @@ div.dropdown.rounded-dropdown {
         font-size: 14px; }
       div.dropdown.rounded-dropdown .dropdown-menu > li > a:hover {
         background-color: transparent;
-        color: #16a085; }
+        color: #16a085;
+        text-decoration: underline; }
   div.dropdown.rounded-dropdown.open button {
     border-radius: 20px 20px 0 0;
     border-bottom: 1px solid transparent;
@@ -8847,6 +8848,11 @@ ul.abn-tree li.abn-tree-row.active a {
 /*
 * Sort styling
 */
+.dataTable div.dropdown.rounded-dropdown {
+  display: block; }
+  .dataTable div.dropdown.rounded-dropdown button {
+    width: 100%; }
+
 table.dataTable thead th {
   position: relative;
   background-image: none !important;

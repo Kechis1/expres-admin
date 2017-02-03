@@ -38,7 +38,8 @@
       },
       "ADD": "New Order",
       "DATE": {
-        "Title": "Date"
+        "Title": "Date",
+        "Format": "{{date|date:'MMM d, yyyy h:mm a'}}"
       },
       "COMPANY": {
         "Title": "Enterprise",
@@ -59,11 +60,14 @@
       },
       "STATUS": {
         "Title": "Status",
-        "0": "Canceled",
-        "1": "Received",
-        "2": "Dispatched",
-        "3": "Closed",
-        "4": "Pending"
+        "children": [
+          "Canceled",
+          "Received",
+          "Dispatched",
+          "Closed",
+          "Pending"
+        ],
+        "children_count": "5"
       }
     }
   },
