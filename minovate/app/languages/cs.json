@@ -39,6 +39,7 @@
         }
       },
       "Orders": {
+        "TITLE": "Souhrn objednávek",
         "Header": {
           "BOLD": "Objednávky",
           "THIN": "Seznam"
@@ -46,7 +47,7 @@
         "ADD": "Vytvořit objednávku",
         "DATE": {
           "Title": "Datum",
-          "Format": "{{date|date:'d. MMMM yyyy v HH:mm'}}"
+          "Format": "{{date|date:'d. MMM yyyy v HH:mm'}}"
         },
         "COMPANY": {
           "Title": "Firma",

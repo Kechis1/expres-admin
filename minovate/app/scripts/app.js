@@ -439,7 +439,6 @@ var app = angular
     //shop/orders
     .state('app.shop.orders', {
       url: '/orders',
-      controller: 'OrdersCtrl',
       templateUrl: 'views/tmpl/shop/orders.html',
       resolve: {
         plugins: ['$ocLazyLoad', function($ocLazyLoad) {

@@ -6,7 +6,7 @@
   <!-- page header -->
   <div class="pageheader">
 
-    <h2>{{page.title}}</h2>
+    <h2>{{'Pages.Orders.TITLE' | translate}}</h2>
 
     <div class="page-bar">
 
@@ -15,7 +15,7 @@
           <a ui-sref="app.dashboard"><i class="fa fa-home"></i> {{main.title}}</a>
         </li>
         <li>
-          <a ui-sref="app.shop.orders">{{page.title}}</a>
+          <a ui-sref="app.shop.orders">{{'Pages.Orders.TITLE' | translate}}</a>
         </li>
       </ul>
 
@@ -106,7 +106,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-class="{'danger' : order.status == '1'}" ng-repeat="order in showCase.orders">
+                  <tr ng-class="{'danger' : order.new == '1'}" ng-repeat="order in showCase.orders.fields">
                     <td><label class="checkbox checkbox-custom checkbox-custom-sm m-0"><input type="checkbox" ng-model="order.selected"><i></i></label></td>
                     <td>{{ order.id }}</td>
                     <td>{{ 'Pages.Orders.DATE.Format' | translate:{date:order.date} }}</td>

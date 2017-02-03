@@ -1,5 +1,15 @@
 'use strict';
 
+app
+  .factory('OrdersList', function($resource) {
+    return $resource('http://localhost:80/v1/app/orders', null, {
+      query: {
+        method: 'GET',
+        isArray: false
+      }
+    });
+  });
+
 /**
  * @ngdoc function
  * @name minovateApp.controller:ShopOrdersCtrl
@@ -8,14 +18,7 @@
  * Controller of the minovateApp
  */
 app
-  .controller('OrdersCtrl', function ($scope, $filter) {
-    var $translate = $filter('translate');
-    $scope.page = {
-      title: $translate('Menu-Headings.ORDERS')
-    };
-  })
-
-  .controller('OrdersTableCtrl', function ($scope, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $resource, $filter) {
+  .controller('OrdersTableCtrl', function ($scope, OrdersList, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $resource, $filter) {
     var $translation = $filter('translate');
     var sLengthMenu = $translation('Labels.VIEW') + ' _MENU_ ' + $translation('Labels.RECORDS');
     var sInfo = $translation('Labels.FOUND') + ' _TOTAL_ ' + $translation('Labels.RECORDS');
@@ -53,9 +56,7 @@ app
       });
     };
 
-    $resource('http://localhost:80/v1/app/orders').query().$promise.then(function (orders) {
-      vm.orders = orders;
-    });
+    vm.orders = OrdersList.get();
 
     var STATUS_COUNT = 0;
     $scope.status_keys = [];

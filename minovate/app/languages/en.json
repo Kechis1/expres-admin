@@ -32,6 +32,7 @@
       }
     },
     "Orders": {
+      "TITLE": "Orders summary",
       "Header": {
         "BOLD": "Orders",
         "THIN": "List"

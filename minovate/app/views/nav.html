@@ -10,7 +10,7 @@
           <a ui-sref="app.dashboard"><fa name="dashboard"></fa> <span>{{ 'Menu.DASHBOARD' | translate }}</span></a>
         </li>
         <li ui-sref-active="active" ng-class="{'open':$state.includes('app.forms')}">
-          <a ui-sref="app.shop.orders"><fa name="shopping-cart"></fa> <span>{{ 'Menu.ORDERS' | translate }}</span> <span class="badge bg-lightred">6</span></a>
+          <a ui-sref="app.shop.orders"><fa name="shopping-cart"></fa> <span>{{ 'Menu.ORDERS' | translate }}</span> <span ng-if="info.orders.newbies>0" class="badge bg-lightred">{{ info.orders.newbies }}</span></a>
         </li>
         <li ui-sref-active="active" ng-class="{'open':$state.includes('app.forms')}">
           <a ui-sref="app.forms"><fa name="truck"></fa> <span>{{ 'Menu.SHIPPINGS.Name' | translate }}</span></a>
