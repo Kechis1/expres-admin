@@ -8,68 +8,61 @@ app
         isArray: false
       }
     });
-  });
+  })
 
-/**
- * @ngdoc function
- * @name minovateApp.controller:ShopOrdersCtrl
- * @description
- * # ShopOrdersCtrl
- * Controller of the minovateApp
- */
-app
-  .controller('OrdersTableCtrl', function ($scope, OrdersList, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $resource, $filter) {
-    var $translation = $filter('translate');
-    var sLengthMenu = $translation('Labels.VIEW') + ' _MENU_ ' + $translation('Labels.RECORDS');
-    var sInfo = $translation('Labels.FOUND') + ' _TOTAL_ ' + $translation('Labels.RECORDS');
-    var vm = this;
-    vm.orders = [];
-    vm.dtOptions = DTOptionsBuilder.newOptions()
-      .withBootstrap()
-      .withOption('order', [[1, 'desc']])
-      .withDOM('<"row"<"col-md-8 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"pull-right"f>>>t<"row"<"col-md-4 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"inline-controls text-center"i>><"col-md-4 col-sm-12"p>>')
-      .withLanguage({
-        "sLengthMenu": sLengthMenu,
-        "sInfo": sInfo,
-        "oPaginate": {
-          "sPage": $translation('Labels.PAGE'),
-          "sPageOf": $translation('Labels.OF')
-        }
-      })
-      .withPaginationType('input')
-      .withColumnFilter();
+  .controller('OrdersTableCtrl', ['$scope', '$filter', 'OrdersList', 'ngTableParams', 'toastr', '$translate',
+    function($scope, $filter, OrdersList, ngTableParams, toastr, $translate) {
 
+      //////////////////////////////////////////
+      //************ Table Settings **********//
+      //////////////////////////////////////////
 
-    vm.dtColumnDefs = [
-      DTColumnDefBuilder.newColumnDef(0).notSortable(),
-      DTColumnDefBuilder.newColumnDef(9).notSortable()
-    ];
+      // Initialize table
+      OrdersList.get().$promise.then(function(orders) {
+        $scope.orders = orders.fields;
 
-    vm.selectedAll = false;
+        $scope.tableParams = new ngTableParams({
+          page: 1,            // show first page
+          count: 10,          // count per page
+          sorting: {
+            id: 'desc'     // initial sorting
+          }
+        }, {
+          total: $scope.orders.length, // length of data
+          getData: function ($defer, params) {
+            // use build-in angular filter
+            var orderedData = params.sorting() ?
+              $filter('orderBy')($scope.orders, params.orderBy()) :
+              $scope.orders;
 
-    vm.selectAll = function () {
+            orderedData = $filter('filter')(orderedData, $scope.searchText);
+            params.total(orderedData.length);
 
-      $scope.selectedAll = !$scope.selectedAll;
+            $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
+          }
+        });
+        ////////////////////////////////////////// *Initialize table
 
-      angular.forEach(vm.orders.fields, function (order) {
-        order.selected = $scope.selectedAll;
+        var STATUS_COUNT = 0;
+        $scope.status_keys = [];
+
+        $translate('Pages.Orders.STATUS.children_count').then(function (count) {
+          STATUS_COUNT = count;
+          for (var i = 0; i < STATUS_COUNT; i++) {
+             $scope.status_keys.push(i);
+           }
+        });
       });
-    };
 
-    vm.orders = OrdersList.get();
+      $scope.selectedAll = false;
 
-    var STATUS_COUNT = 0;
-    $scope.status_keys = [];
+      $scope.selectAll = function () {
 
-    $translate('Pages.Orders.STATUS.children_count').then(function (count) {
-      STATUS_COUNT = count;
-      for (var i = 0; i < STATUS_COUNT; i++) {
-        $scope.status_keys.push(i);
-      }
-    });
+        $scope.selectedAll = !$scope.selectedAll;
 
-    vm.delete = function (order) {
+        angular.forEach($scope.orders, function (order) {
+          order.selected = $scope.selectedAll;
+        });
+      };
 
-    };
-
-  });
+}]);

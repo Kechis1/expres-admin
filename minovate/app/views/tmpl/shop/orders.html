@@ -84,14 +84,14 @@
           <!-- /tile header -->
 
           <!-- tile body -->
-          <div class="tile-body" ng-controller="OrdersTableCtrl as showCase">
+          <div class="tile-body" ng-controller="OrdersTableCtrl">
             <div class="table-responsive-wide">
-              <table datatable="ng" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="table table-striped table-hover table-custom" style="min-width: 1000px;">
+              <table ng-table="tableParams" class="table table-striped table-hover table-custom" style="min-width: 1000px;">
                 <thead>
                   <tr>
                     <th style="width:40px;">
                       <label class="checkbox checkbox-custom checkbox-custom-sm m-0">
-                        <input type="checkbox" ng-model="showCase.selectedAll" ng-click="showCase.selectAll()"><i></i>
+                        <input type="checkbox" ng-model="selectedAll" ng-click="selectAll()"><i></i>
                       </label>
                     </th>
                     <th style="width:80px;">ID</th>
@@ -106,7 +106,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-class="{'danger' : order.new == '1'}" ng-repeat="order in showCase.orders.fields">
+                  <tr ng-class="{'danger' : order.new == '1'}" ng-repeat="order in $data">
                     <td><label class="checkbox checkbox-custom checkbox-custom-sm m-0"><input type="checkbox" ng-model="order.selected"><i></i></label></td>
                     <td>{{ order.id }}</td>
                     <td>{{ 'Pages.Orders.DATE.Format' | translate:{date:order.date} }}</td>
@@ -132,7 +132,7 @@
                     <td>{{ order.total | number:fractionSize }} Kč</td>
                     <td>
                       <a ui-sref="app.shop.single-order/{{order.id}}" class="btn btn-xs btn-default"><i class="fa fa-search"></i> {{ 'Buttons.VIEW' | translate }}</a>
-                      <a ng-click="showCase.delete(order.id)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i> {{ 'Buttons.DELETE' | translate }}</a>
+                      <a ng-click="delete(order.id)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i> {{ 'Buttons.DELETE' | translate }}</a>
                     </td>
                   </tr>
                 </tbody>
