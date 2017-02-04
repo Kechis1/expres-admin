@@ -14,12 +14,12 @@
     "Dashboard": {
       "Cards": {
         "USERS": {
-          "Title": "New Users",
+          "Title": "Users",
           "Manage": "Manage Users",
           "Add": "Create a User"
         },
         "ORDERS": {
-          "Title": "New Orders",
+          "Title": "Orders",
           "Manage": "Manage Orders",
           "Add": "Place an Order"
         },

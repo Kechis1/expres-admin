@@ -21,12 +21,12 @@
       "Dashboard": {
         "Cards": {
           "USERS": {
-            "Title": "Noví uživatelé",
+            "Title": "Uživatelé",
             "Manage": "Spravovat Uživatelé",
             "Add": "Vytvořit uživatele"
           },
           "ORDERS": {
-            "Title": "Nové objednávky",
+            "Title": "Objednávky",
             "Manage": "Spravovat objednávky",
             "Add": "Vytvořit objednávku"
           },

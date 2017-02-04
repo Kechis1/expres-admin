@@ -51,7 +51,7 @@ app
 
       $scope.selectedAll = !$scope.selectedAll;
 
-      angular.forEach(vm.orders, function (order) {
+      angular.forEach(vm.orders.fields, function (order) {
         order.selected = $scope.selectedAll;
       });
     };
