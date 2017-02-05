@@ -8848,9 +8848,9 @@ ul.abn-tree li.abn-tree-row.active a {
 /*
 * Sort styling
 */
-.dataTable div.dropdown.rounded-dropdown {
+table.ng-table div.dropdown.rounded-dropdown {
   display: block; }
-  .dataTable div.dropdown.rounded-dropdown button {
+  table.ng-table div.dropdown.rounded-dropdown button {
     width: 100%; }
 
 table.dataTable thead th {

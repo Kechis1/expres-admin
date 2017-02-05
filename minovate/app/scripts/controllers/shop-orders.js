@@ -19,7 +19,7 @@ app
 
       // Initialize table
       OrdersList.get().$promise.then(function(orders) {
-        $scope.orders = orders.fields;
+        var data = orders.fields;
 
         $scope.tableParams = new ngTableParams({
           page: 1,            // show first page
@@ -28,12 +28,12 @@ app
             id: 'desc'     // initial sorting
           }
         }, {
-          total: $scope.orders.length, // length of data
+          total: data.length, // length of data
           getData: function ($defer, params) {
             // use build-in angular filter
             var orderedData = params.sorting() ?
-              $filter('orderBy')($scope.orders, params.orderBy()) :
-              $scope.orders;
+              $filter('orderBy')(data, params.orderBy()) :
+              data;
 
             orderedData = $filter('filter')(orderedData, $scope.searchText);
             params.total(orderedData.length);
@@ -60,7 +60,7 @@ app
 
         $scope.selectedAll = !$scope.selectedAll;
 
-        angular.forEach($scope.orders, function (order) {
+        angular.forEach($scope.tableParams.data, function (order) {
           order.selected = $scope.selectedAll;
         });
       };
