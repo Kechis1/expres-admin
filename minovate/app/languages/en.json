@@ -1,5 +1,6 @@
 {
   "Labels": {
+    "TOTAL": "from total",
     "EMPTYTABLE": "No data available in table",
     "VIEW": "View",
     "RECORDS": {

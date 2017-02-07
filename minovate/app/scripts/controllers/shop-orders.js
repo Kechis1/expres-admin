@@ -35,26 +35,26 @@ app
             lrecords = $translation('Labels.RECORDS.many');
             break;
         }
-        vm.dtOptions = DTOptionsBuilder.newOptions()
-          .withBootstrap()
-          .withOption('order', [[1, 'desc']])
-          .withDOM('<"row"<"col-md-4 col-sm-12"<"inline-controls">><"col-md-8 col-sm-12"<"pull-right"f>>>t<"row"<"col-md-4 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"inline-controls text-center"i>><"col-md-4 col-sm-12"<"pull-right"p>>>')
-          .withLanguage({
-            "sLengthMenu": lview + ' _MENU_ ' + $translation('Labels.RECORDS.many'),
-            "sInfo": lfound + ' _TOTAL_ ' + lrecords,
-            "sInfoEmpty": lfound + ' _TOTAL_ ' + lrecords,
-            "emptyTable": $translation('Labels.EMPTYTABLE'),
-            "oPaginate": {
-              "sPage": $translation('Labels.PAGE'),
-              "sPageOf": $translation('Labels.OF')
-            },
-            "sSearch": $translation('Labels.SEARCH') + ':'
-          })
-          .withPaginationType('input')
-          .withColumnFilter();
       });
 
-
+      vm.dtOptions = DTOptionsBuilder.newOptions()
+        .withBootstrap()
+        .withOption('order', [[1, 'desc']])
+        .withDOM('<"row"<"col-md-4 col-sm-12"<"inline-controls"<"table-action-button">>><"col-md-8 col-sm-12"<"pull-right"f>>>t<"row"<"col-md-4 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"inline-controls text-center"i>><"col-md-4 col-sm-12"<"pull-right"p>>>')
+        .withLanguage({
+          "sLengthMenu": lview + ' _MENU_ ' + $translation('Labels.RECORDS.many'),
+          "sInfo": lfound + ' _TOTAL_ ' + lrecords,
+          "sInfoEmpty": lfound + ' _TOTAL_ ' + lrecords,
+          "emptyTable": $translation('Labels.EMPTYTABLE'),
+          "oPaginate": {
+            "sPage": $translation('Labels.PAGE'),
+            "sPageOf": $translation('Labels.OF')
+          },
+          "infoFiltered": "(" + $translation('Labels.TOTAL') + " _MAX_ " + lrecords + ")",
+          "sSearch": $translation('Labels.SEARCH') + ':'
+        })
+        .withPaginationType('input')
+        .withColumnFilter();
 
       vm.dtColumnDefs = [
         DTColumnDefBuilder.newColumnDef(0).notSortable(),
