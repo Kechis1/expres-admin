@@ -1,10 +1,20 @@
 {
   "Labels": {
+    "EMPTYTABLE": "No data available in table",
     "VIEW": "View",
-    "RECORDS": "records",
-    "FOUND": "Found",
+    "RECORDS": {
+      "one": "records",
+      "chico": "records",
+      "many": "records"
+    },
+    "FOUND": {
+      "one": "Found",
+      "chico": "Found",
+      "many": "Found"
+    },
     "PAGE": "Page",
-    "OF": "of"
+    "OF": "of",
+    "SEARCH": "Search"
   },
   "Buttons": {
     "VIEW": "View",

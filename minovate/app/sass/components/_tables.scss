@@ -154,7 +154,7 @@
 * Sort styling
 */
 
-table.ng-table div.dropdown.rounded-dropdown {
+table div.dropdown.rounded-dropdown {
   display: block;
 
   button {
@@ -389,6 +389,14 @@ div.dataTables_paginate a.last:after {
 
 table.dataTable.no-footer {
   border-bottom-color: $bright-default;
+}
+
+.dataTables_wrapper {
+  .dataTables_filter {
+    input {
+      margin-left: .5em;
+    }
+  }
 }
 
 .table-custom {

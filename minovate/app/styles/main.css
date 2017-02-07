@@ -8848,9 +8848,9 @@ ul.abn-tree li.abn-tree-row.active a {
 /*
 * Sort styling
 */
-table.ng-table div.dropdown.rounded-dropdown {
+table div.dropdown.rounded-dropdown {
   display: block; }
-  table.ng-table div.dropdown.rounded-dropdown button {
+  table div.dropdown.rounded-dropdown button {
     width: 100%; }
 
 table.dataTable thead th {
@@ -9016,6 +9016,9 @@ div.dataTables_paginate a.last:after {
 
 table.dataTable.no-footer {
   border-bottom-color: #dbe0e2; }
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-left: .5em; }
 
 .table-custom .dataTables_wrapper .dataTables_filter input {
   background: none;

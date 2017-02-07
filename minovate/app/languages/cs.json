@@ -1,10 +1,20 @@
 {
   "Labels": {
+    "EMPTYTABLE": "Nebyly nalezeny žádné data",
     "VIEW": "Zobraz",
-    "RECORDS": "záznamů",
-    "FOUND": "Nalezeno",
+    "RECORDS": {
+      "one": "záznam",
+      "chico": "záznamy",
+      "many": "záznamů"
+    },
+    "FOUND": {
+      "one": "Nalezen",
+      "chico": "Nalezeny",
+      "many": "Nalezeno"
+    },
     "PAGE": "Stránka",
-    "OF": "z"
+    "OF": "z",
+    "SEARCH": "Vyhledat"
   },
   "Buttons": {
     "VIEW": "Zobrazit",
