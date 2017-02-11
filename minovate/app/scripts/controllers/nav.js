@@ -1,15 +1,5 @@
 'use strict';
 
-app
-  .factory('NavInfo', function($resource) {
-    return $resource('http://localhost:80/v1/app/nav', null, {
-      query: {
-        method: 'GET',
-        isArray: false
-      }
-    });
-  });
-
 /**
  * @ngdoc function
  * @name minovateApp.controller:NavCtrl

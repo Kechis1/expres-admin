@@ -1,17 +1,15 @@
 'use strict';
 
+/**
+ * @ngdoc function
+ * @name minovateApp.controller:OrdersTableCtrl
+ * @description
+ * # OrdersTableCtrl
+ * Controller of the minovateApp
+ */
 app
-  .factory('OrdersList', function($resource) {
-    return $resource('http://localhost:80/v1/app/orders', null, {
-      query: {
-        method: 'GET',
-        isArray: false
-      }
-    });
-  })
-
-  .controller('OrdersTableCtrl', ['$scope', 'OrdersList', '$translate', 'DTOptionsBuilder', 'DTColumnDefBuilder', 'DTColumnBuilder', '$filter',
-    function($scope, OrdersList, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $filter) {
+  .controller('OrdersTableCtrl', ['$scope', '$timeout', 'OrdersList', '$translate', 'DTOptionsBuilder', 'DTColumnDefBuilder', 'DTColumnBuilder', '$filter',
+    function($scope,$timeout, OrdersList, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $filter) {
       var $translation = $filter('translate');
       var vm = this;
       var lfound = $translation('Labels.FOUND.many');
@@ -36,7 +34,17 @@ app
             break;
         }
       });
-
+      $scope.button = {
+        title: 'Možnosti',
+        options: [
+          "Storno",
+          "Přijatá",
+          "Odeslaná",
+          "Vyřízená",
+          "Vyřizuje se"
+        ],
+        separate: 'Odstranit'
+      };
       vm.dtOptions = DTOptionsBuilder.newOptions()
         .withBootstrap()
         .withOption('order', [[1, 'desc']])

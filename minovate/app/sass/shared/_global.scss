@@ -667,6 +667,10 @@ body {
   @include animation-duration(.5s);
 }
 
+.absolute {
+  position: absolute;
+}
+
 .block {
   display: block;
 }

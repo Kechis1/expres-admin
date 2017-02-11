@@ -86,8 +86,8 @@
           <!-- tile body -->
           <div class="tile-body" ng-controller="OrdersTableCtrl as showCase">
             <div class="table-responsive-wide">
-              <wrap-datatable>
-                <table datatable="ng" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="table table-striped table-hover table-custom" style="min-width: 1000px;">
+              <div class="absolute btn-group mb-20"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> {{ button.title }} <span class="caret"></span> </button> <ul class="dropdown-menu" role="menu"> <li ng-repeat="option in button.options"><a href="#">{{ option }}</a></li> <li class="divider"></li> <li><a href="#">{{ button.separate }}</a></li> </ul> </div>
+              <table datatable="ng" dt-options="showCase.dtOptions" dt-column-defs="showCase.dtColumnDefs" class="table table-striped table-hover table-custom" style="min-width: 1000px;">
                   <thead>
                     <tr>
                       <th style="width:40px;">
@@ -146,7 +146,7 @@
                     </tr>
                   </tfoot>
                 </table>
-              </wrap-datatable>
+
             </div>
           </div>
           <!-- /tile body -->
