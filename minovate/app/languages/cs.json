@@ -51,6 +51,17 @@
       },
       "Orders": {
         "TITLE": "Souhrn objednávek",
+        "BUTTON": {
+          "Title": "Možnosti",
+          "Options": [
+            "Storno",
+            "Přijatá",
+            "Odeslaná",
+            "Vyřízená",
+            "Vyřizuje se"
+          ],
+          "Separate": "Odstranit"
+        },
         "Header": {
           "BOLD": "Objednávky",
           "THIN": "Seznam"

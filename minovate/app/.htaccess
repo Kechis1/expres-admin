@@ -1,3 +1,4 @@
+RewriteEngine on
 # Apache Configuration File
 
 # (!) Using `.htaccess` files slows down Apache, therefore, if you have access
@@ -15,6 +16,9 @@
 # Enable cross-origin AJAX requests.
 # http://code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
 # http://enable-cors.org/
+
+Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding"
+Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
 
 # <IfModule mod_headers.c>
 #    Header set Access-Control-Allow-Origin "*"

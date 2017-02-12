@@ -44,6 +44,17 @@
     },
     "Orders": {
       "TITLE": "Orders summary",
+      "BUTTON": {
+        "Title": "Options",
+        "Options": [
+          "Canceled",
+          "Received",
+          "Dispatched",
+          "Closed",
+          "Pending"
+        ],
+        "Separate": "Odstranit"
+      },
       "Header": {
         "BOLD": "Orders",
         "THIN": "List"

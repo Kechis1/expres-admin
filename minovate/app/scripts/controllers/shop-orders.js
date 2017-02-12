@@ -8,8 +8,8 @@
  * Controller of the minovateApp
  */
 app
-  .controller('OrdersTableCtrl', ['$scope', '$timeout', 'OrdersList', '$translate', 'DTOptionsBuilder', 'DTColumnDefBuilder', 'DTColumnBuilder', '$filter',
-    function($scope,$timeout, OrdersList, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $filter) {
+  .controller('OrdersTableCtrl', ['$scope', 'toastr', 'OrdersFactr', '$translate', 'DTOptionsBuilder', 'DTColumnDefBuilder', 'DTColumnBuilder', '$filter',
+    function($scope, toastr, OrdersFactr, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $filter) {
       var $translation = $filter('translate');
       var vm = this;
       var lfound = $translation('Labels.FOUND.many');
@@ -17,7 +17,7 @@ app
       var lrecords = $translation('Labels.RECORDS.many');
       vm.orders = [];
       // Initialize table
-      OrdersList.get().$promise.then(function(orders) {
+      OrdersFactr.get().$promise.then(function(orders) {
         vm.orders = orders.fields;
         switch (vm.orders.length) {
           case 1:
@@ -34,21 +34,10 @@ app
             break;
         }
       });
-      $scope.button = {
-        title: 'Možnosti',
-        options: [
-          "Storno",
-          "Přijatá",
-          "Odeslaná",
-          "Vyřízená",
-          "Vyřizuje se"
-        ],
-        separate: 'Odstranit'
-      };
       vm.dtOptions = DTOptionsBuilder.newOptions()
         .withBootstrap()
         .withOption('order', [[1, 'desc']])
-        .withDOM('<"row"<"col-md-4 col-sm-12"<"inline-controls"<"table-action-button">>><"col-md-8 col-sm-12"<"pull-right"f>>>t<"row"<"col-md-4 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"inline-controls text-center"i>><"col-md-4 col-sm-12"<"pull-right"p>>>')
+        .withDOM('<"row"<"col-md-12 col-sm-12"<"pull-right"f>>>t<"row"<"col-md-4 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"inline-controls text-center"i>><"col-md-4 col-sm-12"<"pull-right"p>>>')
         .withLanguage({
           "sLengthMenu": lview + ' _MENU_ ' + $translation('Labels.RECORDS.many'),
           "sInfo": lfound + ' _TOTAL_ ' + lrecords,
@@ -87,7 +76,6 @@ app
       vm.selectedAll = false;
 
       vm.selectAll = function () {
-
         $scope.selectedAll = !$scope.selectedAll;
 
         angular.forEach(vm.orders, function (order) {
@@ -95,4 +83,23 @@ app
         });
       };
 
+      $scope.statusUpdate = function (status) {
+        var orders = [];
+        angular.forEach(vm.orders, function (order) {
+          if(order.selected === true) {
+            orders.push({
+              id: order.id
+            });
+          }
+        });
+        var data = {status: status, orders: orders};
+        OrdersFactr.put({}, data).$promise.then(function() {
+          console.log('sdf');
+          console.log(data);
+          toastr.success('We have sent an email with new password', 'Password reset!');
+          console.log("Password reset email sent successfully");
+        }, function(error) {
+          console.log("Error sending password reset email:", error);
+        });
+      };
 }]);

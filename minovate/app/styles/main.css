@@ -4390,6 +4390,13 @@ div.dropdown.rounded-dropdown {
     left: 0; }
 
 /* General button style (reset) */
+.btn-action {
+  position: absolute;
+  z-index: 100000; }
+  @media only screen and (max-width: 480px) {
+    .btn-action {
+      position: static; } }
+
 .btn-ef {
   border: none;
   display: inline-block;
@@ -11176,9 +11183,6 @@ body {
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s; }
-
-.absolute {
-  position: absolute; }
 
 .block {
   display: block; }

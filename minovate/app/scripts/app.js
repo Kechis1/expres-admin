@@ -96,7 +96,7 @@ var app = angular
         prefix: 'languages/',
         suffix: '.json'
       }).useLocalStorage()
-      .preferredLanguage('cz')
+      .preferredLanguage('cs')
       .useSanitizeValueStrategy(null);
   }])
 

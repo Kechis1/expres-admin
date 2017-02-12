@@ -3,7 +3,10 @@
 app
   .factory('DashboardInfo', function($resource) {
     return $resource('https://www.kominexpres.cz/v1/app/dashboard/:from/:to', null, {
-      query: {
+      get: {
+        headers: {
+          'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUm2='
+        },
         params: {
           from: '@from',
           to: '@to'
@@ -16,17 +19,31 @@ app
 
   .factory('NavInfo', function($resource) {
     return $resource('https://www.kominexpres.cz/v1/app/nav', null, {
-      query: {
+      get: {
+        headers: {
+          'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUmQ='
+        },
         method: 'GET',
         isArray: false
       }
     });
   })
 
-  .factory('OrdersList', function($resource) {
+  .factory('OrdersFactr', function($resource) {
     return $resource('https://www.kominexpres.cz/v1/app/orders', null, {
-      query: {
+      get: {
         method: 'GET',
+        headers: {
+          'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUmQ='
+        },
+        isArray: false
+      },
+      put: {
+        headers: {
+          'Content-Type':'application/json; charset=UTF-8',
+          'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUmQ='
+        },
+        method: 'PUT',
         isArray: false
       }
     });
