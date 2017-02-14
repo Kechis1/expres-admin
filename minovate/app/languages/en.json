@@ -57,9 +57,9 @@
       },
       "Header": {
         "BOLD": "Orders",
-        "THIN": "List"
+        "THIN": "List",
+        "HIDDEN": "Show removed"
       },
-      "ADD": "New Order",
       "DATE": {
         "Title": "Date",
         "Format": "{{date|date:'MMM d, yyyy h:mm a'}}"

@@ -83,23 +83,40 @@ app
         });
       };
 
-      $scope.statusUpdate = function (status) {
+      function getSelectedOrders() {
         var orders = [];
         angular.forEach(vm.orders, function (order) {
-          if(order.selected === true) {
+          if (order.selected === true) {
             orders.push({
               id: order.id
             });
           }
         });
+        return orders;
+      }
+
+      $scope.statusUpdate = function (status) {
+        var orders = getSelectedOrders();
         var data = {status: status, orders: orders};
         OrdersFactr.put({}, data).$promise.then(function() {
-          console.log('sdf');
-          console.log(data);
-          toastr.success('We have sent an email with new password', 'Password reset!');
-          console.log("Password reset email sent successfully");
+          toastr.success('Cool', 'It worked!');
         }, function(error) {
-          console.log("Error sending password reset email:", error);
+          toastr.error(error.data.message, 'Chyba!');
+        });
+      };
+
+      $scope.delete = function (id) {
+        var orders = getSelectedOrders();
+        if (typeof(id) !== 'undefined') {
+          orders.push({
+            id: id
+          });
+        }
+        var data = {status: null, orders: orders};
+        OrdersFactr.delete({}, data).$promise.then(function() {
+          toastr.success('Cool', 'It worked!');
+        }, function(error) {
+          toastr.error(error.data.message, 'Chyba!');
         });
       };
 }]);

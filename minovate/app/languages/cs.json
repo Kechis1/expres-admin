@@ -64,9 +64,9 @@
         },
         "Header": {
           "BOLD": "Objednávky",
-          "THIN": "Seznam"
+          "THIN": "Seznam",
+          "HIDDEN": "Zobrazit odstraněné"
         },
-        "ADD": "Vytvořit objednávku",
         "DATE": {
           "Title": "Datum",
           "Format": "{{date|date:'d. MMM yyyy v HH:mm'}}"

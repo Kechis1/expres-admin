@@ -45,6 +45,14 @@ app
         },
         method: 'PUT',
         isArray: false
+      },
+      delete: {
+        headers: {
+          'Content-Type':'application/json; charset=UTF-8',
+          'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUmQ='
+        },
+        method: 'DELETE',
+        isArray: false
       }
     });
   });
