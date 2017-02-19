@@ -8,59 +8,16 @@
  * Controller of the minovateApp
  */
 app
-  .controller('OrdersTableCtrl', ['$scope', 'toastr', 'OrdersFactr', '$translate', 'DTOptionsBuilder', 'DTColumnDefBuilder', 'DTColumnBuilder', '$filter',
-    function($scope, toastr, OrdersFactr, $translate, DTOptionsBuilder, DTColumnDefBuilder, DTColumnBuilder, $filter) {
+  .controller('OrdersTableCtrl', ['$scope', 'toastr', 'OrdersHiddenFactr', 'OrdersFactr', '$translate', 'ngTableParams', '$filter',
+    function($scope, toastr, OrdersHiddenFactr, OrdersFactr, $translate, ngTableParams, $filter) {
+      //////////////////////////////////////////
+      //************ Table Settings **********//
+      //////////////////////////////////////////
+      var STATUS_COUNT = 0;
       var $translation = $filter('translate');
-      var vm = this;
       var lfound = $translation('Labels.FOUND.many');
       var lview = $translation('Labels.VIEW');
       var lrecords = $translation('Labels.RECORDS.many');
-      vm.orders = [];
-      // Initialize table
-      OrdersFactr.get().$promise.then(function(orders) {
-        vm.orders = orders.fields;
-        switch (vm.orders.length) {
-          case 1:
-            lfound = $translation('Labels.FOUND.one');
-            lrecords = $translation('Labels.RECORDS.one');
-            break;
-          case 2:case 3:case 4:
-            lfound = $translation('Labels.FOUND.chico');
-            lrecords = $translation('Labels.RECORDS.chico');
-            break;
-          default:
-            lfound = $translation('Labels.FOUND.many');
-            lrecords = $translation('Labels.RECORDS.many');
-            break;
-        }
-      });
-      vm.dtOptions = DTOptionsBuilder.newOptions()
-        .withBootstrap()
-        .withOption('order', [[1, 'desc']])
-        .withDOM('<"row"<"col-md-12 col-sm-12"<"pull-right"f>>>t<"row"<"col-md-4 col-sm-12"<"inline-controls"l>><"col-md-4 col-sm-12"<"inline-controls text-center"i>><"col-md-4 col-sm-12"<"pull-right"p>>>')
-        .withLanguage({
-          "sLengthMenu": lview + ' _MENU_ ' + $translation('Labels.RECORDS.many'),
-          "sInfo": lfound + ' _TOTAL_ ' + lrecords,
-          "sInfoEmpty": lfound + ' _TOTAL_ ' + lrecords,
-          "emptyTable": $translation('Labels.EMPTYTABLE'),
-          "oPaginate": {
-            "sPage": $translation('Labels.PAGE'),
-            "sPageOf": $translation('Labels.OF')
-          },
-          "infoFiltered": "(" + $translation('Labels.TOTAL') + " _MAX_ " + lrecords + ")",
-          "sSearch": $translation('Labels.SEARCH') + ':'
-        })
-        .withPaginationType('input')
-        .withColumnFilter();
-
-      vm.dtColumnDefs = [
-        DTColumnDefBuilder.newColumnDef(0).notSortable(),
-        DTColumnDefBuilder.newColumnDef(9).notSortable()
-      ];
-
-      ////////////////////////////////////////// *Initialize table
-
-      var STATUS_COUNT = 0;
       $scope.status_keys = [];
 
       $translate('Pages.Orders.STATUS.children_count').then(function (count) {
@@ -69,23 +26,23 @@ app
           $scope.status_keys.push(i);
         }
       });
-      //////////////////////////////////////////
-      //************ Table Settings **********//
-      //////////////////////////////////////////
 
-      vm.selectedAll = false;
+      $scope.selectedAll = false;
 
-      vm.selectAll = function () {
+      $scope.selectAll = function () {
         $scope.selectedAll = !$scope.selectedAll;
-
-        angular.forEach(vm.orders, function (order) {
+        angular.forEach($scope.orders, function (order) {
           order.selected = $scope.selectedAll;
         });
       };
 
+      /**
+       * @desc Gets selected checkboxes
+       * @returns {Array}
+       */
       function getSelectedOrders() {
         var orders = [];
-        angular.forEach(vm.orders, function (order) {
+        angular.forEach($scope.orders, function (order) {
           if (order.selected === true) {
             orders.push({
               id: order.id
@@ -95,19 +52,27 @@ app
         return orders;
       }
 
-      $scope.statusUpdate = function (status) {
-        var orders = getSelectedOrders();
-        var data = {status: status, orders: orders};
-        OrdersFactr.put({}, data).$promise.then(function() {
-          toastr.success('Cool', 'It worked!');
-        }, function(error) {
-          toastr.error(error.data.message, 'Chyba!');
+      $scope.getOrders = function () {
+        OrdersFactr.get().$promise.then(function(orders) {
+          $scope.orders = orders.fields;
         });
       };
 
-      $scope.delete = function (id) {
+      $scope.getHiddenOrders = function() {
+        console.log('sdg');
+        OrdersHiddenFactr.get().$promise.then(function (orders) {
+          $scope.orders = orders.fields;
+        });
+      };
+
+      /**
+       * @desc DELETE CRUD operation
+       * @param id
+       */
+      $scope.deleteItem = function(id) {
         var orders = getSelectedOrders();
         if (typeof(id) !== 'undefined') {
+          orders = [];
           orders.push({
             id: id
           });
@@ -115,8 +80,87 @@ app
         var data = {status: null, orders: orders};
         OrdersFactr.delete({}, data).$promise.then(function() {
           toastr.success('Cool', 'It worked!');
+          OrdersFactr.get().$promise.then(function(orders) {
+            $scope.orders = orders.fields;
+          });
         }, function(error) {
           toastr.error(error.data.message, 'Chyba!');
         });
       };
+
+      /**
+       * @desc PUT CRUD operation
+       * @param status
+       */
+      $scope.statusUpdate = function(status) {
+        var orders = getSelectedOrders();
+        var data = {status: status, orders: orders};
+        OrdersFactr.put({}, data).$promise.then(function() {
+          toastr.success('Cool', 'It worked!');
+          OrdersFactr.get().$promise.then(function(orders) {
+            $scope.orders = orders.fields;
+          });
+        }, function(error) {
+          toastr.error(error.data.message, 'Chyba!');
+        });
+      };
+
+      // Initialize table
+      OrdersFactr.get().$promise.then(function(orders) {
+        $scope.orders = orders.fields;
+        switch ($scope.orders.length) {
+          case 1:
+            lfound = $translation('Labels.FOUND.one');
+            lrecords = $translation('Labels.RECORDS.one');
+            break;
+          case 2:case 3:case 4:
+          lfound = $translation('Labels.FOUND.chico');
+          lrecords = $translation('Labels.RECORDS.chico');
+          break;
+          default:
+            lfound = $translation('Labels.FOUND.many');
+            lrecords = $translation('Labels.RECORDS.many');
+            break;
+        }
+
+        // watch data in scope, if change reload table
+        $scope.$watchCollection('orders', function(newVal, oldVal) {
+          if (newVal !== oldVal) {
+            $scope.tableParams.reload();
+          }
+        });
+
+        $scope.$watch('searchText', function(newVal, oldVal) {
+          if (newVal !== oldVal) {
+            $scope.tableParams.reload();
+          }
+        });
+        ///////////////////////////////////////////// *watch data in scope, if change reload table
+
+        $scope.tableParams = new ngTableParams({
+            page: 1,            // show first page
+            count: 10,           // count per page
+            sorting: {
+              id: 'desc'     // initial sorting
+            }
+          }, {
+            total: $scope.orders.length, // length of data
+            getData: function($defer, params) {
+              var orderedData = params.sorting() ?
+                $filter('orderBy')($scope.orders, params.orderBy()) :
+                $scope.orders;
+
+              orderedData	= $filter('filter')(orderedData, $scope.searchText);
+              params.total(orderedData.length);
+
+              $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
+            }
+        });
+      });
+      ////////////////////////////////////////// *Initialize table
+
+
+      //////////////////////////////////////////
+      //************ Table Settings **********//
+      //////////////////////////////////////////
 }]);

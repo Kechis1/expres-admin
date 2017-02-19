@@ -29,6 +29,18 @@ app
     });
   })
 
+  .factory('OrdersHiddenFactr', function ($resource) {
+    return $resource('https://www.kominexpres.cz/v1/app/orders/hidden', null, {
+      get: {
+        method: 'GET',
+        headers: {
+          'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUmQ='
+        },
+        isArray: false
+      }
+    });
+  })
+
   .factory('OrdersFactr', function($resource) {
     return $resource('https://www.kominexpres.cz/v1/app/orders', null, {
       get: {
@@ -51,7 +63,7 @@ app
           'Content-Type':'application/json; charset=UTF-8',
           'Authorization': 'Basic YWRtaW4ta29taW5leHByZXM6czBtM2NSQTJZcGEkJHcwUmQ='
         },
-        method: 'DELETE',
+        method: 'PATCH',
         isArray: false
       }
     });

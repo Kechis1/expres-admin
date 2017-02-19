@@ -4390,13 +4390,6 @@ div.dropdown.rounded-dropdown {
     left: 0; }
 
 /* General button style (reset) */
-.btn-action {
-  position: absolute;
-  z-index: 100000; }
-  @media only screen and (max-width: 480px) {
-    .btn-action {
-      position: static; } }
-
 .btn-ef {
   border: none;
   display: inline-block;
@@ -10787,6 +10780,9 @@ body {
 
 *:focus {
   outline: 0 !important; }
+
+.bg-deleted {
+  background-color: #f3ddde !important; }
 
 .bg-white {
   background-color: white !important; }
