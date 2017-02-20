@@ -5131,6 +5131,14 @@ div.dropdown.rounded-dropdown {
       -moz-animation: scaleFromUp 0.5s;
       animation: scaleFromUp 0.5s; }
 
+.bg-deleted .btn-default,
+.bg-new .btn-default {
+  color: #616f77 !important; }
+
+.bg-deleted .btn-danger,
+.bg-new .btn-danger {
+  color: white !important; }
+
 button:focus {
   outline: 0 !important; }
 
@@ -8853,6 +8861,19 @@ table div.dropdown.rounded-dropdown {
   table div.dropdown.rounded-dropdown button {
     width: 100%; }
 
+.table-striped > tbody > tr.bg-deleted {
+  background-color: #fff0f2; }
+  .table-striped > tbody > tr.bg-deleted:hover {
+    background-color: #ffccd3 !important; }
+  .table-striped > tbody > tr.bg-deleted:nth-of-type(odd) {
+    background-color: #fbddde; }
+.table-striped > tbody > tr.bg-new {
+  background-color: #f2f9ff; }
+  .table-striped > tbody > tr.bg-new:hover {
+    background-color: #d3e9ff !important; }
+  .table-striped > tbody > tr.bg-new:nth-of-type(odd) {
+    background-color: #e6f3ff; }
+
 table.dataTable thead th {
   position: relative;
   background-image: none !important;
@@ -10780,9 +10801,6 @@ body {
 
 *:focus {
   outline: 0 !important; }
-
-.bg-deleted {
-  background-color: #f3ddde !important; }
 
 .bg-white {
   background-color: white !important; }

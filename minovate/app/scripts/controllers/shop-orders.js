@@ -19,6 +19,7 @@ app
       var lview = $translation('Labels.VIEW');
       var lrecords = $translation('Labels.RECORDS.many');
       $scope.status_keys = [];
+      $scope.orders_shown_deleted = false;
 
       $translate('Pages.Orders.STATUS.children_count').then(function (count) {
         STATUS_COUNT = count;
@@ -55,13 +56,16 @@ app
       $scope.getOrders = function () {
         OrdersFactr.get().$promise.then(function(orders) {
           $scope.orders = orders.fields;
+          angular.element('.tile.refreshing').removeClass('refreshing');
+          $scope.orders_shown_deleted = false;
         });
       };
 
       $scope.getHiddenOrders = function() {
-        console.log('sdg');
         OrdersHiddenFactr.get().$promise.then(function (orders) {
           $scope.orders = orders.fields;
+          angular.element('.tile.refreshing').removeClass('refreshing');
+          $scope.orders_shown_deleted = true;
         });
       };
 
@@ -79,12 +83,14 @@ app
         }
         var data = {status: null, orders: orders};
         OrdersFactr.delete({}, data).$promise.then(function() {
-          toastr.success('Cool', 'It worked!');
+          toastr.success($translation('Messages.ORDERS.DELETE'), $translation('Messages.SUCCESS'));
           OrdersFactr.get().$promise.then(function(orders) {
             $scope.orders = orders.fields;
+            angular.element('.tile.refreshing').removeClass('refreshing');
           });
         }, function(error) {
-          toastr.error(error.data.message, 'Chyba!');
+          toastr.error(error.data.message, $translation('Messages.ERROR'));
+          angular.element('.tile.refreshing').removeClass('refreshing');
         });
       };
 
@@ -96,12 +102,14 @@ app
         var orders = getSelectedOrders();
         var data = {status: status, orders: orders};
         OrdersFactr.put({}, data).$promise.then(function() {
-          toastr.success('Cool', 'It worked!');
+          toastr.success($translation('Messages.ORDERS.UPDATE'), $translation('Messages.SUCCESS'));
           OrdersFactr.get().$promise.then(function(orders) {
             $scope.orders = orders.fields;
+            angular.element('.tile.refreshing').removeClass('refreshing');
           });
         }, function(error) {
-          toastr.error(error.data.message, 'Chyba!');
+          toastr.error(error.data.message, $translation('Messages.ERROR'));
+          angular.element('.tile.refreshing').removeClass('refreshing');
         });
       };
 

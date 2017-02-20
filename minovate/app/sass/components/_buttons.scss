@@ -563,7 +563,7 @@
 
     &.btn-default {
       background: #e2e2e2;
-	  color: $font-color;
+	    color: $font-color;
 
       &:hover {
         background: darken(#e2e2e2, 10%);
@@ -1115,6 +1115,15 @@
 
 
 // general
+.bg-deleted .btn-default,
+.bg-new .btn-default {
+  color: $font-color !important;
+}
+
+.bg-deleted .btn-danger,
+.bg-new .btn-danger {
+  color: white !important;
+}
 
 button {
   &:focus {

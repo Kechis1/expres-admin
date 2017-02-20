@@ -1,4 +1,12 @@
 {
+  "Messages": {
+    "SUCCESS": "Success!",
+    "ERROR": "Error!",
+    "ORDERS": {
+      "DELETE": "Orders were removed",
+      "UPDATE": "Orders were updated"
+    }
+  },
   "Labels": {
     "TOTAL": "from total",
     "EMPTYTABLE": "No data available in table",

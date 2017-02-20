@@ -162,6 +162,29 @@ table div.dropdown.rounded-dropdown {
   }
 }
 
+.table-striped {
+  > tbody > tr {
+    &.bg-deleted {
+      background-color: $deleted;
+      &:hover {
+        background-color: $darken-deleted!important;
+      }
+      &:nth-of-type(odd) {
+        background-color: #fbddde;
+      }
+    }
+    &.bg-new {
+      background-color: #f2f9ff;
+      &:hover {
+        background-color: #d3e9ff!important;
+      }
+      &:nth-of-type(odd) {
+        background-color: #e6f3ff;
+      }
+    }
+  }
+}
+
 table.dataTable thead th {
   position: relative;
   background-image: none !important; /* Remove the DataTables bootstrap integration styling */

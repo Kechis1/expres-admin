@@ -1,4 +1,12 @@
 {
+  "Messages": {
+    "SUCCESS": "Skvěle!",
+    "ERROR": "Chyba!",
+    "ORDERS": {
+      "DELETE": "Objednávky byly odstraněny",
+      "UPDATE": "Objednávky byly upraveny"
+    }
+  },
   "Labels": {
     "TOTAL": "z celkem",
     "EMPTYTABLE": "Nebyly nalezeny žádné data",
@@ -65,7 +73,8 @@
         "Header": {
           "BOLD": "Objednávky",
           "THIN": "Seznam",
-          "HIDDEN": "Zobrazit odstraněné"
+          "HIDDEN": "Zobrazit odstraněné",
+          "SHOWN": "Skrýt odstraněné"
         },
         "DATE": {
           "Title": "Datum",
