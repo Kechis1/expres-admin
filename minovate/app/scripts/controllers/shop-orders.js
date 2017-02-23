@@ -15,9 +15,6 @@ app
       //////////////////////////////////////////
       var STATUS_COUNT = 0;
       var $translation = $filter('translate');
-      var lfound = $translation('Labels.FOUND.many');
-      var lview = $translation('Labels.VIEW');
-      var lrecords = $translation('Labels.RECORDS.many');
       $scope.status_keys = [];
       $scope.orders_shown_deleted = false;
 
@@ -116,21 +113,6 @@ app
       // Initialize table
       OrdersFactr.get().$promise.then(function(orders) {
         $scope.orders = orders.fields;
-        switch ($scope.orders.length) {
-          case 1:
-            lfound = $translation('Labels.FOUND.one');
-            lrecords = $translation('Labels.RECORDS.one');
-            break;
-          case 2:case 3:case 4:
-          lfound = $translation('Labels.FOUND.chico');
-          lrecords = $translation('Labels.RECORDS.chico');
-          break;
-          default:
-            lfound = $translation('Labels.FOUND.many');
-            lrecords = $translation('Labels.RECORDS.many');
-            break;
-        }
-
         // watch data in scope, if change reload table
         $scope.$watchCollection('orders', function(newVal, oldVal) {
           if (newVal !== oldVal) {
