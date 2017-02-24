@@ -113,6 +113,7 @@ app
       // Initialize table
       OrdersFactr.get().$promise.then(function(orders) {
         $scope.orders = orders.fields;
+
         // watch data in scope, if change reload table
         $scope.$watchCollection('orders', function(newVal, oldVal) {
           if (newVal !== oldVal) {
@@ -142,7 +143,6 @@ app
 
               orderedData	= $filter('filter')(orderedData, $scope.searchText);
               params.total(orderedData.length);
-
               $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
             }
         });

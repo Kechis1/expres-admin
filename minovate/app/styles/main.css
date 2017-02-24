@@ -8861,6 +8861,10 @@ table div.dropdown.rounded-dropdown {
   table div.dropdown.rounded-dropdown button {
     width: 100%; }
 
+.ng-table-footer {
+  padding-top: 15px;
+  border-top: 1px solid #798992; }
+
 .table-striped > tbody > tr.bg-deleted {
   background-color: #fff0f2; }
   .table-striped > tbody > tr.bg-deleted:hover {
@@ -8967,7 +8971,7 @@ div.dataTables_paginate a.last:after {
   color: #616f77;
   font-size: 12px; }
 .dataTables_wrapper .pagination {
-  margin: 0; }
+  margin: 0 !important; }
   .dataTables_wrapper .pagination > li > a,
   .dataTables_wrapper .pagination > li > span {
     padding: 5px 10px; }

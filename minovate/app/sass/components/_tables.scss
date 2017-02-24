@@ -162,6 +162,11 @@ table div.dropdown.rounded-dropdown {
   }
 }
 
+.ng-table-footer {
+  padding-top: 15px;
+  border-top: 1px solid #798992;
+}
+
 .table-striped {
   > tbody > tr {
     &.bg-deleted {
@@ -283,7 +288,7 @@ div.dataTables_paginate a.last:after {
     font-size: $font-size-small;
   }
   .pagination {
-    margin: 0;
+    margin: 0 !important;
     > li > a,
     > li > span {
       padding: 5px 10px;
