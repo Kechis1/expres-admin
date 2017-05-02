@@ -142,7 +142,7 @@
                         <span class="label" ng-class="{'bg-danger' : order.status == '0', 'bg-primary' : order.status == '1', 'bg-success' : order.status == '2', 'bg-warning' : order.status == '3', 'bg-dutch' : order.status == '4'}">{{ 'Pages.Orders.STATUS.children.' + order.status | translate }}</span>
                     </td>
                     <td data-title="'E-mail'" sortable="'email'">{{ order.email | lowercase }}</td>
-                    <td data-title="'Pages.Orders.CELLNUMBER.Title' | translate" sortable="'cellnumber'">{{ order.cellnumber }}</td>
+                    <td data-title="'Pages.Orders.CELLNUMBER.Title' | translate" sortable="'cellnumber'">{{ order.cellnumber | number:fractionSize }}</td>
                     <td data-title="'Pages.Orders.TOTAL.Title' | translate" sortable="'total'">{{ order.total | number:fractionSize }} Kč</td>
                     <td data-title="'Pages.Orders.ACTION.Title' | translate">
                       <a ui-sref="app.shop.single-order/{{order.id}}" class="btn btn-xs btn-default"><i class="fa fa-search"></i> {{ 'Buttons.VIEW' | translate }}</a>
