@@ -102,6 +102,22 @@
       padding-bottom: 5px;
     }
   }
+  &.with-addon {
+    position: relative;
+
+    .input-addon {
+      color: #bbb;
+      border-right: 1px solid #ddd;
+      padding-right: 10px;
+      position: absolute;
+      top: 14px;
+      left: 15px;
+
+      &+.form-control {
+        padding-left: 50px;
+      }
+    }
+  }
 }
 
 label {

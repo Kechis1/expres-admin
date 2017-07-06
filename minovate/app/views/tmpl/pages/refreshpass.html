@@ -9,16 +9,16 @@
     <form name="form" class="form-validation mt-20" novalidate>
 
       <p class="help-block text-left">
-         Enter your e-mail address below to reset your password.
+         Enter your new password.
       </p>
 
       <div class="form-group with-addon">
-        <span class="input-addon"><i class="icon-envelope"></i></span>
-        <input type="email" class="form-control" placeholder="E-mail address" ng-maxlength="100" ng-model="user.email" required>
+        <span class="input-addon"><i class="icon-key"></i></span>
+        <input type="password" class="form-control" placeholder="New password" ng-minlength="8" ng-model="user.password" required>
       </div>
 
       <div class="mt-40">
-        <button type="submit" class="btn btn-success btn-block btn-lg btn-rounded-40" ng-click="resetpassword()" ng-disabled='form.$invalid'>Submit</button>
+        <button type="submit" class="btn btn-success btn-block btn-lg btn-rounded-40" ng-click="refreshpassword()" ng-disabled='form.$invalid'>Submit</button>
       </div>
 
     </form>

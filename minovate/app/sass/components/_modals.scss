@@ -12,6 +12,41 @@
   bottom: 0;
 }
 
+.modal-login {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 520px;
+  border-radius: 6px;
+  padding: 30px 40px;
+
+  .branding {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px rgba(0,0,0,.1);
+  }
+
+  .form-control {
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 12px;
+    height: 46px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-login {
+    width: 100%;
+  }
+}
+
 // splashes
 
 // turn off default modal animations

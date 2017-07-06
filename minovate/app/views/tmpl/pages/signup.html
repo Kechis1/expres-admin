@@ -1,42 +1,49 @@
 <div class="page page-core page-login">
 
-  <div class="text-center"><h3 class="text-light text-white"><span class="text-lightred">M</span>INOVATE</h3></div>
+  <div class="container modal-login">
 
-  <div class="container w-420 p-15 bg-white mt-40 text-center">
+    <div class="branding">
+      <img src="../../../images/logo.png" alt="">
+    </div>
 
-    <h2 class="text-light text-greensea">Sign Up</h2>
+    <form name="userForm" ng-submit="submitForm(userForm.$valid)" role="form" class="form-validation mt-20" novalidate>
 
-    <form name="form" class="form-validation mt-20" novalidate>
-
-      <p class="help-block text-left">
-         Enter your personal details below:
-      </p>
-
-      <div class="form-group">
-        <input type="text" class="form-control underline-input" placeholder="Full Name" ng-model="user.name" required>
+      <div class="form-group with-addon">
+        <span class="input-addon"><i class="icon-user"></i></span>
+        <input type="text" name="fullname" class="form-control" placeholder="Full Name" ng-maxlength="71" ng-model="user.fullname" required>
+        <p class="help-block">
+          <span ng-show="userForm.fullname.$invalid && !userForm.fullname.$pristine">Full name is required.</span>
+          <span ng-show="userForm.fullname.$error.maxlength">Full name is too long.</span>
+        </p>
       </div>
 
-      <div class="form-group">
-        <input type="email" class="form-control underline-input" placeholder="Email" ng-model="user.email" required>
+      <div class="form-group with-addon">
+        <span class="input-addon"><i class="icon-envelope"></i></span>
+        <input type="email" name="email" class="form-control" placeholder="E-mail address" ng-maxlength="100" ng-model="user.email" required>
+        <p class="help-block">
+          <span ng-show="userForm.email.$invalid && !userForm.email.$pristine">E-mail address is required.</span>
+          <span ng-show="userForm.email.$error.maxlength">E-mail address is too long.</span>
+        </p>
       </div>
 
-      <div class="form-group">
-        <input type="password" placeholder="Password" class="form-control underline-input" ng-model="user.password" required>
+      <div class="form-group with-addon">
+        <span class="input-addon"><i class="icon-key"></i></span>
+        <input type="password" name="password" placeholder="Password" class="form-control" ng-minlength="8" ng-model="user.password" required>
+        <p class="help-block">
+          <span ng-show="userForm.password.$invalid && !userForm.password.$pristine">Password is required.</span>
+          <span ng-show="userForm.password.$error.minlength">Password is too short.</span>
+        </p>
       </div>
 
-      <div class="form-group text-left">
-         <label class="checkbox checkbox-custom checkbox-custom-sm inline-block">
-          <input type="checkbox" ng-model="user.accept" required><i></i> I agree to the <a href="javascript:;">Terms of Service</a> & <a href="javascript:;">Privacy Policy</a>
-        </label>
+      <div class="mt-40">
+        <button type="submit" class="btn btn-success btn-block btn-lg btn-rounded-40" ng-click="signup()" ng-disabled='userForm.$invalid'>Submit</button>
       </div>
 
     </form>
 
-    <div class="bg-slategray lt wrap-reset mt-20 text-left">
-      <p class="m-0">
-        <a ui-sref="app.dashboard" class="btn btn-greensea b-0 text-uppercase pull-right" ng-disabled='form.$invalid'>Submit</a>
-        <a ui-sref="core.login" class="btn btn-lightred b-0 text-uppercase">Back</a>
-      </p>
+    <div class="mt-20 text-center">
+      Already have an account?
+      <a ui-sref="core.login">Please log in</a>
     </div>
 
   </div>

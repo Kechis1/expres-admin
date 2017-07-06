@@ -106,7 +106,7 @@ var app = angular
 
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/app/dashboard');
+    $urlRouterProvider.otherwise('/core/login');
 
     $stateProvider
 
@@ -783,6 +783,12 @@ var app = angular
       url: '/forgotpass',
       controller: 'ForgotPasswordCtrl',
       templateUrl: 'views/tmpl/pages/forgotpass.html'
+    })
+    //refresh password
+    .state('core.refreshpass', {
+      url: '/refreshpass',
+      controller: 'RefreshPasswordCtrl',
+      templateUrl: 'views/tmpl/pages/refreshpass.html'
     })
     //page 404
     .state('core.page404', {
